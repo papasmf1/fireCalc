@@ -1,0 +1,128 @@
+# 데이터 수집 리포트
+
+- 작성일: 2026-11-11 (수집 기준일)
+- 작성: 데이터 수집 담당 (Haiku)
+- 범위: `scripts/`, `data/` 만 변경. `src/` 등 다른 파일은 건드리지 않음.
+
+## 1. 수집 결과
+
+| 파일 | 내용 | 기간 | 행 수 | 상태 |
+|---|---|---|---|---|
+| `data/etf/VOO.json` | Vanguard S&P 500 ETF | 2006-11 ~ 2026-10 | 240 | 완료 (2006-11~2010-09 SPY proxy) |
+| `data/etf/SCHD.json` | Schwab US Dividend Equity ETF | 2011-11 ~ 2026-10 | 180 | 완료 (상장 전 구간 없음, 가능 기간만) |
+| `data/etf/QQQM.json` | Invesco NASDAQ 100 ETF | 2006-11 ~ 2026-10 | 240 | 완료 (2006-11~2020-09 QQQ proxy) |
+| `data/etf/QLD.json` | ProShares Ultra QQQ | 2006-11 ~ 2026-10 | 240 | 완료 (proxy 없음) |
+| `data/etf/SPYQ.json` | Tradr 2X Long SPY Quarterly ETF | 2024-09 ~ 2026-10 | 26 | 완료, 데이터 매우 짧음 (아래 3절) |
+| `data/fx/usdkrw-monthly.json` | USD/KRW 월말 환율 | 2006-11 ~ 2026-10 | 240 | 완료 |
+| `data/fx/usdkrw-daily.json` | USD/KRW 일별 환율 | 2025-11-10 ~ 2026-11-11 | 261 | 완료 (오늘 1,342.67원) |
+| `data/summary.json` | 5y/10y/20y × USD/KRW 요약 지표 | — | — | 완료 |
+
+- 실행: `node scripts/collect-etf.mjs`, `node scripts/collect-fx.mjs`, `node scripts/collect-fx-daily.mjs`, `node scripts/compute-summary.mjs`
+- 모든 스크립트는 외부 의존성 없이 Node 내장 `fetch` 만 사용 (`scripts/lib/yahoo.mjs` 공용 헬퍼).
+- 현재 진행 중인 달(2026-11)은 월말 기준이 아니므로 제외. 마지막 완료 월은 2026-10.
+
+### 데이터 계약 대비 차이 (Codex 참고)
+- `monthly` 각 행에 `source` 필드가 있다 (계약과 동일). ETF 파일에 `proxy` 필드(최상위)를 추가했다 (`"SPY"`, `"QQQ"` 또는 `null`).
+- `usdkrw-monthly.json` 에 `source` 문자열을 추가했다.
+- `usdkrw-daily.json` 의 각 행에 `source` 필드를 추가했다 (`"Yahoo Finance KRW=X"` 또는 `"open.er-api.com"`).
+- 월봉 환율은 Yahoo **월봉(1mo)** 이 아니라 **일봉 전체 기간을 받아 달별 마지막 거래일 종가**로 만들었다 (아래 4절 참고).
+
+## 2. 기간별 핵심 수치
+
+값은 `data/summary.json` 기준. CAGR·총수익·변동성·MDD 는 연환산/누적 기준. KRW 는 매월 환전해 원화로 평가한 결과.
+
+| 티커 | 기간 | 개월 | 커버리지 | CAGR (USD) | CAGR (KRW) | 총수익 (USD) | 변동성 (USD) | MDD (USD) | MDD (KRW) | 배당수익률 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| VOO | 5y | 60 | full | 12.04% | 15.14% | 76.55% | 15.46% | -23.90% | -13.33% | 1.17% |
+| VOO | 10y | 120 | full | 15.41% | 17.21% | 319.26% | 15.32% | -23.90% | -17.12% | 1.17% |
+| VOO | 20y | 239 | partial | 10.86% | 12.97% | 679.47% | 15.32% | -50.78% | -22.30% | 1.17% |
+| SCHD | 5y | 60 | full | 10.61% | 13.67% | 65.54% | 15.57% | -15.70% | -12.71% | 3.22% |
+| SCHD | 10y | 120 | full | 13.69% | 15.46% | 260.82% | 15.52% | -21.53% | -17.73% | 3.22% |
+| SCHD | 20y | 179 | partial (상장 이후) | 13.55% | 14.78% | 565.79% | 13.81% | -21.53% | -17.73% | 3.22% |
+| QQQM | 5y | 60 | full | 13.08% | 16.20% | 84.86% | 23.26% | -33.10% | -28.53% | 0.51% |
+| QQQM | 10y | 120 | full | 20.26% | 22.13% | 532.96% | 20.46% | -33.10% | -28.53% | 0.51% |
+| QQQM | 20y | 239 | partial | 15.74% | 17.94% | 1738.52% | 19.40% | -49.74% | -28.53% | 0.51% |
+| QLD | 5y | 60 | full | 14.62% | 17.79% | 97.87% | 42.17% | -60.52% | -58.19% | 0.17% |
+| QLD | 10y | 120 | full | 31.95% | 34.01% | 1500.40% | 39.15% | -60.52% | -58.19% | 0.17% |
+| QLD | 20y | 239 | partial | 23.55% | 25.90% | 6647.00% | 38.18% | -80.62% | -68.01% | 0.17% |
+| SPYQ | 5y/10y/20y | 25 | partial (상장 이후 전체) | 21.67% | 22.95% | 50.48% | 35.15% | -31.72% | -29.85% | 0.16% |
+
+- 20y 는 데이터가 2006-11 부터라 실제로는 239개월 수익률. "partial" 은 1개월 부족을 뜻한다 (계약상 시작점 2006-11 때문).
+- SCHD 20y 행은 상장 이후 전체(179개월, 약 15년)를 사용한 것이다. 실제 20년 수치가 아님.
+- SPYQ 는 상장 이후 25개월뿐이라 5y/10y/20y 값이 모두 같다. **의미 있는 장기 성과 비교 불가.**
+- 요약 지표 계산 방식: `scripts/compute-summary.mjs` 상단 주석 참고. `bestYear`/`worstYear` 는 완전한 달력연도(전년 12월→당해 12월) 기준이며 `summary.json` 에 들어 있다.
+
+### 상식 점검 결과
+- VOO 10년 CAGR 15.4% (USD): 계약 예시(10~15%)보다 약간 높다. 2016~2026년 미국 대형주 강세장이 반영된 결과로 보이며 계산 오류는 찾지 못했다 (MDD -23.9% = 2020년 3월 부근, 변동성 15% 수준 모두 정상).
+- VOO 20y MDD -50.8% (USD): 2008년 금융위기 구간. 정상.
+- QQQM 20y 15.7%, QLD 20y 23.5%: QQQ 대비 레버리지 2배 효과와 일치하는 수준.
+- SCHD 배당수익률 3.2%, VOO 1.2%, QQQM 0.5%: 각 ETF 공시 수준과 대체로 일치.
+- KRW 기준 CAGR 이 USD 보다 높은 것은 2006~2026년 원화 약세(USD/KRW 상승) 때문. 정상.
+
+## 3. proxy 사용 구간 및 SPYQ 확인
+
+### proxy (상장 전 구간 대체)
+| 티커 | proxy | 대체 구간 | 행 수 | 연결 방식 |
+|---|---|---|---|---|
+| VOO | SPY | 2006-11 ~ 2010-09 | 47 | 상장 첫 달(2010-10) 기준 close·adjClose 비율로 SPY 가격을 스케일 |
+| QQQM | QQQ | 2006-11 ~ 2020-09 | 167 | 상장 첫 달(2020-10) 기준 비율로 QQQ 가격을 스케일 |
+| SCHD | 없음 | — | — | 상장 전 proxy 없음 (아래 한계 참고) |
+| QLD | 없음 | — | — | 2006-06 상장이라 2006-11 부터 실데이터 |
+| SPYQ | 없음 | — | — | 상장 이후 데이터만 |
+
+- proxy 구간의 `source` 는 `"SPY"` / `"QQQ"`, 실데이터 구간은 티커 자체. ETF 파일 최상위 `proxy` 필드도 함께 기록.
+- 배당은 proxy 구간에서 같은 비율로 스케일했다.
+- **VOO 2010-09 행은 SPY 값**이다. Yahoo 월봉에 VOO 의 2010-09 봉이 없기 때문 (VOO 상장일은 2010-09-09). 2010-10 부터 실데이터.
+- 연결 방식상 proxy 구간의 수익률은 SPY/QQQ 의 실제 수익률과 같고, 상장 첫 달에서 끊기지 않는다.
+
+### SPYQ 확인 결과
+- **실존 여부: 실존함.** 정식 명칭은 **Tradr 2X Long SPY Quarterly ETF** (Nasdaq 상장, 티커 SPYQ). 발행사는 Tradr 계열 (일부 사이트는 AXS Investments 로 표기).
+- **상장일: 2024-09-30 (다수 출처), 일부 2024-09-29.** Yahoo 의 `firstTradeDate` 는 2024-10-01 이고 Yahoo 월봉의 첫 행은 2024-09 (2024-09-30 거래일 종가 124.71). 정식 상장일과 Yahoo 값의 차이가 있어 `inception` 필드는 Yahoo 값(2024-10-01)을 그대로 두었다. 정확한 날짜가 필요하면 Tradr 투자설명서 확인 필요.
+- **성격: 레버리지 2배, 분기 리셋.** 목표는 SPY 의 **분기(calendar quarter) 수익률의 2배**이다. 일별·월별 2배 ETF 와 다르므로 장기 CAGR 을 QLD 와 직접 비교하면 안 된다.
+- **보수:** 0.95% (발행사·stockanalysis). MarketBeat 는 1.30% 로 표기. 일부 집계 사이트의 0% 는 신뢰하지 않음.
+- **역분할:** 2025-06 에 1:5 역분할이 있었다 (MarketBeat 보도). Yahoo 의 `split` 이벤트 조정 가격을 쓰므로 월봉에 5배 점프는 없다 (확인함). 2025-02 → 2025-03 에 종가가 130 → 93 으로 떨어진 구간이 있으나, 역분할 전후 가격 차이인지 실제 하락인지는 이번 작업에서 검증하지 않았다.
+- 출처: [stockanalysis.com SPYQ](https://stockanalysis.com/etf/spyq/), [ETFBeacon SPYQ](https://etfbeacon.com/etf/SPYQ), [Tradr SPYQ](https://www.tradretfs.com/SPYQ), [MarketBeat SPYQ](https://www.marketbeat.com/stocks/NASDAQ/SPYQ/forecast/chart)
+- 주의: 상장 이후 25개월이라 5년 이상 기간 통계는 **존재하지 않는다**. 앱에서는 SPYQ 를 "데이터 부족"으로 표시하거나 비교 대상에서 제외하는 것이 좋다.
+
+## 4. 수집 중 발견한 데이터 문제와 처리
+
+1. **Yahoo 월봉 환율(KRW=X, interval=1mo)에 잘못된 봉이 섞여 있음.** 예: 2015-02 가 0.1103 (정상값 약 1,100). 1개월 봉 단위로 여러 달(2015, 2016, 2017 등)에서 발생. 그대로 쓰면 MDD 와 변동성이 수십만 %로 나온다.
+   - **처리:** 월봉 대신 일봉을 전체 기간(`period1`/`period2`)으로 받아 달별 마지막 거래일 종가를 월말 환율로 사용. 일봉에는 잘못된 값이 없었다 (확인함).
+   - 추가로 USD/KRW 역사적 범위(500~3,000)를 벗어나는 값은 제외하도록 필터를 넣었다.
+2. **Yahoo 월봉 타임스탬프 시차.** KRW=X 월봉이 `전월 마지막 날 23:00 UTC` 로 찍혀 UTC 기준 월 키가 한 달 밀린다. 모든 월/일 키는 **한국 시간(KST) 기준**으로 만든다.
+3. **상장 첫 달 봉 누락.** VOO(2010-09), SCHD(2011-10)는 Yahoo 월봉에 상장 첫 달 봉이 없다. VOO 는 SPY proxy 로 채워졌고, **SCHD 의 2011-10 달은 비어 있다 (2011-11 부터 시작).**
+
+## 5. 한계점
+
+1. **SCHD 상장 전 구간 없음.** 2011-10 상장. proxy 로 쓸 수 있는 원지수 ETF 가 없어 20년 데이터를 만들 수 없다. 참고용 대안으로 **DVY (iShares Select Dividend ETF, 2003-11-07 상장)** 를 확인했으나, 지수(Dow Jones U.S. Select Dividend)가 SCHD(Dow Jones U.S. Dividend 100)와 달라 proxy 로 쓰지 않았다. 필요하면 별도 수집 가능.
+2. **SPYQ 데이터 25개월.** 장기 통계 불가. 레버리지 분기 리셋 상품이라 장기 수익률을 일반 2배 ETF 와 비교하기 어렵다.
+3. **proxy 구간 신뢰도.** SPY/QQQ 를 VOO/QQQM 의 대체로 쓴 구간은 운용 비용·추적 오차·배당 차이를 반영하지 않는다. 특히 VOO(SPY)는 보수 차이(SPY 0.09% 대 VOO 0.03%)만큼 과거 수익률이 약간 낮게 나올 수 있다. QQQM 도 보수 차이가 있다.
+4. **세금·환전 수수료·환율 스프레드 미반영.** 수집 데이터는 가격·배당·환율만 다룬다. 세금 계산(배당 15%, 양도 22%)과 환전 비용은 앱 시뮬레이터에서 처리해야 한다.
+5. **월말 환율의 정의.** 달별 마지막 거래일 종가를 쓴다 (정오 기준 등 다른 기준과 소폭 차이 가능).
+6. **일별 환율 원천.** 최근 1년 백필과 오늘 값은 Yahoo 기준이며, 실패 시 `open.er-api.com` 폴백. 폴백 값은 행마다 `source` 로 구분된다. 두 원천 모두 실패하면 파일은 건드리지 않고 종료 코드 1 을 반환한다.
+7. **Yahoo 비공식 API.** `query1.finance.yahoo.com/v8/finance/chart` 는 공식 API 가 아니다. 차단·형식 변경 시 스크립트가 실패할 수 있다. 재시도(429/5xx, 3회)는 있다.
+8. **배당 ex-date 기준.** 배당은 Yahoo 이벤트의 ex-date 가 속한 달에 넣었다. 월별 배당 합계는 실제 지급일과 다를 수 있다.
+9. **`package.json` 스크립트 미등록.** 이 작업은 `scripts/`, `data/` 만 수정하도록 제한되어 있어 `collect:etf`, `collect:fx` 등 npm 스크립트는 등록하지 않았다. PLAN.md 완료 기준에 맞게 다음을 추가하면 된다 (담당자가 반영):
+   ```json
+   "collect:etf": "node scripts/collect-etf.mjs",
+   "collect:fx": "node scripts/collect-fx.mjs && node scripts/collect-fx-daily.mjs",
+   "summary": "node scripts/compute-summary.mjs"
+   ```
+
+## 6. 매일 실행 방법
+
+```
+node scripts/collect-fx-daily.mjs
+```
+- 같은 날짜가 이미 있으면 덮어쓴다. 여러 번 실행해도 중복되지 않는다.
+- 파일이 없거나 비어 있으면 최근 1년 일봉으로 먼저 채운다.
+- Windows 작업 스케줄러 예시는 README 에 추가할 예정 (README 는 이 작업 범위 밖이라 여기 기록만 함).
+
+## 7. 재실행 순서 (전체 갱신)
+
+```
+node scripts/collect-etf.mjs
+node scripts/collect-fx.mjs
+node scripts/collect-fx-daily.mjs
+node scripts/compute-summary.mjs
+```

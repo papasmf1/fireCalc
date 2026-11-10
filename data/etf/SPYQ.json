@@ -1,0 +1,192 @@
+{
+  "ticker": "SPYQ",
+  "name": "Tradr 2X Long SPY Quarterly ETF",
+  "inception": "2024-10-01",
+  "currency": "USD",
+  "updatedAt": "2026-11-11",
+  "proxy": null,
+  "monthly": [
+    {
+      "date": "2024-09",
+      "close": 124.71,
+      "adjClose": 124.5036,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2024-10",
+      "close": 122.88,
+      "adjClose": 122.6767,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2024-11",
+      "close": 135.76,
+      "adjClose": 135.5353,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2024-12",
+      "close": 130.88,
+      "adjClose": 130.6634,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-01",
+      "close": 134.69,
+      "adjClose": 134.4671,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-02",
+      "close": 130.395,
+      "adjClose": 130.1792,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-03",
+      "close": 92.7,
+      "adjClose": 92.5466,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-04",
+      "close": 117.5,
+      "adjClose": 117.3056,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-05",
+      "close": 125.75,
+      "adjClose": 125.5419,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-06",
+      "close": 140.84,
+      "adjClose": 140.6069,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-07",
+      "close": 138.147,
+      "adjClose": 137.9184,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-08",
+      "close": 147.375,
+      "adjClose": 147.1311,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-09",
+      "close": 158.088,
+      "adjClose": 157.8264,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-10",
+      "close": 163.439,
+      "adjClose": 163.1685,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-11",
+      "close": 163.024,
+      "adjClose": 162.7542,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2025-12",
+      "close": 162.135,
+      "adjClose": 162.135,
+      "dividend": 0.271,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-01",
+      "close": 165.665,
+      "adjClose": 165.665,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-02",
+      "close": 162.126,
+      "adjClose": 162.126,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-03",
+      "close": 147.573,
+      "adjClose": 147.573,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-04",
+      "close": 175.94,
+      "adjClose": 175.94,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-05",
+      "close": 191.142,
+      "adjClose": 191.142,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-06",
+      "close": 185.641,
+      "adjClose": 185.641,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-07",
+      "close": 185.939,
+      "adjClose": 185.939,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-08",
+      "close": 195.665,
+      "adjClose": 195.665,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-09",
+      "close": 195.319,
+      "adjClose": 195.319,
+      "dividend": 0,
+      "source": "SPYQ"
+    },
+    {
+      "date": "2026-10",
+      "close": 187.358,
+      "adjClose": 187.358,
+      "dividend": 0,
+      "source": "SPYQ"
+    }
+  ]
+}

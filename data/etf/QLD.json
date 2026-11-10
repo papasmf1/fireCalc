@@ -1,0 +1,1690 @@
+{
+  "ticker": "QLD",
+  "name": "ProShares Ultra QQQ",
+  "inception": "2006-06-21",
+  "currency": "USD",
+  "updatedAt": "2026-11-11",
+  "proxy": null,
+  "monthly": [
+    {
+      "date": "2006-11",
+      "close": 1.4066,
+      "adjClose": 1.2241,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2006-12",
+      "close": 1.2663,
+      "adjClose": 1.1732,
+      "dividend": 0.084703,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-01",
+      "close": 1.3039,
+      "adjClose": 1.2081,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-02",
+      "close": 1.2577,
+      "adjClose": 1.1652,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-03",
+      "close": 1.2653,
+      "adjClose": 1.1725,
+      "dividend": 0.000188,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-04",
+      "close": 1.3977,
+      "adjClose": 1.2951,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-05",
+      "close": 1.4798,
+      "adjClose": 1.3713,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-06",
+      "close": 1.4864,
+      "adjClose": 1.3774,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-07",
+      "close": 1.4688,
+      "adjClose": 1.361,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-08",
+      "close": 1.5302,
+      "adjClose": 1.4179,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-09",
+      "close": 1.6891,
+      "adjClose": 1.5652,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-10",
+      "close": 1.9136,
+      "adjClose": 1.7732,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-11",
+      "close": 1.6478,
+      "adjClose": 1.5269,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2007-12",
+      "close": 1.5503,
+      "adjClose": 1.5138,
+      "dividend": 0.0795,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-01",
+      "close": 1.1727,
+      "adjClose": 1.145,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-02",
+      "close": 1.0741,
+      "adjClose": 1.0488,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-03",
+      "close": 1.093,
+      "adjClose": 1.0672,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-04",
+      "close": 1.2633,
+      "adjClose": 1.2335,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-05",
+      "close": 1.4141,
+      "adjClose": 1.3808,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-06",
+      "close": 1.1461,
+      "adjClose": 1.1196,
+      "dividend": 0.000516,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-07",
+      "close": 1.1511,
+      "adjClose": 1.1245,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-08",
+      "close": 1.1731,
+      "adjClose": 1.146,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-09",
+      "close": 0.8184,
+      "adjClose": 0.7995,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-10",
+      "close": 0.5434,
+      "adjClose": 0.5309,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-11",
+      "close": 0.4131,
+      "adjClose": 0.4036,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2008-12",
+      "close": 0.4202,
+      "adjClose": 0.4104,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-01",
+      "close": 0.3958,
+      "adjClose": 0.3866,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-02",
+      "close": 0.3519,
+      "adjClose": 0.3437,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-03",
+      "close": 0.422,
+      "adjClose": 0.4123,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-04",
+      "close": 0.5331,
+      "adjClose": 0.5208,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-05",
+      "close": 0.5641,
+      "adjClose": 0.551,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-06",
+      "close": 0.5953,
+      "adjClose": 0.5815,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-07",
+      "close": 0.6966,
+      "adjClose": 0.6804,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-08",
+      "close": 0.7152,
+      "adjClose": 0.6986,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-09",
+      "close": 0.7964,
+      "adjClose": 0.778,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-10",
+      "close": 0.7453,
+      "adjClose": 0.7281,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-11",
+      "close": 0.8394,
+      "adjClose": 0.8199,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2009-12",
+      "close": 0.9294,
+      "adjClose": 0.9079,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-01",
+      "close": 0.8084,
+      "adjClose": 0.7897,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-02",
+      "close": 0.8825,
+      "adjClose": 0.8621,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-03",
+      "close": 1.0225,
+      "adjClose": 0.9988,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-04",
+      "close": 1.0656,
+      "adjClose": 1.041,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-05",
+      "close": 0.903,
+      "adjClose": 0.8821,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-06",
+      "close": 0.7906,
+      "adjClose": 0.7723,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-07",
+      "close": 0.9053,
+      "adjClose": 0.8844,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-08",
+      "close": 0.8128,
+      "adjClose": 0.794,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-09",
+      "close": 1.0358,
+      "adjClose": 1.0118,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-10",
+      "close": 1.1698,
+      "adjClose": 1.1428,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-11",
+      "close": 1.16,
+      "adjClose": 1.1332,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2010-12",
+      "close": 1.2723,
+      "adjClose": 1.2429,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-01",
+      "close": 1.3422,
+      "adjClose": 1.3111,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-02",
+      "close": 1.4255,
+      "adjClose": 1.3925,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-03",
+      "close": 1.4058,
+      "adjClose": 1.3732,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-04",
+      "close": 1.4869,
+      "adjClose": 1.4525,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-05",
+      "close": 1.4445,
+      "adjClose": 1.4111,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-06",
+      "close": 1.3817,
+      "adjClose": 1.3497,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-07",
+      "close": 1.4236,
+      "adjClose": 1.3906,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-08",
+      "close": 1.2581,
+      "adjClose": 1.229,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-09",
+      "close": 1.1398,
+      "adjClose": 1.1135,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-10",
+      "close": 1.3792,
+      "adjClose": 1.3473,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-11",
+      "close": 1.2939,
+      "adjClose": 1.264,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2011-12",
+      "close": 1.2728,
+      "adjClose": 1.2434,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-01",
+      "close": 1.4927,
+      "adjClose": 1.4581,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-02",
+      "close": 1.6883,
+      "adjClose": 1.6492,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-03",
+      "close": 1.8586,
+      "adjClose": 1.8156,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-04",
+      "close": 1.8108,
+      "adjClose": 1.7689,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-05",
+      "close": 1.5584,
+      "adjClose": 1.5224,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-06",
+      "close": 1.6638,
+      "adjClose": 1.6252,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-07",
+      "close": 1.6909,
+      "adjClose": 1.6518,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-08",
+      "close": 1.8709,
+      "adjClose": 1.8276,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-09",
+      "close": 1.9009,
+      "adjClose": 1.8569,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-10",
+      "close": 1.6991,
+      "adjClose": 1.6597,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-11",
+      "close": 1.74,
+      "adjClose": 1.6997,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2012-12",
+      "close": 1.7128,
+      "adjClose": 1.6757,
+      "dividend": 0.002563,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-01",
+      "close": 1.8038,
+      "adjClose": 1.7646,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-02",
+      "close": 1.8125,
+      "adjClose": 1.7732,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-03",
+      "close": 1.9184,
+      "adjClose": 1.8809,
+      "dividend": 0.004094,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-04",
+      "close": 2.0078,
+      "adjClose": 1.9686,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-05",
+      "close": 2.1506,
+      "adjClose": 2.1086,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-06",
+      "close": 2.0394,
+      "adjClose": 1.9995,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-07",
+      "close": 2.3056,
+      "adjClose": 2.2605,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-08",
+      "close": 2.2816,
+      "adjClose": 2.237,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-09",
+      "close": 2.4997,
+      "adjClose": 2.4508,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-10",
+      "close": 2.7513,
+      "adjClose": 2.6975,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-11",
+      "close": 2.9413,
+      "adjClose": 2.8837,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2013-12",
+      "close": 3.1125,
+      "adjClose": 3.0516,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-01",
+      "close": 2.9856,
+      "adjClose": 2.9272,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-02",
+      "close": 3.2919,
+      "adjClose": 3.2275,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-03",
+      "close": 3.1078,
+      "adjClose": 3.047,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-04",
+      "close": 3.0741,
+      "adjClose": 3.014,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-05",
+      "close": 3.3503,
+      "adjClose": 3.2848,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-06",
+      "close": 3.5531,
+      "adjClose": 3.4893,
+      "dividend": 0.005625,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-07",
+      "close": 3.6275,
+      "adjClose": 3.5624,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-08",
+      "close": 3.9956,
+      "adjClose": 3.9239,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-09",
+      "close": 3.9288,
+      "adjClose": 3.8582,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-10",
+      "close": 4.1144,
+      "adjClose": 4.0405,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-11",
+      "close": 4.4925,
+      "adjClose": 4.4118,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2014-12",
+      "close": 4.2731,
+      "adjClose": 4.1988,
+      "dividend": 0.0025,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-01",
+      "close": 4.0872,
+      "adjClose": 4.0161,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-02",
+      "close": 4.6894,
+      "adjClose": 4.6078,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-03",
+      "close": 4.4547,
+      "adjClose": 4.3795,
+      "dividend": 0.002469,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-04",
+      "close": 4.6144,
+      "adjClose": 4.5365,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-05",
+      "close": 4.8187,
+      "adjClose": 4.7374,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-06",
+      "close": 4.5719,
+      "adjClose": 4.4947,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-07",
+      "close": 4.9794,
+      "adjClose": 4.8953,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-08",
+      "close": 4.2819,
+      "adjClose": 4.2096,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-09",
+      "close": 4.0656,
+      "adjClose": 3.997,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-10",
+      "close": 5.0338,
+      "adjClose": 4.9488,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-11",
+      "close": 5.0819,
+      "adjClose": 4.9961,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2015-12",
+      "close": 4.8975,
+      "adjClose": 4.8177,
+      "dividend": 0.002875,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-01",
+      "close": 4.2075,
+      "adjClose": 4.139,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-02",
+      "close": 4.055,
+      "adjClose": 3.9889,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-03",
+      "close": 4.6125,
+      "adjClose": 4.5374,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-04",
+      "close": 4.31,
+      "adjClose": 4.2398,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-05",
+      "close": 4.6838,
+      "adjClose": 4.6075,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-06",
+      "close": 4.4475,
+      "adjClose": 4.3775,
+      "dividend": 0.0025,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-07",
+      "close": 5.0969,
+      "adjClose": 5.0167,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-08",
+      "close": 5.1944,
+      "adjClose": 5.1126,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-09",
+      "close": 5.4088,
+      "adjClose": 5.3236,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-10",
+      "close": 5.2431,
+      "adjClose": 5.1606,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-11",
+      "close": 5.2731,
+      "adjClose": 5.1901,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2016-12",
+      "close": 5.3825,
+      "adjClose": 5.3013,
+      "dividend": 0.003688,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-01",
+      "close": 5.9356,
+      "adjClose": 5.8461,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-02",
+      "close": 6.4556,
+      "adjClose": 6.3582,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-03",
+      "close": 6.7038,
+      "adjClose": 6.6038,
+      "dividend": 0.001188,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-04",
+      "close": 7.0606,
+      "adjClose": 6.9554,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-05",
+      "close": 7.5988,
+      "adjClose": 7.4855,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-06",
+      "close": 7.2075,
+      "adjClose": 7.1005,
+      "dividend": 0.000438,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-07",
+      "close": 7.7987,
+      "adjClose": 7.683,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-08",
+      "close": 8.0775,
+      "adjClose": 7.9576,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-09",
+      "close": 8.0275,
+      "adjClose": 7.9083,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-10",
+      "close": 8.76,
+      "adjClose": 8.6299,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-11",
+      "close": 9.085,
+      "adjClose": 8.9501,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2017-12",
+      "close": 9.1663,
+      "adjClose": 9.0301,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-01",
+      "close": 10.8013,
+      "adjClose": 10.6409,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-02",
+      "close": 10.4312,
+      "adjClose": 10.2764,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-03",
+      "close": 9.525,
+      "adjClose": 9.3836,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-04",
+      "close": 9.55,
+      "adjClose": 9.4082,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-05",
+      "close": 10.6263,
+      "adjClose": 10.4685,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-06",
+      "close": 10.8075,
+      "adjClose": 10.647,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-07",
+      "close": 11.3525,
+      "adjClose": 11.1839,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-08",
+      "close": 12.69,
+      "adjClose": 12.5016,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-09",
+      "close": 12.585,
+      "adjClose": 12.3981,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-10",
+      "close": 10.3512,
+      "adjClose": 10.1976,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-11",
+      "close": 10.23,
+      "adjClose": 10.0781,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2018-12",
+      "close": 8.3988,
+      "adjClose": 8.2797,
+      "dividend": 0.005,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-01",
+      "close": 9.8962,
+      "adjClose": 9.756,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-02",
+      "close": 10.4525,
+      "adjClose": 10.3043,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-03",
+      "close": 11.2413,
+      "adjClose": 11.0897,
+      "dividend": 0.007875,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-04",
+      "close": 12.46,
+      "adjClose": 12.292,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-05",
+      "close": 10.4087,
+      "adjClose": 10.2684,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-06",
+      "close": 12.0013,
+      "adjClose": 11.8445,
+      "dividend": 0.005125,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-07",
+      "close": 12.5188,
+      "adjClose": 12.3552,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-08",
+      "close": 11.9288,
+      "adjClose": 11.7729,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-09",
+      "close": 12.0913,
+      "adjClose": 11.9333,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-10",
+      "close": 13.1112,
+      "adjClose": 12.94,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-11",
+      "close": 14.165,
+      "adjClose": 13.9799,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2019-12",
+      "close": 15.2362,
+      "adjClose": 15.0434,
+      "dividend": 0.00625,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-01",
+      "close": 16.0925,
+      "adjClose": 15.8888,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-02",
+      "close": 14.1975,
+      "adjClose": 14.0178,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-03",
+      "close": 11.1975,
+      "adjClose": 11.057,
+      "dividend": 0.001125,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-04",
+      "close": 14.6225,
+      "adjClose": 14.439,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-05",
+      "close": 16.4338,
+      "adjClose": 16.2275,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-06",
+      "close": 18.4613,
+      "adjClose": 18.2295,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-07",
+      "close": 21.21,
+      "adjClose": 20.9438,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-08",
+      "close": 26.04,
+      "adjClose": 25.7132,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-09",
+      "close": 22.9125,
+      "adjClose": 22.6249,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-10",
+      "close": 21.375,
+      "adjClose": 21.1067,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-11",
+      "close": 26.2025,
+      "adjClose": 25.8736,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2020-12",
+      "close": 28.7775,
+      "adjClose": 28.4163,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-01",
+      "close": 28.8425,
+      "adjClose": 28.4805,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-02",
+      "close": 28.635,
+      "adjClose": 28.2756,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-03",
+      "close": 29.2975,
+      "adjClose": 28.9298,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-04",
+      "close": 32.7675,
+      "adjClose": 32.3562,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-05",
+      "close": 31.845,
+      "adjClose": 31.4453,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-06",
+      "close": 35.905,
+      "adjClose": 35.4543,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-07",
+      "close": 37.9,
+      "adjClose": 37.4243,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-08",
+      "close": 41.08,
+      "adjClose": 40.5644,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-09",
+      "close": 36.385,
+      "adjClose": 35.9283,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-10",
+      "close": 42.27,
+      "adjClose": 41.7395,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-11",
+      "close": 43.805,
+      "adjClose": 43.2552,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2021-12",
+      "close": 44.51,
+      "adjClose": 43.9513,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-01",
+      "close": 36.855,
+      "adjClose": 36.3924,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-02",
+      "close": 33.335,
+      "adjClose": 32.9166,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-03",
+      "close": 35.96,
+      "adjClose": 35.5086,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-04",
+      "close": 26.6,
+      "adjClose": 26.2661,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-05",
+      "close": 25.335,
+      "adjClose": 25.017,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-06",
+      "close": 20.705,
+      "adjClose": 20.4451,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-07",
+      "close": 26.01,
+      "adjClose": 25.6835,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-08",
+      "close": 23.185,
+      "adjClose": 22.894,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-09",
+      "close": 18.33,
+      "adjClose": 18.0999,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-10",
+      "close": 19.54,
+      "adjClose": 19.2947,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-11",
+      "close": 21.45,
+      "adjClose": 21.1808,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2022-12",
+      "close": 17.52,
+      "adjClose": 17.3509,
+      "dividend": 0.0545,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-01",
+      "close": 21.235,
+      "adjClose": 21.0301,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-02",
+      "close": 20.865,
+      "adjClose": 20.6636,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-03",
+      "close": 24.785,
+      "adjClose": 24.5458,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-04",
+      "close": 24.87,
+      "adjClose": 24.63,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-05",
+      "close": 28.66,
+      "adjClose": 28.3834,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-06",
+      "close": 32.19,
+      "adjClose": 31.8793,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-07",
+      "close": 34.515,
+      "adjClose": 34.1819,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-08",
+      "close": 33.14,
+      "adjClose": 32.8202,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-09",
+      "close": 29.675,
+      "adjClose": 29.4704,
+      "dividend": 0.088,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-10",
+      "close": 28.21,
+      "adjClose": 28.0155,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-11",
+      "close": 34.355,
+      "adjClose": 34.1181,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2023-12",
+      "close": 38,
+      "adjClose": 37.7767,
+      "dividend": 0.039,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-01",
+      "close": 39.1,
+      "adjClose": 38.8702,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-02",
+      "close": 43.02,
+      "adjClose": 42.7672,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-03",
+      "close": 43.74,
+      "adjClose": 43.5109,
+      "dividend": 0.0275,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-04",
+      "close": 39.66,
+      "adjClose": 39.4523,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-05",
+      "close": 44.56,
+      "adjClose": 44.3266,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-06",
+      "close": 49.905,
+      "adjClose": 49.6962,
+      "dividend": 0.053,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-07",
+      "close": 47.755,
+      "adjClose": 47.5552,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-08",
+      "close": 48.275,
+      "adjClose": 48.0731,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-09",
+      "close": 50.35,
+      "adjClose": 50.165,
+      "dividend": 0.0255,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-10",
+      "close": 49.14,
+      "adjClose": 48.9594,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-11",
+      "close": 54.105,
+      "adjClose": 53.9062,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2024-12",
+      "close": 54.12,
+      "adjClose": 53.9507,
+      "dividend": 0.0305,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-01",
+      "close": 56.005,
+      "adjClose": 55.8298,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-02",
+      "close": 52.645,
+      "adjClose": 52.4803,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-03",
+      "close": 44.44,
+      "adjClose": 44.3126,
+      "dividend": 0.013,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-04",
+      "close": 44.29,
+      "adjClose": 44.1631,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-05",
+      "close": 52.365,
+      "adjClose": 52.2149,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-06",
+      "close": 58.855,
+      "adjClose": 58.7509,
+      "dividend": 0.062,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-07",
+      "close": 61.385,
+      "adjClose": 61.2764,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-08",
+      "close": 62.11,
+      "adjClose": 62.0001,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-09",
+      "close": 68.6,
+      "adjClose": 68.4992,
+      "dividend": 0.0205,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-10",
+      "close": 74.74,
+      "adjClose": 74.6302,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-11",
+      "close": 71.81,
+      "adjClose": 71.7045,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2025-12",
+      "close": 70.41,
+      "adjClose": 70.3289,
+      "dividend": 0.023,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-01",
+      "close": 71.71,
+      "adjClose": 71.6274,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-02",
+      "close": 67.99,
+      "adjClose": 67.9117,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-03",
+      "close": 61,
+      "adjClose": 60.9424,
+      "dividend": 0.013,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-04",
+      "close": 81.05,
+      "adjClose": 80.9734,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-05",
+      "close": 98.46,
+      "adjClose": 98.367,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-06",
+      "close": 96.76,
+      "adjClose": 96.7333,
+      "dividend": 0.061,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-07",
+      "close": 83.67,
+      "adjClose": 83.6469,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-08",
+      "close": 90.24,
+      "adjClose": 90.2151,
+      "dividend": 0,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-09",
+      "close": 95.65,
+      "adjClose": 95.65,
+      "dividend": 0.027,
+      "source": "QLD"
+    },
+    {
+      "date": "2026-10",
+      "close": 82.59,
+      "adjClose": 82.59,
+      "dividend": 0,
+      "source": "QLD"
+    }
+  ]
+}

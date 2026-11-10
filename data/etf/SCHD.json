@@ -1,0 +1,1270 @@
+{
+  "ticker": "SCHD",
+  "name": "Schwab U.S. Dividend Equity ETF",
+  "inception": "2011-10-20",
+  "currency": "USD",
+  "updatedAt": "2026-11-11",
+  "proxy": null,
+  "monthly": [
+    {
+      "date": "2011-11",
+      "close": 8.64,
+      "adjClose": 5.3741,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2011-12",
+      "close": 8.7267,
+      "adjClose": 5.4541,
+      "dividend": 0.040667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-01",
+      "close": 8.87,
+      "adjClose": 5.5437,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-02",
+      "close": 9.1233,
+      "adjClose": 5.702,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-03",
+      "close": 9.2967,
+      "adjClose": 5.8393,
+      "dividend": 0.046,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-04",
+      "close": 9.2867,
+      "adjClose": 5.833,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-05",
+      "close": 8.9333,
+      "adjClose": 5.6111,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-06",
+      "close": 9.2533,
+      "adjClose": 5.8558,
+      "dividend": 0.068667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-07",
+      "close": 9.48,
+      "adjClose": 5.9992,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-08",
+      "close": 9.5367,
+      "adjClose": 6.0351,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-09",
+      "close": 9.5833,
+      "adjClose": 6.1081,
+      "dividend": 0.069333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-10",
+      "close": 9.4933,
+      "adjClose": 6.0508,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-11",
+      "close": 9.5367,
+      "adjClose": 6.0784,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2012-12",
+      "close": 9.4467,
+      "adjClose": 6.0754,
+      "dividend": 0.086,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-01",
+      "close": 9.97,
+      "adjClose": 6.412,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-02",
+      "close": 10.18,
+      "adjClose": 6.547,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-03",
+      "close": 10.5967,
+      "adjClose": 6.8585,
+      "dividend": 0.066333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-04",
+      "close": 10.9133,
+      "adjClose": 7.0635,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-05",
+      "close": 11.0667,
+      "adjClose": 7.1627,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-06",
+      "close": 10.9,
+      "adjClose": 7.1037,
+      "dividend": 0.075,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-07",
+      "close": 11.4,
+      "adjClose": 7.4296,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-08",
+      "close": 10.9967,
+      "adjClose": 7.1667,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-09",
+      "close": 11.2167,
+      "adjClose": 7.3593,
+      "dividend": 0.077,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-10",
+      "close": 11.7767,
+      "adjClose": 7.7267,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-11",
+      "close": 12.0767,
+      "adjClose": 7.9236,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2013-12",
+      "close": 12.22,
+      "adjClose": 8.0729,
+      "dividend": 0.083,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-01",
+      "close": 11.6767,
+      "adjClose": 7.7139,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-02",
+      "close": 12.13,
+      "adjClose": 8.0134,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-03",
+      "close": 12.2833,
+      "adjClose": 8.1702,
+      "dividend": 0.082667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-04",
+      "close": 12.5067,
+      "adjClose": 8.3187,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-05",
+      "close": 12.6733,
+      "adjClose": 8.4296,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-06",
+      "close": 12.7567,
+      "adjClose": 8.5442,
+      "dividend": 0.089667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-07",
+      "close": 12.5367,
+      "adjClose": 8.3968,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-08",
+      "close": 12.9667,
+      "adjClose": 8.6848,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-09",
+      "close": 12.8533,
+      "adjClose": 8.6648,
+      "dividend": 0.084667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-10",
+      "close": 13.1067,
+      "adjClose": 8.8355,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-11",
+      "close": 13.4967,
+      "adjClose": 9.0985,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2014-12",
+      "close": 13.2833,
+      "adjClose": 9.0161,
+      "dividend": 0.091667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-01",
+      "close": 12.87,
+      "adjClose": 8.7355,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-02",
+      "close": 13.5433,
+      "adjClose": 9.1926,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-03",
+      "close": 13.1367,
+      "adjClose": 8.9769,
+      "dividend": 0.09,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-04",
+      "close": 13.2367,
+      "adjClose": 9.0452,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-05",
+      "close": 13.3033,
+      "adjClose": 9.0908,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-06",
+      "close": 12.7633,
+      "adjClose": 8.7897,
+      "dividend": 0.102,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-07",
+      "close": 12.8533,
+      "adjClose": 8.8517,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-08",
+      "close": 12.17,
+      "adjClose": 8.3811,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-09",
+      "close": 11.9833,
+      "adjClose": 8.3211,
+      "dividend": 0.099667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-10",
+      "close": 13.0333,
+      "adjClose": 9.0502,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-11",
+      "close": 13.07,
+      "adjClose": 9.0757,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2015-12",
+      "close": 12.8533,
+      "adjClose": 8.9894,
+      "dividend": 0.090667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-01",
+      "close": 12.56,
+      "adjClose": 8.7842,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-02",
+      "close": 12.6533,
+      "adjClose": 8.8495,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-03",
+      "close": 13.3633,
+      "adjClose": 9.4158,
+      "dividend": 0.099333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-04",
+      "close": 13.34,
+      "adjClose": 9.3993,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-05",
+      "close": 13.5267,
+      "adjClose": 9.5309,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-06",
+      "close": 13.8133,
+      "adjClose": 9.8089,
+      "dividend": 0.105667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-07",
+      "close": 14.2067,
+      "adjClose": 10.0882,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-08",
+      "close": 14.16,
+      "adjClose": 10.0551,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-09",
+      "close": 14.1033,
+      "adjClose": 10.0735,
+      "dividend": 0.081333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-10",
+      "close": 13.8833,
+      "adjClose": 9.9164,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-11",
+      "close": 14.3367,
+      "adjClose": 10.2402,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2016-12",
+      "close": 14.5233,
+      "adjClose": 10.468,
+      "dividend": 0.133,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-01",
+      "close": 14.4533,
+      "adjClose": 10.4175,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-02",
+      "close": 14.9467,
+      "adjClose": 10.7731,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-03",
+      "close": 14.86,
+      "adjClose": 10.7884,
+      "dividend": 0.108667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-04",
+      "close": 14.8967,
+      "adjClose": 10.815,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-05",
+      "close": 15.1567,
+      "adjClose": 11.0038,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-06",
+      "close": 15.0333,
+      "adjClose": 10.9933,
+      "dividend": 0.110333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-07",
+      "close": 15.2833,
+      "adjClose": 11.1761,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-08",
+      "close": 15.28,
+      "adjClose": 11.1736,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-09",
+      "close": 15.6,
+      "adjClose": 11.4919,
+      "dividend": 0.114667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-10",
+      "close": 16.1633,
+      "adjClose": 11.9069,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-11",
+      "close": 16.8433,
+      "adjClose": 12.4078,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2017-12",
+      "close": 17.0567,
+      "adjClose": 12.6502,
+      "dividend": 0.115,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-01",
+      "close": 17.8333,
+      "adjClose": 13.2263,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-02",
+      "close": 16.83,
+      "adjClose": 12.4821,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-03",
+      "close": 16.3433,
+      "adjClose": 12.1845,
+      "dividend": 0.087333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-04",
+      "close": 16.16,
+      "adjClose": 12.0478,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-05",
+      "close": 16.45,
+      "adjClose": 12.264,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-06",
+      "close": 16.43,
+      "adjClose": 12.3494,
+      "dividend": 0.135333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-07",
+      "close": 17.1767,
+      "adjClose": 12.9106,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-08",
+      "close": 17.57,
+      "adjClose": 13.2063,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-09",
+      "close": 17.6667,
+      "adjClose": 13.3703,
+      "dividend": 0.122333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-10",
+      "close": 16.6233,
+      "adjClose": 12.5807,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-11",
+      "close": 17.1833,
+      "adjClose": 13.0045,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2018-12",
+      "close": 15.6567,
+      "adjClose": 11.9471,
+      "dividend": 0.135,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-01",
+      "close": 16.6033,
+      "adjClose": 12.6694,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-02",
+      "close": 17.2767,
+      "adjClose": 13.1832,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-03",
+      "close": 17.4267,
+      "adjClose": 13.3875,
+      "dividend": 0.117333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-04",
+      "close": 17.9867,
+      "adjClose": 13.8177,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-05",
+      "close": 16.62,
+      "adjClose": 12.7678,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-06",
+      "close": 17.69,
+      "adjClose": 13.6983,
+      "dividend": 0.140333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-07",
+      "close": 17.9833,
+      "adjClose": 13.9254,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-08",
+      "close": 17.75,
+      "adjClose": 13.7448,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-09",
+      "close": 18.26,
+      "adjClose": 14.2666,
+      "dividend": 0.162,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-10",
+      "close": 18.5067,
+      "adjClose": 14.4594,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-11",
+      "close": 19.03,
+      "adjClose": 14.8682,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2019-12",
+      "close": 19.3067,
+      "adjClose": 15.2078,
+      "dividend": 0.155333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-01",
+      "close": 18.9667,
+      "adjClose": 14.94,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-02",
+      "close": 17.1933,
+      "adjClose": 13.5432,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-03",
+      "close": 14.9933,
+      "adjClose": 11.9338,
+      "dividend": 0.147333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-04",
+      "close": 16.8833,
+      "adjClose": 13.4382,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-05",
+      "close": 17.5067,
+      "adjClose": 13.9343,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-06",
+      "close": 17.25,
+      "adjClose": 13.846,
+      "dividend": 0.147333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-07",
+      "close": 18.1633,
+      "adjClose": 14.5791,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-08",
+      "close": 19.0933,
+      "adjClose": 15.3255,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-09",
+      "close": 18.4333,
+      "adjClose": 14.9429,
+      "dividend": 0.181,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-10",
+      "close": 18.5033,
+      "adjClose": 14.9997,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-11",
+      "close": 20.94,
+      "adjClose": 16.975,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2020-12",
+      "close": 21.38,
+      "adjClose": 17.4932,
+      "dividend": 0.200667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-01",
+      "close": 21.1867,
+      "adjClose": 17.3351,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-02",
+      "close": 22.47,
+      "adjClose": 18.3851,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-03",
+      "close": 24.3067,
+      "adjClose": 20.0289,
+      "dividend": 0.167667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-04",
+      "close": 24.8433,
+      "adjClose": 20.4711,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-05",
+      "close": 25.6433,
+      "adjClose": 21.1303,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-06",
+      "close": 25.2067,
+      "adjClose": 20.9203,
+      "dividend": 0.18,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-07",
+      "close": 25.37,
+      "adjClose": 21.0559,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-08",
+      "close": 25.9,
+      "adjClose": 21.4958,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-09",
+      "close": 24.7467,
+      "adjClose": 20.7023,
+      "dividend": 0.195667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-10",
+      "close": 25.8367,
+      "adjClose": 21.6141,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-11",
+      "close": 25.3067,
+      "adjClose": 21.1707,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2021-12",
+      "close": 26.9433,
+      "adjClose": 22.7195,
+      "dividend": 0.206667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-01",
+      "close": 26.2067,
+      "adjClose": 22.0983,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-02",
+      "close": 25.7,
+      "adjClose": 21.6711,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-03",
+      "close": 26.2967,
+      "adjClose": 22.3198,
+      "dividend": 0.172667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-04",
+      "close": 25.2133,
+      "adjClose": 21.4003,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-05",
+      "close": 26.1967,
+      "adjClose": 22.2349,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-06",
+      "close": 23.8767,
+      "adjClose": 20.4659,
+      "dividend": 0.234667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-07",
+      "close": 24.81,
+      "adjClose": 21.266,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-08",
+      "close": 24.1333,
+      "adjClose": 20.6859,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-09",
+      "close": 22.1433,
+      "adjClose": 19.152,
+      "dividend": 0.212333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-10",
+      "close": 24.6267,
+      "adjClose": 21.2999,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-11",
+      "close": 26.31,
+      "adjClose": 22.7558,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2022-12",
+      "close": 25.18,
+      "adjClose": 21.9799,
+      "dividend": 0.234333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-01",
+      "close": 25.7033,
+      "adjClose": 22.4367,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-02",
+      "close": 24.85,
+      "adjClose": 21.6918,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-03",
+      "close": 24.3867,
+      "adjClose": 21.4645,
+      "dividend": 0.199,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-04",
+      "close": 24.19,
+      "adjClose": 21.2914,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-05",
+      "close": 23.1967,
+      "adjClose": 20.4171,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-06",
+      "close": 24.2067,
+      "adjClose": 21.5029,
+      "dividend": 0.221667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-07",
+      "close": 25.22,
+      "adjClose": 22.4031,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-08",
+      "close": 24.8433,
+      "adjClose": 22.0685,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-09",
+      "close": 23.5867,
+      "adjClose": 21.1408,
+      "dividend": 0.218333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-10",
+      "close": 22.6867,
+      "adjClose": 20.3341,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-11",
+      "close": 24.1167,
+      "adjClose": 21.6158,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2023-12",
+      "close": 25.3767,
+      "adjClose": 22.9787,
+      "dividend": 0.247333,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-01",
+      "close": 25.4133,
+      "adjClose": 23.0119,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-02",
+      "close": 25.88,
+      "adjClose": 23.4345,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-03",
+      "close": 26.8767,
+      "adjClose": 24.5265,
+      "dividend": 0.203667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-04",
+      "close": 25.6633,
+      "adjClose": 23.4192,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-05",
+      "close": 26.19,
+      "adjClose": 23.8998,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-06",
+      "close": 25.92,
+      "adjClose": 23.9041,
+      "dividend": 0.274667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-07",
+      "close": 27.5267,
+      "adjClose": 25.3858,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-08",
+      "close": 28.1767,
+      "adjClose": 25.9853,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-09",
+      "close": 28.1767,
+      "adjClose": 26.218,
+      "dividend": 0.251667,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-10",
+      "close": 28.23,
+      "adjClose": 26.2676,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-11",
+      "close": 29.53,
+      "adjClose": 27.4772,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2024-12",
+      "close": 27.32,
+      "adjClose": 25.658,
+      "dividend": 0.265,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-01",
+      "close": 27.83,
+      "adjClose": 26.1369,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-02",
+      "close": 28.54,
+      "adjClose": 26.8037,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-03",
+      "close": 27.96,
+      "adjClose": 26.496,
+      "dividend": 0.249,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-04",
+      "close": 25.82,
+      "adjClose": 24.468,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-05",
+      "close": 26.17,
+      "adjClose": 24.7997,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-06",
+      "close": 26.5,
+      "adjClose": 25.359,
+      "dividend": 0.26,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-07",
+      "close": 26.5,
+      "adjClose": 25.359,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-08",
+      "close": 27.92,
+      "adjClose": 26.7179,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-09",
+      "close": 27.3,
+      "adjClose": 26.3748,
+      "dividend": 0.26,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-10",
+      "close": 26.75,
+      "adjClose": 25.8435,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-11",
+      "close": 27.59,
+      "adjClose": 26.655,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2025-12",
+      "close": 27.43,
+      "adjClose": 26.7715,
+      "dividend": 0.278,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-01",
+      "close": 29.82,
+      "adjClose": 29.1041,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-02",
+      "close": 31.77,
+      "adjClose": 31.0073,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-03",
+      "close": 30.68,
+      "adjClose": 30.1967,
+      "dividend": 0.257,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-04",
+      "close": 32.07,
+      "adjClose": 31.5648,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-05",
+      "close": 32.5,
+      "adjClose": 31.9881,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-06",
+      "close": 31.71,
+      "adjClose": 31.4591,
+      "dividend": 0.253,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-07",
+      "close": 33.47,
+      "adjClose": 33.2051,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-08",
+      "close": 34.89,
+      "adjClose": 34.6139,
+      "dividend": 0,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-09",
+      "close": 32.53,
+      "adjClose": 32.53,
+      "dividend": 0.267,
+      "source": "SCHD"
+    },
+    {
+      "date": "2026-10",
+      "close": 35.78,
+      "adjClose": 35.78,
+      "dividend": 0,
+      "source": "SCHD"
+    }
+  ]
+}

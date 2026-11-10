@@ -1,69 +1,152 @@
-import Image from "next/image";
-
+import Link from "next/link";
+import { ArrowRight, CircleDollarSign, TrendingUp } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { loadFxDaily, loadSummary } from "@/lib/data/loader";
+const won = (n: number) => new Intl.NumberFormat("ko-KR").format(Math.round(n));
 export default function Home() {
+  const fxResult = loadFxDaily();
+  const fx = fxResult.data;
+  const latest = fx?.daily.at(-1);
+  const previous = fx?.daily.at(-2);
+  const summaryResult = loadSummary();
+  const summary = summaryResult.data;
+  const etfs = ["VOO", "SCHD", "QQQM", "QLD", "SPYQ"];
+  if (!fx || !summary)
+    return (
+      <main className="mx-auto max-w-4xl px-4 py-12">
+        <h1 className="text-2xl font-bold">
+          대시보드 데이터를 불러오지 못했습니다.
+        </h1>
+        <p className="mt-2 text-muted-foreground">
+          {fxResult.error ?? summaryResult.error}
+        </p>
+      </main>
+    );
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
+      <section className="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div>
+          <Badge variant="secondary">FIRE 플래닝 도구</Badge>
+          <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+            내 은퇴 자산,
+            <br />
+            <span className="text-primary">오늘부터 설계하세요.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-4 max-w-xl text-muted-foreground">
+            원화로 적립하고 미국 ETF에 투자하는 상황을 과거 데이터와 결정적
+            시뮬레이션으로 살펴봅니다.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <Link
+          href="/simulate"
+          className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 font-medium text-primary-foreground"
+        >
+          시뮬레이션 시작 <ArrowRight className="size-4" />
+        </Link>
+      </section>
+      <div className="grid gap-4 md:grid-cols-2">
+        <Card className="bg-primary text-primary-foreground">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <CircleDollarSign className="size-5" /> 오늘의 환율
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {latest ? (
+              <>
+                <div className="text-3xl font-bold">
+                  ₩{won(latest.rate)}{" "}
+                  <span className="text-base font-normal opacity-75">/ $1</span>
+                </div>
+                <p className="mt-2 text-sm opacity-80">
+                  전일 대비{" "}
+                  {previous
+                    ? `${latest.rate - previous.rate >= 0 ? "+" : ""}${(latest.rate - previous.rate).toFixed(1)}원`
+                    : "-"}{" "}
+                  · {latest.date} 수집
+                </p>
+                {(latest.date < "2026-11-11" ||
+                  fxResult.source !== "actual") && (
+                  <p className="mt-2 text-xs text-amber-100">
+                    {fxResult.source !== "actual"
+                      ? "개발용 환율 데이터입니다."
+                      : `환율 기준일 ${latest.date} · 최신 수집일보다 오래된 값일 수 있습니다.`}
+                  </p>
+                )}
+              </>
+            ) : (
+              <p>환율 정보를 불러오지 못했습니다.</p>
+            )}
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <TrendingUp className="size-5 text-primary" /> 지금 알아두세요
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              상장 전 구간은 SPY·QQQ 데이터로 대체될 수 있습니다. 요약 카드의
+              기간별 성과는 참고용입니다.
+            </p>
+            <Link
+              href="/etfs"
+              className="mt-4 inline-block text-sm font-medium text-primary"
+            >
+              ETF 비교 보기 →
+            </Link>
+          </CardContent>
+        </Card>
+      </div>
+      <section className="mt-10">
+        <div className="mb-4 flex items-end justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold">ETF 성과 한눈에 보기</h2>
+            <p className="text-sm text-muted-foreground">
+              실제 summary.json · 최근 5년 · 달러 기준
+            </p>
+          </div>
+          <Link href="/etfs" className="text-sm text-primary">
+            상세 비교
+          </Link>
         </div>
-      </main>
-    </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {etfs.map((ticker) => {
+            const m = summary?.tickers[ticker]?.periods["5y"]?.USD;
+            return (
+              <Card key={ticker}>
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-lg">{ticker}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-2xl font-semibold text-primary">
+                    {m
+                      ? ticker === "SPYQ"
+                        ? `데이터 ${m.months}개월`
+                        : `${(m.cagr * 100).toFixed(1)}%`
+                      : "-"}
+                  </div>
+                  <p className="mt-1 text-xs text-muted-foreground">CAGR</p>
+                  <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
+                    <span>
+                      변동성
+                      <br />
+                      <b>{m ? `${(m.volatility * 100).toFixed(1)}%` : "-"}</b>
+                    </span>
+                    <span>
+                      MDD
+                      <br />
+                      <b>{m ? `${(m.maxDrawdown * 100).toFixed(1)}%` : "-"}</b>
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+    </main>
   );
 }

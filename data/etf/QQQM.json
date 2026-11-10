@@ -1,0 +1,1690 @@
+{
+  "ticker": "QQQM",
+  "name": "Invesco NASDAQ 100 ETF",
+  "inception": "2020-10-13",
+  "currency": "USD",
+  "updatedAt": "2026-11-11",
+  "proxy": "QQQ",
+  "monthly": [
+    {
+      "date": "2006-11",
+      "close": 18.1241,
+      "adjClose": 15.4657,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2006-12",
+      "close": 17.762,
+      "adjClose": 15.1752,
+      "dividend": 0.022223,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-01",
+      "close": 18.1365,
+      "adjClose": 15.4952,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-02",
+      "close": 17.8319,
+      "adjClose": 15.2349,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-03",
+      "close": 17.9142,
+      "adjClose": 15.3149,
+      "dividend": 0.011112,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-04",
+      "close": 18.9143,
+      "adjClose": 16.1698,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-05",
+      "close": 19.511,
+      "adjClose": 16.68,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-06",
+      "close": 19.5892,
+      "adjClose": 16.7599,
+      "dividend": 0.015227,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-07",
+      "close": 19.5604,
+      "adjClose": 16.7353,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-08",
+      "close": 20.1118,
+      "adjClose": 17.2071,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-09",
+      "close": 21.1571,
+      "adjClose": 18.1108,
+      "dividend": 0.0107,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-10",
+      "close": 22.6469,
+      "adjClose": 19.3861,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-11",
+      "close": 21.116,
+      "adjClose": 18.0756,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2007-12",
+      "close": 21.079,
+      "adjClose": 18.0627,
+      "dividend": 0.021811,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-01",
+      "close": 18.5727,
+      "adjClose": 15.9151,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-02",
+      "close": 17.6755,
+      "adjClose": 15.1463,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-03",
+      "close": 17.9924,
+      "adjClose": 15.4299,
+      "dividend": 0.013581,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-04",
+      "close": 19.4287,
+      "adjClose": 16.6616,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-05",
+      "close": 20.581,
+      "adjClose": 17.6498,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-06",
+      "close": 18.5892,
+      "adjClose": 15.9527,
+      "dividend": 0.013992,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-07",
+      "close": 18.7085,
+      "adjClose": 16.0552,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-08",
+      "close": 18.9801,
+      "adjClose": 16.2883,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-09",
+      "close": 16.0129,
+      "adjClose": 13.7512,
+      "dividend": 0.011523,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-10",
+      "close": 13.5355,
+      "adjClose": 11.6236,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-11",
+      "close": 11.984,
+      "adjClose": 10.2913,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2008-12",
+      "close": 12.2391,
+      "adjClose": 10.5257,
+      "dividend": 0.017696,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-01",
+      "close": 11.9593,
+      "adjClose": 10.285,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-02",
+      "close": 11.3296,
+      "adjClose": 9.7435,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-03",
+      "close": 12.4778,
+      "adjClose": 10.7487,
+      "dividend": 0.020165,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-04",
+      "close": 14.1075,
+      "adjClose": 12.1525,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-05",
+      "close": 14.5602,
+      "adjClose": 12.5425,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-06",
+      "close": 14.9717,
+      "adjClose": 12.9129,
+      "dividend": 0.018108,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-07",
+      "close": 16.2352,
+      "adjClose": 14.0025,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-08",
+      "close": 16.4739,
+      "adjClose": 14.2084,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-09",
+      "close": 17.3875,
+      "adjClose": 15.0109,
+      "dividend": 0.016873,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-10",
+      "close": 16.8566,
+      "adjClose": 14.5526,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-11",
+      "close": 17.9266,
+      "adjClose": 15.4763,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2009-12",
+      "close": 18.8278,
+      "adjClose": 16.2815,
+      "dividend": 0.030042,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-01",
+      "close": 17.6097,
+      "adjClose": 15.2281,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-02",
+      "close": 18.4204,
+      "adjClose": 15.9292,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-03",
+      "close": 19.8197,
+      "adjClose": 17.1575,
+      "dividend": 0.020988,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-04",
+      "close": 20.2641,
+      "adjClose": 17.5422,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-05",
+      "close": 18.7661,
+      "adjClose": 16.2455,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-06",
+      "close": 17.5768,
+      "adjClose": 15.2747,
+      "dividend": 0.073254,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-07",
+      "close": 18.8525,
+      "adjClose": 16.3834,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-08",
+      "close": 17.8854,
+      "adjClose": 15.5429,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-09",
+      "close": 20.1942,
+      "adjClose": 17.5904,
+      "dividend": 0.046092,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-10",
+      "close": 21.474,
+      "adjClose": 18.7052,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-11",
+      "close": 21.437,
+      "adjClose": 18.6729,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2010-12",
+      "close": 22.4123,
+      "adjClose": 19.5612,
+      "dividend": 0.044446,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-01",
+      "close": 23.0461,
+      "adjClose": 20.1144,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-02",
+      "close": 23.7745,
+      "adjClose": 20.7502,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-03",
+      "close": 23.6346,
+      "adjClose": 20.6571,
+      "dividend": 0.031688,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-04",
+      "close": 24.3136,
+      "adjClose": 21.2506,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-05",
+      "close": 24.0173,
+      "adjClose": 20.9916,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-06",
+      "close": 23.4782,
+      "adjClose": 20.5664,
+      "dividend": 0.049796,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-07",
+      "close": 23.8692,
+      "adjClose": 20.9089,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-08",
+      "close": 22.6593,
+      "adjClose": 19.8491,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-09",
+      "close": 21.6016,
+      "adjClose": 18.9577,
+      "dividend": 0.0428,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-10",
+      "close": 23.8486,
+      "adjClose": 20.9297,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-11",
+      "close": 23.2066,
+      "adjClose": 20.3662,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2011-12",
+      "close": 22.9761,
+      "adjClose": 20.2411,
+      "dividend": 0.086423,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-01",
+      "close": 24.9104,
+      "adjClose": 21.9451,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-02",
+      "close": 26.5071,
+      "adjClose": 23.3518,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-03",
+      "close": 27.7994,
+      "adjClose": 24.5318,
+      "dividend": 0.046504,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-04",
+      "close": 27.4743,
+      "adjClose": 24.2449,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-05",
+      "close": 25.54,
+      "adjClose": 22.538,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-06",
+      "close": 26.4043,
+      "adjClose": 23.3542,
+      "dividend": 0.05885,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-07",
+      "close": 26.6676,
+      "adjClose": 23.5872,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-08",
+      "close": 28.0504,
+      "adjClose": 24.8102,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-09",
+      "close": 28.2191,
+      "adjClose": 25.0306,
+      "dividend": 0.082308,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-10",
+      "close": 26.7294,
+      "adjClose": 23.7092,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-11",
+      "close": 27.0792,
+      "adjClose": 24.0195,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2012-12",
+      "close": 26.8034,
+      "adjClose": 23.9073,
+      "dividend": 0.151034,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-01",
+      "close": 27.5195,
+      "adjClose": 24.546,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-02",
+      "close": 27.6142,
+      "adjClose": 24.6305,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-03",
+      "close": 28.3837,
+      "adjClose": 25.3755,
+      "dividend": 0.065434,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-04",
+      "close": 29.1039,
+      "adjClose": 26.0193,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-05",
+      "close": 30.1451,
+      "adjClose": 26.9502,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-06",
+      "close": 29.3303,
+      "adjClose": 26.3047,
+      "dividend": 0.092184,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-07",
+      "close": 31.1822,
+      "adjClose": 27.9655,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-08",
+      "close": 31.0587,
+      "adjClose": 27.8548,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-09",
+      "close": 32.4621,
+      "adjClose": 29.2008,
+      "dividend": 0.097946,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-10",
+      "close": 34.0712,
+      "adjClose": 30.6482,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-11",
+      "close": 35.2811,
+      "adjClose": 31.7366,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2013-12",
+      "close": 36.1988,
+      "adjClose": 32.6656,
+      "dividend": 0.111938,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-01",
+      "close": 35.5033,
+      "adjClose": 32.038,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-02",
+      "close": 37.1783,
+      "adjClose": 33.6887,
+      "dividend": 0.153504,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-03",
+      "close": 36.0795,
+      "adjClose": 32.7678,
+      "dividend": 0.084777,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-04",
+      "close": 35.9643,
+      "adjClose": 32.6632,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-05",
+      "close": 37.5775,
+      "adjClose": 34.1283,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-06",
+      "close": 38.6475,
+      "adjClose": 35.1944,
+      "dividend": 0.102473,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-07",
+      "close": 39.1043,
+      "adjClose": 35.6104,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-08",
+      "close": 41.0632,
+      "adjClose": 37.3943,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-09",
+      "close": 40.6558,
+      "adjClose": 37.1114,
+      "dividend": 0.097946,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-10",
+      "close": 41.7299,
+      "adjClose": 38.0918,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-11",
+      "close": 43.6271,
+      "adjClose": 39.8236,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2014-12",
+      "close": 42.4913,
+      "adjClose": 38.9313,
+      "dividend": 0.159265,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-01",
+      "close": 41.6065,
+      "adjClose": 38.1206,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-02",
+      "close": 44.6107,
+      "adjClose": 40.8732,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-03",
+      "close": 43.4584,
+      "adjClose": 39.9089,
+      "dividend": 0.102061,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-04",
+      "close": 44.2938,
+      "adjClose": 40.6761,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-05",
+      "close": 45.2897,
+      "adjClose": 41.5907,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-06",
+      "close": 44.0633,
+      "adjClose": 40.5576,
+      "dividend": 0.104531,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-07",
+      "close": 46.0716,
+      "adjClose": 42.4061,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-08",
+      "close": 42.9275,
+      "adjClose": 39.5121,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-09",
+      "close": 41.8781,
+      "adjClose": 38.64,
+      "dividend": 0.107,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-10",
+      "close": 46.6396,
+      "adjClose": 43.0333,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-11",
+      "close": 46.9235,
+      "adjClose": 43.2953,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2015-12",
+      "close": 46.0346,
+      "adjClose": 42.6048,
+      "dividend": 0.140746,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-01",
+      "close": 42.8534,
+      "adjClose": 39.6606,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-02",
+      "close": 42.1826,
+      "adjClose": 39.0398,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-03",
+      "close": 44.9399,
+      "adjClose": 41.715,
+      "dividend": 0.130869,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-04",
+      "close": 43.5078,
+      "adjClose": 40.3857,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-05",
+      "close": 45.4091,
+      "adjClose": 42.1506,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-06",
+      "close": 44.2568,
+      "adjClose": 41.1903,
+      "dividend": 0.118111,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-07",
+      "close": 47.4215,
+      "adjClose": 44.1358,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-08",
+      "close": 47.9194,
+      "adjClose": 44.5993,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-09",
+      "close": 48.8577,
+      "adjClose": 45.5865,
+      "dividend": 0.120992,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-10",
+      "close": 48.1458,
+      "adjClose": 44.9222,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-11",
+      "close": 48.3557,
+      "adjClose": 45.118,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2016-12",
+      "close": 48.759,
+      "adjClose": 45.6289,
+      "dividend": 0.146096,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-01",
+      "close": 51.2652,
+      "adjClose": 47.9742,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-02",
+      "close": 53.5081,
+      "adjClose": 50.0731,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-03",
+      "close": 54.4793,
+      "adjClose": 51.088,
+      "dividend": 0.112761,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-04",
+      "close": 55.965,
+      "adjClose": 52.4812,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-05",
+      "close": 58.1461,
+      "adjClose": 54.5266,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-06",
+      "close": 56.644,
+      "adjClose": 53.2627,
+      "dividend": 0.155561,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-07",
+      "close": 58.9445,
+      "adjClose": 55.4259,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-08",
+      "close": 60.1668,
+      "adjClose": 56.5752,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-09",
+      "close": 59.8581,
+      "adjClose": 56.4081,
+      "dividend": 0.13128,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-10",
+      "close": 62.6154,
+      "adjClose": 59.0065,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-11",
+      "close": 63.8501,
+      "adjClose": 60.17,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2017-12",
+      "close": 64.1011,
+      "adjClose": 60.5329,
+      "dividend": 0.135396,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-01",
+      "close": 69.7145,
+      "adjClose": 65.8338,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-02",
+      "close": 68.8132,
+      "adjClose": 64.9827,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-03",
+      "close": 65.8995,
+      "adjClose": 62.3321,
+      "dividend": 0.113996,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-04",
+      "close": 66.2329,
+      "adjClose": 62.6474,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-05",
+      "close": 69.9902,
+      "adjClose": 66.2014,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-06",
+      "close": 70.6404,
+      "adjClose": 66.9594,
+      "dividend": 0.155561,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-07",
+      "close": 72.6158,
+      "adjClose": 68.8319,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-08",
+      "close": 76.8135,
+      "adjClose": 72.8108,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-09",
+      "close": 76.4596,
+      "adjClose": 72.6058,
+      "dividend": 0.135807,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-10",
+      "close": 69.8873,
+      "adjClose": 66.3648,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-11",
+      "close": 69.7021,
+      "adjClose": 66.1889,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2018-12",
+      "close": 63.4838,
+      "adjClose": 60.4565,
+      "dividend": 0.173257,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-01",
+      "close": 69.2042,
+      "adjClose": 65.9041,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-02",
+      "close": 71.2742,
+      "adjClose": 67.8754,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-03",
+      "close": 73.9368,
+      "adjClose": 70.5392,
+      "dividend": 0.133338,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-04",
+      "close": 78.0028,
+      "adjClose": 74.4183,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-05",
+      "close": 71.587,
+      "adjClose": 68.2973,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-06",
+      "close": 76.8505,
+      "adjClose": 73.4811,
+      "dividend": 0.1712,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-07",
+      "close": 78.6448,
+      "adjClose": 75.1968,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-08",
+      "close": 77.151,
+      "adjClose": 73.7684,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-09",
+      "close": 77.7024,
+      "adjClose": 74.4455,
+      "dividend": 0.15803,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-10",
+      "close": 81.1058,
+      "adjClose": 77.7062,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-11",
+      "close": 84.4064,
+      "adjClose": 80.8684,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2019-12",
+      "close": 87.497,
+      "adjClose": 84.0113,
+      "dividend": 0.188484,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-01",
+      "close": 90.1555,
+      "adjClose": 86.5639,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-02",
+      "close": 84.6944,
+      "adjClose": 81.3203,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-03",
+      "close": 78.3568,
+      "adjClose": 75.3955,
+      "dividend": 0.149388,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-04",
+      "close": 90.0897,
+      "adjClose": 86.685,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-05",
+      "close": 96.0364,
+      "adjClose": 92.407,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-06",
+      "close": 101.8967,
+      "adjClose": 98.2163,
+      "dividend": 0.174492,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-07",
+      "close": 109.3826,
+      "adjClose": 105.4318,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-08",
+      "close": 121.3542,
+      "adjClose": 116.971,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-09",
+      "close": 114.3416,
+      "adjClose": 110.2117,
+      "dividend": 0,
+      "source": "QQQ"
+    },
+    {
+      "date": "2020-10",
+      "close": 110.86,
+      "adjClose": 106.8558,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2020-11",
+      "close": 125.45,
+      "adjClose": 120.9188,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2020-12",
+      "close": 128.91,
+      "adjClose": 124.455,
+      "dividend": 0.206,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-01",
+      "close": 129.37,
+      "adjClose": 124.8992,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-02",
+      "close": 129.72,
+      "adjClose": 125.237,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-03",
+      "close": 133.39,
+      "adjClose": 128.9374,
+      "dividend": 0.157,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-04",
+      "close": 138.83,
+      "adjClose": 134.1958,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-05",
+      "close": 137.95,
+      "adjClose": 133.3452,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-06",
+      "close": 147.37,
+      "adjClose": 142.6351,
+      "dividend": 0.182,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-07",
+      "close": 149.84,
+      "adjClose": 145.0257,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-08",
+      "close": 156.82,
+      "adjClose": 151.7815,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-09",
+      "close": 148.03,
+      "adjClose": 143.4289,
+      "dividend": 0.166,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-10",
+      "close": 158.75,
+      "adjClose": 153.8157,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-11",
+      "close": 157.54,
+      "adjClose": 152.6432,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2021-12",
+      "close": 163.55,
+      "adjClose": 158.6158,
+      "dividend": 0.149,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-01",
+      "close": 147.15,
+      "adjClose": 142.7106,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-02",
+      "close": 138.78,
+      "adjClose": 134.5931,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-03",
+      "close": 148.84,
+      "adjClose": 144.5435,
+      "dividend": 0.194,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-04",
+      "close": 128.94,
+      "adjClose": 125.218,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-05",
+      "close": 125.91,
+      "adjClose": 122.2755,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-06",
+      "close": 116.06,
+      "adjClose": 112.9146,
+      "dividend": 0.205,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-07",
+      "close": 129.79,
+      "adjClose": 126.2725,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-08",
+      "close": 121.51,
+      "adjClose": 118.2169,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-09",
+      "close": 109.95,
+      "adjClose": 107.191,
+      "dividend": 0.245,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-10",
+      "close": 108.84,
+      "adjClose": 106.1089,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-11",
+      "close": 120.35,
+      "adjClose": 117.3301,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2022-12",
+      "close": 109.53,
+      "adjClose": 107.0377,
+      "dividend": 0.27,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-01",
+      "close": 125.99,
+      "adjClose": 123.1231,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-02",
+      "close": 123.3,
+      "adjClose": 120.4943,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-03",
+      "close": 132.01,
+      "adjClose": 129.2675,
+      "dividend": 0.254,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-04",
+      "close": 132.68,
+      "adjClose": 129.9236,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-05",
+      "close": 145.91,
+      "adjClose": 142.8787,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-06",
+      "close": 151.98,
+      "adjClose": 149.0363,
+      "dividend": 0.217,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-07",
+      "close": 153.06,
+      "adjClose": 150.0954,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-08",
+      "close": 155.37,
+      "adjClose": 152.3607,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-09",
+      "close": 147.41,
+      "adjClose": 144.7875,
+      "dividend": 0.245,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-10",
+      "close": 151.3,
+      "adjClose": 148.6082,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-11",
+      "close": 160.43,
+      "adjClose": 157.5758,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2023-12",
+      "close": 168.54,
+      "adjClose": 165.9209,
+      "dividend": 0.381,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-01",
+      "close": 176.67,
+      "adjClose": 173.9246,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-02",
+      "close": 183.48,
+      "adjClose": 180.6288,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-03",
+      "close": 182.69,
+      "adjClose": 180.1991,
+      "dividend": 0.345,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-04",
+      "close": 179.2,
+      "adjClose": 176.7566,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-05",
+      "close": 185.87,
+      "adjClose": 183.3357,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-06",
+      "close": 197.11,
+      "adjClose": 194.7379,
+      "dividend": 0.32,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-07",
+      "close": 184.67,
+      "adjClose": 182.4476,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-08",
+      "close": 196.08,
+      "adjClose": 193.7203,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-09",
+      "close": 200.56,
+      "adjClose": 198.4461,
+      "dividend": 0.3,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-10",
+      "close": 200.6,
+      "adjClose": 198.4857,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-11",
+      "close": 209.8,
+      "adjClose": 207.5887,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2024-12",
+      "close": 213.46,
+      "adjClose": 211.5173,
+      "dividend": 0.31,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-01",
+      "close": 214.99,
+      "adjClose": 213.0333,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-02",
+      "close": 209.26,
+      "adjClose": 207.3555,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-03",
+      "close": 174.28,
+      "adjClose": 172.9716,
+      "dividend": 0.318,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-04",
+      "close": 201.24,
+      "adjClose": 199.7292,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-05",
+      "close": 213.75,
+      "adjClose": 212.1453,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-06",
+      "close": 228.92,
+      "adjClose": 227.533,
+      "dividend": 0.316,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-07",
+      "close": 228.02,
+      "adjClose": 226.6385,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-08",
+      "close": 234.81,
+      "adjClose": 233.3873,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-09",
+      "close": 248.32,
+      "adjClose": 247.1179,
+      "dividend": 0.302,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-10",
+      "close": 258.96,
+      "adjClose": 257.7064,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-11",
+      "close": 254.9,
+      "adjClose": 253.666,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2025-12",
+      "close": 252.44,
+      "adjClose": 251.5377,
+      "dividend": 0.323,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-01",
+      "close": 256.05,
+      "adjClose": 255.1347,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-02",
+      "close": 250.06,
+      "adjClose": 249.1662,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-03",
+      "close": 240.86,
+      "adjClose": 240.328,
+      "dividend": 0.328,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-04",
+      "close": 277.54,
+      "adjClose": 276.927,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-05",
+      "close": 303.96,
+      "adjClose": 303.2886,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-06",
+      "close": 293.42,
+      "adjClose": 293.1107,
+      "dividend": 0.352,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-07",
+      "close": 283.29,
+      "adjClose": 282.9914,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-08",
+      "close": 296.07,
+      "adjClose": 295.7579,
+      "dividend": 0,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-09",
+      "close": 308.69,
+      "adjClose": 308.69,
+      "dividend": 0.313,
+      "source": "QQQM"
+    },
+    {
+      "date": "2026-10",
+      "close": 284.34,
+      "adjClose": 284.34,
+      "dividend": 0,
+      "source": "QQQM"
+    }
+  ]
+}
