@@ -3,11 +3,19 @@
 //
 // 기간: 5y / 10y / 20y 각각 USD 기준과 KRW 기준.
 //  - 기간 N년 = 마지막 달 기준 과거 12N개월 수익률 (시작 가격 포인트 = 12N개월 전 달).
-//  - 데이터가 모자라면 가능한 만큼만 쓰고 coverage: "partial" 로 표시 (예: 2006-11 시작 → 20y 는 239개월).
+//  - 데이터가 모자라면 가능한 만큼만 쓰고 coverage: "partial" 로 표시.
 //  - KRW 기준: 매월 월말 조정종가 × 월말 USDKRW 환율 로 원화 평가액을 만들어 계산.
 //  - bestYear / worstYear: 완전한 달력연도(전년 12월 → 당해 12월) 기준.
-//  - dividendYield: 최근 12개월 배당 합 ÷ 마지막 달 종가 (KRW 는 각 달 환율 반영).
 //  - volatility: 월수익률 표본표준편차 × √12.
+//
+// 배당 지표 (티커 단위, 기간과 무관):
+//  - trailing12mDividendUsd: 마지막 완료 월 기준 최근 12개월(ex-date 기준) 주당 배당 합 (USD)
+//  - dividendYieldTtm: trailing12mDividendUsd ÷ 마지막 달 종가 (USD)
+//  - dividendYieldTtmKrw: 배당을 ex-date 월 환율로 원화 환산한 합 ÷ (마지막 종가 × 마지막 환율)
+//  - dividendFrequency: 최근 12개월 ex-date 횟수로 판정 (11회 이상 monthly, 3~5회 quarterly, 그 외 other)
+//  - dividendCagr5y: 완전한 연도 기준 연간 배당 합의 5년 CAGR (마지막 완전 연도 vs 5년 전). 불가하면 null
+//  - dividendCagrPeriod: 5년이 안 될 때 가능한 가장 긴 구간의 CAGR (예: JEPQ 2023→2025)
+//  배당은 월 버킷이 아니라 dividendEvents(ex-date 원본) 를 쓴다. 월 버킷은 12월 두 번·1월 없음처럼 어긋날 수 있음.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,7 +26,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ETF_DIR = path.join(ROOT, 'data', 'etf');
 const FX_FILE = path.join(ROOT, 'data', 'fx', 'usdkrw-monthly.json');
 const OUT_FILE = path.join(ROOT, 'data', 'summary.json');
-const TICKERS = ['VOO', 'SCHD', 'QQQM', 'QLD', 'SPYQ'];
+const TICKERS = ['VOO', 'SCHD', 'QQQM', 'QLD', 'SPYQ', 'JEPQ'];
 const PERIODS = [5, 10, 20];
 
 const round = (v, d = 6) => (v == null || !Number.isFinite(v) ? null : Math.round(v * 10 ** d) / 10 ** d);
@@ -30,11 +38,14 @@ function stdev(xs) {
   return Math.sqrt(variance);
 }
 
-/**
- * rows: [{date, close, adjClose, dividend, source}] — 같은 달 기준으로 정렬되어 있고 환율이 붙은 상태
- * values: 평가 기준 가격 배열 (USD: adjClose, KRW: adjClose*rate)
- */
-function computeWindow(rows, valueOf, rateOf, ticker, months) {
+/** 'YYYY-MM' 에 달 수를 더해 그 달의 말일 'YYYY-MM-DD' 를 돌려준다 */
+function monthEnd(ym, addMonths = 0) {
+  const [y, m] = ym.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1 + addMonths + 1, 0)).toISOString().slice(0, 10);
+}
+
+/** 기간 수익률/변동성/MDD 계산. rows 는 환율이 붙은 월 행, valueOf 는 평가 가격 */
+function computeWindow(rows, valueOf, ticker, months, dividendYieldTtm) {
   const win = rows.slice(-(months + 1));
   const m = win.length - 1;
   if (m < 12) return { error: `데이터 부족 (${m}개월)` };
@@ -65,29 +76,83 @@ function computeWindow(rows, valueOf, rateOf, ticker, months) {
   const best = years.reduce((a, b) => (a == null || b.return > a.return ? b : a), null);
   const worst = years.reduce((a, b) => (a == null || b.return < a.return ? b : a), null);
 
-  // 최근 12개월 배당수익률 (마지막 달 기준)
-  const last = win[m];
-  const ttm = rows.slice(-12);
-  const divSum = ttm.reduce((acc, r) => acc + r.dividend * rateOf(r), 0);
-  const dividendYield = round(divSum / (last.close * rateOf(last)), 6);
-
-  const total = V[m] / V[0] - 1;
   const cagr = Math.pow(V[m] / V[0], 12 / m) - 1;
   const vol = stdev(rets);
 
   return {
     start: win[0].date,
-    end: last.date,
+    end: win[m].date,
     months: m,
-    coverage: m === 12 * (months / 12) ? 'full' : 'partial',
+    coverage: m === months ? 'full' : 'partial',
     cagr: round(cagr, 6),
-    totalReturn: round(total, 6),
+    totalReturn: round(V[m] / V[0] - 1, 6),
     volatility: round(vol * Math.sqrt(12), 6),
     maxDrawdown: round(mdd, 6),
     bestYear: best,
     worstYear: worst,
-    dividendYield,
+    dividendYield: dividendYieldTtm,
     usesProxy: win.some((r) => r.source !== ticker),
+  };
+}
+
+/** 배당 지표 (티커 단위) */
+function dividendMetrics(etf, rows, rateByMonth) {
+  const events = etf.dividendEvents ?? [];
+  const lastRow = rows.at(-1);
+  const lastMonth = lastRow.date;
+  const lastClose = lastRow.close;
+  const lastRate = rateByMonth.get(lastMonth);
+
+  // 최근 12개월: (말일 - 12개월, 말일]
+  const endDay = monthEnd(lastMonth);
+  const startExcl = monthEnd(lastMonth, -12);
+  const ttmEvents = events.filter((e) => e.exDate > startExcl && e.exDate <= endDay);
+  const ttmUsd = ttmEvents.reduce((a, e) => a + e.amount, 0);
+  const ttmKrwNum = ttmEvents.reduce((a, e) => a + e.amount * (rateByMonth.get(e.exDate.slice(0, 7)) ?? NaN), 0);
+
+  const n = ttmEvents.length;
+  const frequency = n >= 11 ? 'monthly' : n >= 3 && n <= 5 ? 'quarterly' : 'other';
+
+  // 연간 배당 합 (완전한 연도만)
+  const annual = new Map();
+  for (const e of events) {
+    const y = Number(e.exDate.slice(0, 4));
+    annual.set(y, (annual.get(y) ?? 0) + e.amount);
+  }
+  const firstMonth = rows[0].date;
+  const lastFullYear = lastMonth.endsWith('-12') ? Number(lastMonth.slice(0, 4)) : Number(lastMonth.slice(0, 4)) - 1;
+  const firstFullYear = firstMonth.endsWith('-01') ? Number(firstMonth.slice(0, 4)) : Number(firstMonth.slice(0, 4)) + 1;
+
+  const cagrBetween = (from, to) => {
+    const a = annual.get(from);
+    const b = annual.get(to);
+    if (!a || !b || a <= 0 || b <= 0) return null;
+    return Math.pow(b / a, 1 / (to - from)) - 1;
+  };
+
+  const cagr5 = lastFullYear - 5 >= firstFullYear ? cagrBetween(lastFullYear - 5, lastFullYear) : null;
+  let period = null;
+  const shortFrom = Math.max(firstFullYear, lastFullYear - 5);
+  if (lastFullYear - shortFrom >= 1) {
+    const v = cagrBetween(shortFrom, lastFullYear);
+    period = v == null ? null : { from: shortFrom, to: lastFullYear, years: lastFullYear - shortFrom, value: round(v, 6) };
+  }
+
+  return {
+    trailing12mDividendUsd: round(ttmUsd, 6),
+    dividendYieldTtm: round(ttmUsd / lastClose, 6),
+    dividendYieldTtmKrw: lastRate ? round(ttmKrwNum / (lastClose * lastRate), 6) : null,
+    trailing12mDividendEvents: n,
+    dividendFrequency: frequency,
+    dividendCagr5y: round(cagr5, 6),
+    dividendCagrPeriod: period,
+    dividendAnnualUsd: Object.fromEntries(
+      [...annual].filter(([y]) => y >= firstFullYear && y <= lastFullYear).map(([y, v]) => [y, round(v, 6)]),
+    ),
+    dividendNote:
+      cagr5 == null && period == null
+        ? `데이터가 짧아 연간 배당 성장률을 계산할 수 없음 (완전한 연도 ${firstFullYear}~${lastFullYear})`
+        : null,
   };
 }
 
@@ -105,6 +170,7 @@ function main() {
       'USD: 조정종가(배당·분할 반영) 기준 총수익',
       'KRW: 월말 조정종가 × 월말 USDKRW 환율 (매월 환전 후 원화 평가)',
       'coverage "partial": 요청 기간보다 데이터가 짧아 가능한 기간만 사용',
+      '배당 지표는 Yahoo 배당 이벤트(ex-date) 기준, 주당 금액(USD)',
     ],
     tickers: {},
   };
@@ -120,13 +186,14 @@ function main() {
     // 환율이 있는 달만 사용 (KRW 계산 가능 구간)
     const rows = etf.monthly.filter((r) => rateByMonth.has(r.date));
     const rateOf = (r) => rateByMonth.get(r.date);
+    const div = dividendMetrics(etf, rows, rateByMonth);
 
     const periods = {};
     for (const years of PERIODS) {
       const months = years * 12;
       periods[`${years}y`] = {
-        USD: computeWindow(rows, (r) => r.adjClose, rateOf, ticker, months),
-        KRW: computeWindow(rows, (r) => r.adjClose * rateOf(r), rateOf, ticker, months),
+        USD: computeWindow(rows, (r) => r.adjClose, ticker, months, div.dividendYieldTtm),
+        KRW: computeWindow(rows, (r) => r.adjClose * rateOf(r), ticker, months, div.dividendYieldTtmKrw),
       };
     }
     out.tickers[ticker] = {
@@ -135,6 +202,7 @@ function main() {
       proxy: etf.proxy ?? null,
       firstMonth: etf.monthly[0].date,
       lastMonth: etf.monthly.at(-1).date,
+      ...div,
       periods,
     };
   }
@@ -142,7 +210,8 @@ function main() {
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2) + '\n', 'utf8');
 
   // 콘솔 요약
-  console.log('ticker  period  cur  months  cover    CAGR      total     vol      MDD      divYld  proxy');
+  const pct = (v) => (v == null ? '    -  ' : (v * 100).toFixed(2).padStart(6) + '%');
+  console.log('ticker  period  cur  months  cover    CAGR      total     vol      MDD      divYld');
   for (const [t, info] of Object.entries(out.tickers)) {
     if (!info.periods) continue;
     for (const [p, cur] of Object.entries(info.periods)) {
@@ -152,12 +221,21 @@ function main() {
           console.log(`${t.padEnd(7)} ${p.padEnd(6)}  ${c}  ${s.error}`);
           continue;
         }
-        const pct = (v) => (v == null ? '   -  ' : (v * 100).toFixed(2).padStart(6) + '%');
         console.log(
-          `${t.padEnd(7)} ${p.padEnd(6)}  ${c}  ${String(s.months).padStart(5)}  ${s.coverage.padEnd(7)}  ${pct(s.cagr)}  ${pct(s.totalReturn)}  ${pct(s.volatility)}  ${pct(s.maxDrawdown)}  ${pct(s.dividendYield)}  ${s.usesProxy ? 'Y' : '-'}`,
+          `${t.padEnd(7)} ${p.padEnd(6)}  ${c}  ${String(s.months).padStart(5)}  ${s.coverage.padEnd(7)}  ${pct(s.cagr)}  ${pct(s.totalReturn)}  ${pct(s.volatility)}  ${pct(s.maxDrawdown)}  ${pct(s.dividendYield)}`,
         );
       }
     }
+  }
+
+  console.log('\n[배당 지표]');
+  console.log('ticker  TTM($)    yieldUSD  yieldKRW  events freq       divCAGR5y  period');
+  for (const [t, info] of Object.entries(out.tickers)) {
+    if (!info.periods) continue;
+    const cp = info.dividendCagrPeriod;
+    console.log(
+      `${t.padEnd(7)} ${String(info.trailing12mDividendUsd).padStart(8)}  ${pct(info.dividendYieldTtm)}  ${pct(info.dividendYieldTtmKrw)}  ${String(info.trailing12mDividendEvents).padStart(6)}  ${info.dividendFrequency.padEnd(10)} ${pct(info.dividendCagr5y)}  ${cp ? `${cp.from}→${cp.to} ${pct(cp.value)}` : '-'}`,
+    );
   }
   console.log(`\n→ ${OUT_FILE}`);
 }

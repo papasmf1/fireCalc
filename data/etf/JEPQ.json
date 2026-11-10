@@ -1,0 +1,655 @@
+{
+  "ticker": "JEPQ",
+  "name": "JPMorgan Nasdaq Equity Premium Income ETF",
+  "inception": "2022-05-04",
+  "currency": "USD",
+  "updatedAt": "2026-11-11",
+  "proxy": null,
+  "monthly": [
+    {
+      "date": "2022-05",
+      "close": 48.64,
+      "adjClose": 29.8692,
+      "dividend": 0,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-06",
+      "close": 45.39,
+      "adjClose": 28.0821,
+      "dividend": 0.376,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-07",
+      "close": 49.15,
+      "adjClose": 30.4083,
+      "dividend": 0.34,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-08",
+      "close": 45.1,
+      "adjClose": 28.4718,
+      "dividend": 0.407,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-09",
+      "close": 41.65,
+      "adjClose": 26.2938,
+      "dividend": 0.546,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-10",
+      "close": 40.83,
+      "adjClose": 26.4309,
+      "dividend": 0.38,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-11",
+      "close": 43.95,
+      "adjClose": 28.8031,
+      "dividend": 0.681,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2022-12",
+      "close": 40.8,
+      "adjClose": 27.1245,
+      "dividend": 1.122,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-01",
+      "close": 43.17,
+      "adjClose": 28.9951,
+      "dividend": 0,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-02",
+      "close": 42.8,
+      "adjClose": 29.0418,
+      "dividend": 0.441,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-03",
+      "close": 45.09,
+      "adjClose": 30.5957,
+      "dividend": 0.433,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-04",
+      "close": 45.77,
+      "adjClose": 31.373,
+      "dividend": 0.454,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-05",
+      "close": 47.17,
+      "adjClose": 32.9269,
+      "dividend": 0.484,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-06",
+      "close": 48.37,
+      "adjClose": 33.7646,
+      "dividend": 0.357,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-07",
+      "close": 48.34,
+      "adjClose": 34.2553,
+      "dividend": 0.367,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-08",
+      "close": 48.55,
+      "adjClose": 34.7237,
+      "dividend": 0.366,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-09",
+      "close": 46.93,
+      "adjClose": 33.5651,
+      "dividend": 0.451,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-10",
+      "close": 47.52,
+      "adjClose": 34.6051,
+      "dividend": 0.417,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-11",
+      "close": 48.9,
+      "adjClose": 35.9176,
+      "dividend": 0.418,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2023-12",
+      "close": 49.93,
+      "adjClose": 36.9621,
+      "dividend": 0.814,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-01",
+      "close": 51.94,
+      "adjClose": 38.7074,
+      "dividend": 0,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-02",
+      "close": 53.26,
+      "adjClose": 39.9762,
+      "dividend": 0.342,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-03",
+      "close": 54.24,
+      "adjClose": 40.7118,
+      "dividend": 0.38,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-04",
+      "close": 52.75,
+      "adjClose": 40.2409,
+      "dividend": 0.427,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-05",
+      "close": 54.19,
+      "adjClose": 41.3394,
+      "dividend": 0.431,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-06",
+      "close": 55.5,
+      "adjClose": 42.6933,
+      "dividend": 0.45,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-07",
+      "close": 51.14,
+      "adjClose": 39.9576,
+      "dividend": 0.421,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-08",
+      "close": 54.08,
+      "adjClose": 42.2548,
+      "dividend": 0.427,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-09",
+      "close": 54.37,
+      "adjClose": 43.3584,
+      "dividend": 0.557,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-10",
+      "close": 54.44,
+      "adjClose": 43.8107,
+      "dividend": 0.551,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-11",
+      "close": 57.09,
+      "adjClose": 45.9433,
+      "dividend": 0.494,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2024-12",
+      "close": 57.08,
+      "adjClose": 46.72,
+      "dividend": 0.964,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-01",
+      "close": 57.47,
+      "adjClose": 47.0392,
+      "dividend": 0,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-02",
+      "close": 55.98,
+      "adjClose": 46.1812,
+      "dividend": 0.45,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-03",
+      "close": 46.6,
+      "adjClose": 39.1864,
+      "dividend": 0.482,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-04",
+      "close": 51.49,
+      "adjClose": 43.8087,
+      "dividend": 0.541,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-05",
+      "close": 52.63,
+      "adjClose": 44.7787,
+      "dividend": 0.598,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-06",
+      "close": 54.16,
+      "adjClose": 47.0579,
+      "dividend": 0.621,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-07",
+      "close": 53.81,
+      "adjClose": 47.1337,
+      "dividend": 0.494,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-08",
+      "close": 55.68,
+      "adjClose": 48.7716,
+      "dividend": 0.444,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-09",
+      "close": 57.28,
+      "adjClose": 50.9698,
+      "dividend": 0.442,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-10",
+      "close": 59.1,
+      "adjClose": 52.5893,
+      "dividend": 0.446,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-11",
+      "close": 58.81,
+      "adjClose": 52.7561,
+      "dividend": 0.476,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2025-12",
+      "close": 58.09,
+      "adjClose": 53.1228,
+      "dividend": 1.129,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-01",
+      "close": 59.43,
+      "adjClose": 54.3482,
+      "dividend": 0,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-02",
+      "close": 58.04,
+      "adjClose": 53.4965,
+      "dividend": 0.466,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-03",
+      "close": 55.59,
+      "adjClose": 52.2174,
+      "dividend": 0.509,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-04",
+      "close": 58.86,
+      "adjClose": 55.8458,
+      "dividend": 0.559,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-05",
+      "close": 61.15,
+      "adjClose": 58.0186,
+      "dividend": 0.591,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-06",
+      "close": 59.39,
+      "adjClose": 57.4689,
+      "dividend": 0.564,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-07",
+      "close": 58.25,
+      "adjClose": 56.3658,
+      "dividend": 0.637,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-08",
+      "close": 59.87,
+      "adjClose": 59.3159,
+      "dividend": 0.705,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-09",
+      "close": 61.04,
+      "adjClose": 61.04,
+      "dividend": 0.683,
+      "source": "JEPQ"
+    },
+    {
+      "date": "2026-10",
+      "close": 57.58,
+      "adjClose": 57.58,
+      "dividend": 0.567,
+      "source": "JEPQ"
+    }
+  ],
+  "dividendEvents": [
+    {
+      "exDate": "2022-06-01",
+      "amount": 0.376,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-07-01",
+      "amount": 0.34,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-08-01",
+      "amount": 0.407,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-09-01",
+      "amount": 0.546,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-10-03",
+      "amount": 0.38,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-11-01",
+      "amount": 0.681,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-12-01",
+      "amount": 0.546,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2022-12-29",
+      "amount": 0.576,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-02-01",
+      "amount": 0.441,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-03-01",
+      "amount": 0.433,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-04-03",
+      "amount": 0.454,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-05-01",
+      "amount": 0.484,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-06-01",
+      "amount": 0.357,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-07-03",
+      "amount": 0.367,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-08-01",
+      "amount": 0.366,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-09-01",
+      "amount": 0.451,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-10-02",
+      "amount": 0.417,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-11-01",
+      "amount": 0.418,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-12-01",
+      "amount": 0.422,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2023-12-28",
+      "amount": 0.392,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-02-01",
+      "amount": 0.342,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-03-01",
+      "amount": 0.38,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-04-01",
+      "amount": 0.427,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-05-01",
+      "amount": 0.431,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-06-03",
+      "amount": 0.45,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-07-01",
+      "amount": 0.421,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-08-01",
+      "amount": 0.427,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-09-03",
+      "amount": 0.557,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-10-01",
+      "amount": 0.551,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-11-01",
+      "amount": 0.494,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-12-02",
+      "amount": 0.508,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2024-12-31",
+      "amount": 0.456,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-02-03",
+      "amount": 0.45,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-03-03",
+      "amount": 0.482,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-04-01",
+      "amount": 0.541,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-05-01",
+      "amount": 0.598,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-06-02",
+      "amount": 0.621,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-07-01",
+      "amount": 0.494,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-08-01",
+      "amount": 0.444,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-09-02",
+      "amount": 0.442,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-10-01",
+      "amount": 0.446,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-11-03",
+      "amount": 0.476,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-12-01",
+      "amount": 0.553,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2025-12-31",
+      "amount": 0.576,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-02-02",
+      "amount": 0.466,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-03-02",
+      "amount": 0.509,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-04-01",
+      "amount": 0.559,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-05-01",
+      "amount": 0.591,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-06-01",
+      "amount": 0.564,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-07-01",
+      "amount": 0.637,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-08-03",
+      "amount": 0.705,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-09-01",
+      "amount": 0.683,
+      "source": "JEPQ"
+    },
+    {
+      "exDate": "2026-10-01",
+      "amount": 0.567,
+      "source": "JEPQ"
+    }
+  ]
+}

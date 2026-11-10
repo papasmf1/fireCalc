@@ -40,9 +40,29 @@ function load<T>(
   }
 }
 export function loadEtfs(): DataResult<EtfData[]> {
-  const results = fixtureEtfs.map((fallback) =>
-    load(`etf/${fallback.ticker}.json`, (v) => etfSchema.parse(v), fallback),
-  );
+  const files = fs.existsSync(path.join(root, "etf"))
+    ? fs
+        .readdirSync(path.join(root, "etf"))
+        .filter((file) => file.endsWith(".json"))
+    : [];
+  const tickers = files.length
+    ? files.map((file) => file.replace(/\.json$/, ""))
+    : fixtureEtfs.map((etf) => etf.ticker);
+  const results = [
+    ...new Set([
+      ...tickers,
+      ...(process.env.NODE_ENV !== "production"
+        ? fixtureEtfs
+            .map((etf) => etf.ticker)
+            .filter((ticker) => !tickers.includes(ticker))
+        : []),
+    ]),
+  ]
+    .map((ticker) => {
+      const fallback = fixtureEtfs.find((etf) => etf.ticker === ticker);
+      return load(`etf/${ticker}.json`, (v) => etfSchema.parse(v), fallback);
+    })
+    .filter((result): result is DataResult<EtfData> => Boolean(result.data));
   const errors = results.filter((r) => r.source === "error");
   if (errors.length)
     return {

@@ -611,7 +611,7 @@
     {
       "date": "2014-01",
       "close": 2.9856,
-      "adjClose": 2.9272,
+      "adjClose": 2.9273,
       "dividend": 0,
       "source": "QLD"
     },
@@ -1262,7 +1262,7 @@
     {
       "date": "2021-10",
       "close": 42.27,
-      "adjClose": 41.7395,
+      "adjClose": 41.7394,
       "dividend": 0,
       "source": "QLD"
     },
@@ -1514,7 +1514,7 @@
     {
       "date": "2024-10",
       "close": 49.14,
-      "adjClose": 48.9594,
+      "adjClose": 48.9595,
       "dividend": 0,
       "source": "QLD"
     },
@@ -1684,6 +1684,173 @@
       "close": 82.59,
       "adjClose": 82.59,
       "dividend": 0,
+      "source": "QLD"
+    }
+  ],
+  "dividendEvents": [
+    {
+      "exDate": "2006-12-20",
+      "amount": 0.084703,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2007-03-27",
+      "amount": 0.000188,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2007-12-20",
+      "amount": 0.0795,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2008-06-24",
+      "amount": 0.000516,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2012-12-26",
+      "amount": 0.002563,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2013-03-20",
+      "amount": 0.004094,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2014-06-25",
+      "amount": 0.005625,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2014-12-22",
+      "amount": 0.0025,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2015-03-25",
+      "amount": 0.002469,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2015-12-22",
+      "amount": 0.002875,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2016-06-22",
+      "amount": 0.0025,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2016-12-21",
+      "amount": 0.003688,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2017-03-22",
+      "amount": 0.001188,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2017-06-21",
+      "amount": 0.000438,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2018-12-26",
+      "amount": 0.005,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2019-03-20",
+      "amount": 0.007875,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2019-06-25",
+      "amount": 0.005125,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2019-12-24",
+      "amount": 0.00625,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2020-03-25",
+      "amount": 0.001125,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2022-12-22",
+      "amount": 0.0545,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2023-09-20",
+      "amount": 0.088,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2023-12-20",
+      "amount": 0.039,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2024-03-20",
+      "amount": 0.0275,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2024-06-26",
+      "amount": 0.053,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2024-09-25",
+      "amount": 0.0255,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2024-12-23",
+      "amount": 0.0305,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2025-03-26",
+      "amount": 0.013,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2025-06-25",
+      "amount": 0.062,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2025-09-24",
+      "amount": 0.0205,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2025-12-24",
+      "amount": 0.023,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2026-03-25",
+      "amount": 0.013,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2026-06-24",
+      "amount": 0.061,
+      "source": "QLD"
+    },
+    {
+      "exDate": "2026-09-23",
+      "amount": 0.027,
       "source": "QLD"
     }
   ]

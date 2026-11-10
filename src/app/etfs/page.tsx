@@ -48,7 +48,7 @@ export default function EtfsPage() {
       })),
     };
   });
-  const tickers = ["VOO", "SCHD", "QQQM", "QLD", "SPYQ"];
+  const tickers = etfs.map((etf) => etf.ticker);
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
       <h1 className="text-3xl font-bold">ETF 비교</h1>
@@ -87,6 +87,11 @@ export default function EtfsPage() {
                         {short && (
                           <Badge variant="outline">
                             실제 {twenty.months}개월
+                          </Badge>
+                        )}
+                        {["SPYQ", "JEPQ"].includes(ticker) && (
+                          <Badge variant="destructive">
+                            짧은 표본 · {five?.months ?? 0}개월
                           </Badge>
                         )}
                         {ticker === "SPYQ" && (

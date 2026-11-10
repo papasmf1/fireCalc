@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, CircleDollarSign, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { loadFxDaily, loadSummary } from "@/lib/data/loader";
+import { loadEtfs, loadFxDaily, loadSummary } from "@/lib/data/loader";
 const won = (n: number) => new Intl.NumberFormat("ko-KR").format(Math.round(n));
 export default function Home() {
   const fxResult = loadFxDaily();
@@ -11,7 +11,9 @@ export default function Home() {
   const previous = fx?.daily.at(-2);
   const summaryResult = loadSummary();
   const summary = summaryResult.data;
-  const etfs = ["VOO", "SCHD", "QQQM", "QLD", "SPYQ"];
+  const etfs =
+    loadEtfs().data?.map((etf) => etf.ticker) ??
+    Object.keys(summary?.tickers ?? {});
   if (!fx || !summary)
     return (
       <main className="mx-auto max-w-4xl px-4 py-12">
@@ -129,6 +131,11 @@ export default function Home() {
                       : "-"}
                   </div>
                   <p className="mt-1 text-xs text-muted-foreground">CAGR</p>
+                  {m && ["SPYQ", "JEPQ"].includes(ticker) && m.months < 60 ? (
+                    <Badge variant="outline" className="mt-2">
+                      짧은 표본 · {m.months}개월
+                    </Badge>
+                  ) : null}
                   <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
                     <span>
                       변동성

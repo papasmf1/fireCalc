@@ -188,5 +188,12 @@
       "dividend": 0,
       "source": "SPYQ"
     }
+  ],
+  "dividendEvents": [
+    {
+      "exDate": "2025-12-23",
+      "amount": 0.271,
+      "source": "SPYQ"
+    }
   ]
 }

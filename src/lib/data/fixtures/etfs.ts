@@ -17,7 +17,8 @@ const definitions = [
   ["SCHD", "Schwab US Dividend Equity ETF", 80],
   ["QQQM", "Invesco NASDAQ 100 ETF", 75],
   ["QLD", "ProShares Ultra QQQ", 60],
-  ["SPYQ", "사용자 지정 ETF", 90],
+  ["SPYQ", "Tradr 2X Long SPY Quarterly ETF", 90],
+  ["JEPQ", "JPMorgan Nasdaq Equity Premium Income ETF", 95],
 ] as const;
 export const fixtureEtfs: EtfData[] = definitions.map(
   ([ticker, name, start]) => ({

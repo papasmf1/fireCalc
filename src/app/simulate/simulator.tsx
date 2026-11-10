@@ -1,9 +1,19 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Line, LineChart, CartesianGrid, XAxis, YAxis } from "recharts";
+import {
+  Line,
+  LineChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  ReferenceLine,
+} from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { MoneyInput } from "@/components/money-input";
+import { formatWon } from "@/lib/money";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,11 +29,12 @@ import {
   firstTargetMonth,
   maxDrawdown,
   marketCagr,
-  monteCarlo,
   runBacktest,
   taxByYear,
   type MonthlySeries,
 } from "@/lib/sim";
+import type { Summary } from "@/lib/data/schema";
+import { monthlyDividendKrw, runScenarioMonteCarlo } from "@/lib/sim/scenario";
 
 type Fx = { date: string; rate: number };
 type Preset = "stable" | "growth" | "aggressive" | "direct";
@@ -38,16 +49,17 @@ export default function Simulator({
   etfs,
   fx,
   latestFx,
+  summary,
 }: {
   etfs: MonthlySeries[];
   fx: Fx[];
   latestFx: number;
+  summary: Summary | null;
 }) {
   const [currentAge, setCurrentAge] = useState(35);
   const [retireAge, setRetireAge] = useState(55);
-  const [monthly, setMonthly] = useState(2_000_000);
-  const [initial, setInitial] = useState(50_000_000);
-  const [living, setLiving] = useState(2_500_000);
+  const [monthly, setMonthly] = useState(100);
+  const [living, setLiving] = useState(250);
   const [growth, setGrowth] = useState(0.03);
   const [inflation, setInflation] = useState(0.025);
   const [withdrawal, setWithdrawal] = useState(0.04);
@@ -55,16 +67,30 @@ export default function Simulator({
   const [retireMonths, setRetireMonths] = useState(240);
   const [rebalance, setRebalance] = useState(false);
   const [taxEnabled, setTaxEnabled] = useState(false);
+  const [view, setView] = useState<"pessimistic" | "historical">("pessimistic");
+  const [haircut, setHaircut] = useState(0.02);
+  const [realTerms, setRealTerms] = useState(false);
   const [fxMode, setFxMode] = useState<"historical" | "fixed">("historical");
   const [fixedFx, setFixedFx] = useState(latestFx);
   const [preset, setPreset] = useState<Preset>("stable");
-  const [weights, setWeights] = useState<Record<string, number>>({
-    VOO: 0.35,
-    SCHD: 0.45,
-    QQQM: 0.2,
-    QLD: 0,
-    SPYQ: 0,
-  });
+  const [amounts, setAmounts] = useState<Record<string, number>>(() =>
+    Object.fromEntries(etfs.map((etf) => [etf.ticker, 1000])),
+  );
+  const totalAmount = Object.values(amounts).reduce(
+    (sum, value) => sum + value,
+    0,
+  );
+  const weights = useMemo(
+    () =>
+      Object.fromEntries(
+        Object.entries(amounts).map(([ticker, value]) => [
+          ticker,
+          totalAmount ? value / totalAmount : 0,
+        ]),
+      ),
+    [amounts, totalAmount],
+  );
+  const initial = totalAmount * 10_000;
   const activeEtfs = useMemo(
     () => etfs.filter((etf) => (weights[etf.ticker] ?? 0) > 0),
     [etfs, weights],
@@ -86,6 +112,28 @@ export default function Simulator({
     }
   }, [activeEtfs, fx]);
   const activeReturns = activeReturnsState.data;
+  const futureReturnsState = useMemo(() => {
+    try {
+      return {
+        data: Object.fromEntries(
+          activeEtfs.map((etf) => [
+            etf.ticker,
+            buildMonthlyReturns([etf], fx)[etf.ticker],
+          ]),
+        ),
+        error: null,
+      };
+    } catch (error) {
+      return {
+        data: {},
+        error:
+          error instanceof Error
+            ? error.message
+            : "미래 시나리오 데이터를 계산할 수 없습니다.",
+      };
+    }
+  }, [activeEtfs, fx]);
+  const futureReturns = futureReturnsState.data;
   const availableMonths = Object.values(activeReturns)[0]?.length ?? 0;
   const requestedMonths = Number(years) * 12;
   const usableMonths = Math.min(requestedMonths, availableMonths);
@@ -105,8 +153,12 @@ export default function Simulator({
   );
   const validWeights =
     Math.abs(totalWeight - 1) < 0.0001 &&
-    Object.values(weights).every((value) => value >= 0 && value <= 1);
+    Object.values(weights).every((value) => value >= 0 && value <= 1) &&
+    fixedFx > 0 &&
+    withdrawal > 0;
   const yearsToRetire = Math.max(0, retireAge - currentAge);
+  const effectiveInflation =
+    view === "pessimistic" ? Math.max(inflation, 0.03) : inflation;
   const result = useMemo(() => {
     try {
       if (activeReturnsState.error) return { error: activeReturnsState.error };
@@ -116,7 +168,7 @@ export default function Simulator({
         };
       const backtest = runBacktest({
         initialKrw: initial,
-        monthlyContributionKrw: monthly,
+        monthlyContributionKrw: monthly * 10_000,
         contributionGrowth: growth,
         weights,
         returns: selectedReturns,
@@ -124,18 +176,30 @@ export default function Simulator({
         fixedFx,
         rebalance: rebalance ? "annual" : "none",
       });
-      const target = fireTarget(living, withdrawal, inflation, yearsToRetire);
-      const mc = monteCarlo(
-        backtest.slice(1).map((point) => point.marketReturn),
-        initial,
-        living * Math.pow(1 + inflation, yearsToRetire),
-        retireMonths,
+      const target = fireTarget(
+        living * 10_000,
+        withdrawal,
+        effectiveInflation,
+        yearsToRetire,
+      );
+      const scenario = runScenarioMonteCarlo(
+        {
+          returns: futureReturns,
+          weights,
+          initialKrw: initial,
+          monthlyContributionKrw: monthly * 10_000,
+          contributionGrowth: growth,
+          accumulationMonths: yearsToRetire * 12,
+          retirementMonths: retireMonths,
+          monthlyLivingKrw:
+            living * 10_000 * Math.pow(1 + effectiveInflation, yearsToRetire),
+          fxRate: fixedFx,
+          inflation: effectiveInflation,
+          haircut,
+          pessimistic: view === "pessimistic",
+        },
         1000,
         42,
-        yearsToRetire * 12,
-        monthly,
-        growth,
-        inflation,
       );
       const final = backtest.at(-1);
       const gain = (final?.valueKrw ?? 0) - (final?.contributedKrw ?? 0);
@@ -153,11 +217,11 @@ export default function Simulator({
       return {
         backtest,
         target,
-        mc,
         tax,
         chart,
         mdd: maxDrawdown(backtest.map((point) => point.valueKrw)),
         targetDate: firstTargetMonth(backtest, target),
+        scenario,
         cagr:
           final && final.valueUsd > 0
             ? marketCagr(backtest.map((point) => point.marketReturn))
@@ -184,23 +248,85 @@ export default function Simulator({
     rebalance,
     living,
     withdrawal,
-    inflation,
+    effectiveInflation,
     yearsToRetire,
     retireMonths,
     taxEnabled,
+    futureReturns,
+    view,
+    haircut,
   ]);
   const setPresetWeights = (next: Preset) => {
     setPreset(next);
-    setWeights(
+    setAmounts(
       next === "stable"
-        ? { VOO: 0.35, SCHD: 0.45, QQQM: 0.2, QLD: 0, SPYQ: 0 }
+        ? { VOO: 1400, SCHD: 1800, QQQM: 800, QLD: 0, SPYQ: 0, JEPQ: 0 }
         : next === "growth"
-          ? { VOO: 0.45, SCHD: 0.1, QQQM: 0.45, QLD: 0, SPYQ: 0 }
+          ? { VOO: 1800, SCHD: 400, QQQM: 1800, QLD: 0, SPYQ: 0, JEPQ: 0 }
           : next === "aggressive"
-            ? { VOO: 0.1, SCHD: 0, QQQM: 0.5, QLD: 0.4, SPYQ: 0 }
-            : weights,
+            ? { VOO: 400, SCHD: 0, QQQM: 2000, QLD: 1600, SPYQ: 0, JEPQ: 0 }
+            : amounts,
     );
   };
+  const dividendYields = Object.fromEntries(
+    etfs.map((etf) => {
+      const recent = etf.monthly.slice(-12);
+      const dividend = recent.reduce(
+        (sum, point) => sum + (point.dividend ?? 0),
+        0,
+      );
+      const close = etf.monthly.at(-1)?.close ?? 0;
+      const fromSummary = summary?.tickers[etf.ticker]?.dividendYieldTtm;
+      return [etf.ticker, fromSummary ?? (close > 0 ? dividend / close : 0)];
+    }),
+  );
+  const scenarioCards =
+    "error" in result
+      ? []
+      : result.scenario.paths.map((path) => {
+          const monthlyDividend = monthlyDividendKrw(
+            path.retirementHoldings,
+            dividendYields,
+            fixedFx,
+          );
+          return {
+            ...path,
+            displayValues: path.values.map((value, index) =>
+              realTerms
+                ? value / Math.pow(1 + effectiveInflation, index / 12)
+                : value,
+            ),
+            monthlyDividend,
+            coverage:
+              living *
+                10_000 *
+                Math.pow(1 + effectiveInflation, yearsToRetire) >
+              0
+                ? monthlyDividend /
+                  (living *
+                    10_000 *
+                    Math.pow(1 + effectiveInflation, yearsToRetire))
+                : 0,
+          };
+        });
+  const displayTarget =
+    "error" in result
+      ? 0
+      : realTerms
+        ? fireTarget(living * 10_000, withdrawal, 0, 0)
+        : result.target;
+  const displayChart =
+    "error" in result
+      ? []
+      : result.chart.map((point, index) => ({
+          ...point,
+          krw: realTerms
+            ? point.krw / Math.pow(1 + effectiveInflation, index / 12)
+            : point.krw,
+          usd: realTerms
+            ? point.usd / Math.pow(1 + effectiveInflation, index / 12)
+            : point.usd,
+        }));
   return (
     <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
       <div className="mb-8">
@@ -233,17 +359,15 @@ export default function Simulator({
                 setValue={setRetireAge}
               />
             </div>
-            <Field
-              id="initial"
-              label="초기 투자금 (원)"
-              value={initial}
-              setValue={setInitial}
-            />
-            <Field
+            <p className="text-sm text-muted-foreground">
+              초기 투자금 합계: <b>{totalAmount.toLocaleString()}만원</b> (
+              {money(initial)})
+            </p>
+            <MoneyInput
               id="monthly"
-              label="월 적립금 (원)"
+              label="월 적립금"
               value={monthly}
-              setValue={setMonthly}
+              onChange={setMonthly}
             />
             <Field
               id="growth"
@@ -252,11 +376,11 @@ export default function Simulator({
               setValue={(value) => setGrowth(value / 100)}
               step="0.1"
             />
-            <Field
+            <MoneyInput
               id="living"
               label="은퇴 후 월 생활비 (현재가치)"
               value={living}
-              setValue={setLiving}
+              onChange={setLiving}
             />
             <div className="grid grid-cols-2 gap-2">
               <Field
@@ -291,6 +415,38 @@ export default function Simulator({
               />
             </div>
             <div>
+              <Label>관점</Label>
+              <Tabs
+                value={view}
+                onValueChange={(value) =>
+                  setView(value as "pessimistic" | "historical")
+                }
+                className="mt-2"
+              >
+                <TabsList className="grid w-full grid-cols-2">
+                  <TabsTrigger value="pessimistic">비관적 낙관론자</TabsTrigger>
+                  <TabsTrigger value="historical">역사적 그대로</TabsTrigger>
+                </TabsList>
+              </Tabs>
+              {view === "pessimistic" && (
+                <>
+                  <p className="mb-2 text-xs leading-5 text-muted-foreground">
+                    산술 기대수익률에서 연 2%p를 차감하고 변동성을 1.15배로
+                    높입니다. QLD/SPYQ 같은 레버리지 ETF는 복리 변동성 끌림으로
+                    역사적 경로와의 격차가 더 커질 수 있습니다. 실제 적용 물가:{" "}
+                    {(effectiveInflation * 100).toFixed(1)}%
+                  </p>
+                  <Field
+                    id="haircut"
+                    label="기대수익률 헤어컷 (%p)"
+                    value={haircut * 100}
+                    setValue={(value) => setHaircut(value / 100)}
+                    step="0.1"
+                  />
+                </>
+              )}
+            </div>
+            <div>
               <Label>백테스트 기간</Label>
               <Tabs value={years} onValueChange={setYears} className="mt-2">
                 <TabsList className="grid w-full grid-cols-4">
@@ -316,32 +472,39 @@ export default function Simulator({
               </Tabs>
             </div>
             <div>
-              <Label>ETF 비중 합계: {(totalWeight * 100).toFixed(0)}%</Label>
-              {Object.keys(weights).map((ticker) => (
-                <div key={ticker} className="mt-2 flex items-center gap-2">
-                  <span className="w-12 text-xs">{ticker}</span>
-                  <Input
-                    aria-label={`${ticker} 비중`}
-                    type="number"
-                    min="0"
-                    max="100"
-                    value={weights[ticker] * 100}
-                    onChange={(event) => {
-                      const value = Math.max(
-                        0,
-                        Math.min(100, Number(event.target.value) || 0),
-                      );
-                      setPreset("direct");
-                      setWeights({ ...weights, [ticker]: value / 100 });
-                    }}
-                  />
-                  <span className="text-xs">%</span>
-                </div>
-              ))}
+              <Label>종목별 초기 투자금 (만원) · 비중 자동 계산</Label>
+              {etfs.map((etf) => {
+                const ticker = etf.ticker;
+                return (
+                  <div key={ticker} className="mt-2 flex items-center gap-2">
+                    <span className="flex w-24 items-center gap-1 text-xs">
+                      {ticker}
+                      {["SPYQ", "JEPQ"].includes(ticker) &&
+                      etf.monthly.length < 60 ? (
+                        <Badge variant="outline" className="px-1 text-[10px]">
+                          표본 {etf.monthly.length}개월
+                        </Badge>
+                      ) : null}
+                    </span>
+                    <MoneyInput
+                      id={`amount-${ticker}`}
+                      label=""
+                      value={amounts[ticker] ?? 0}
+                      onChange={(value) => {
+                        setPreset("direct");
+                        setAmounts({ ...amounts, [ticker]: value });
+                      }}
+                    />
+                    <span className="text-xs">
+                      {((weights[ticker] ?? 0) * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                );
+              })}
             </div>
             {!validWeights && (
               <p className="text-sm text-destructive">
-                각 비중은 0~100%이며 합계가 100%여야 합니다.
+                투자금은 0 이상이어야 하고 총 투자금이 0일 수 없습니다.
               </p>
             )}
             <div className="flex items-center justify-between">
@@ -404,7 +567,7 @@ export default function Simulator({
                   title="최종 자산"
                   value={money(result.backtest.at(-1)?.valueKrw ?? 0)}
                 />
-                <Metric title="FIRE 목표액" value={money(result.target)} />
+                <Metric title="FIRE 목표액" value={formatWon(result.target)} />
                 <Metric
                   title="연환산 수익률(적립 효과 제외)"
                   value={`${(result.cagr * 100).toFixed(1)}%`}
@@ -420,7 +583,7 @@ export default function Simulator({
                 </CardHeader>
                 <CardContent>
                   <ChartContainer config={chartConfig} className="h-72 w-full">
-                    <LineChart accessibilityLayer data={result.chart}>
+                    <LineChart accessibilityLayer data={displayChart}>
                       <CartesianGrid vertical={false} />
                       <XAxis
                         dataKey="date"
@@ -466,25 +629,139 @@ export default function Simulator({
                   </p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>
-                    미래 시뮬레이션 1,000회 · 은퇴 후 {retireMonths}개월
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                  <Metric title="10 백분위" value={money(result.mc.p10)} />
-                  <Metric title="중앙값" value={money(result.mc.p50)} />
-                  <Metric title="90 백분위" value={money(result.mc.p90)} />
-                  <Metric
-                    title="고갈 확률"
-                    value={`${(result.mc.depletionProbability * 100).toFixed(1)}%`}
+              <div className="flex items-center justify-between rounded-md border p-3">
+                <span className="text-sm">
+                  경로 정의: 은퇴 시점 자산 순위로 고른 대표 경로 ·{" "}
+                  <b>{realTerms ? "실질" : "명목"}</b> 가치
+                </span>
+                <div className="flex items-center gap-2">
+                  <Label htmlFor="realTerms">실질가치</Label>
+                  <Switch
+                    id="realTerms"
+                    checked={realTerms}
+                    onCheckedChange={setRealTerms}
                   />
-                  {taxEnabled && (
-                    <Metric title="단순 예상 세금" value={money(result.tax)} />
-                  )}
-                </CardContent>
-              </Card>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {realTerms
+                  ? "오늘 가치 기준: 전 구간을 물가로 할인했습니다."
+                  : "명목 가치 기준"}
+              </p>
+              <div className="grid gap-4 lg:grid-cols-3">
+                {scenarioCards.map((scenario) => (
+                  <Card key={scenario.label}>
+                    <CardHeader>
+                      <CardTitle>
+                        {scenario.label === "P10"
+                          ? "부정적 미래"
+                          : scenario.label === "P50"
+                            ? "중간 미래"
+                            : "낙관적 미래"}{" "}
+                        · 대표 경로
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ChartContainer
+                        config={{
+                          value: {
+                            label: "자산",
+                            color: "var(--color-primary)",
+                          },
+                          target: { label: "FIRE 목표", color: "#ef4444" },
+                        }}
+                        className="h-40 w-full"
+                      >
+                        <LineChart
+                          data={scenario.displayValues.map((value, index) => ({
+                            month: index,
+                            value,
+                            target: displayTarget,
+                          }))}
+                        >
+                          <XAxis
+                            dataKey="month"
+                            tickFormatter={(value) =>
+                              String(Math.round(value / 12)) + "년"
+                            }
+                          />
+                          <YAxis
+                            tickFormatter={(value) =>
+                              String(Math.round(value / 100000000)) + "억"
+                            }
+                          />
+                          <ReferenceLine
+                            x={yearsToRetire * 12}
+                            stroke="#2563eb"
+                            label="은퇴"
+                          />
+                          <Line
+                            dataKey="value"
+                            type="monotone"
+                            stroke="var(--color-value)"
+                            dot={false}
+                          />
+                          <Line
+                            dataKey="target"
+                            stroke="var(--color-target)"
+                            strokeDasharray="4 4"
+                            dot={false}
+                          />
+                          <ChartTooltip content={<ChartTooltipContent />} />
+                        </LineChart>
+                      </ChartContainer>
+                      <p className="mt-2 text-sm">
+                        은퇴 시 자산{" "}
+                        <b>{formatWon(scenario.retirementValue)}</b>
+                      </p>
+                      <p className="text-sm">
+                        월 배당 <b>{formatWon(scenario.monthlyDividend)}</b> ·
+                        생활비 충당률 {(scenario.coverage * 100).toFixed(1)}%
+                      </p>
+                      <table className="mt-3 w-full text-xs">
+                        <tbody>
+                          {Object.entries(scenario.retirementHoldings).map(
+                            ([ticker, value]) => (
+                              <tr key={ticker} className="border-b">
+                                <td className="py-1">
+                                  {ticker} (
+                                  {summary?.tickers[ticker]
+                                    ?.dividendFrequency ?? "other"}
+                                  )
+                                </td>
+                                <td className="py-1 text-right">
+                                  {formatWon(
+                                    monthlyDividendKrw(
+                                      { [ticker]: value },
+                                      { [ticker]: dividendYields[ticker] },
+                                      fixedFx,
+                                    ),
+                                  )}
+                                </td>
+                              </tr>
+                            ),
+                          )}
+                        </tbody>
+                      </table>
+                      <p className="mt-2 text-xs font-medium">
+                        배당만으로 생활 가능:{" "}
+                        {scenario.coverage >= 1 ? "가능" : "불가"}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        전체 경로 고갈 확률:{" "}
+                        {(result.scenario.depletionProbability * 100).toFixed(
+                          1,
+                        )}
+                        %
+                      </p>
+                      <p className="mt-2 text-xs text-muted-foreground">
+                        월 배당은 은퇴 시점 보유액의 TTM 기준, 원천징수 15%
+                        후입니다. 분기배당은 월 평균 환산입니다.
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </>
           )}
         </div>

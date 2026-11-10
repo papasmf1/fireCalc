@@ -45,6 +45,10 @@ export const metricSchema = z.object({
   worstYear: z.object({ year: z.number(), return: z.number() }),
   dividendYield: z.number(),
   usesProxy: z.boolean(),
+  trailing12mDividendUsd: z.number().optional(),
+  dividendYieldTtm: z.number().optional(),
+  dividendFrequency: z.enum(["monthly", "quarterly", "other"]).optional(),
+  dividendCagr5y: z.number().optional(),
 });
 export const summarySchema = z.object({
   generatedAt: z.string(),
@@ -57,6 +61,18 @@ export const summarySchema = z.object({
       proxy: z.string().nullable(),
       firstMonth: z.string(),
       lastMonth: z.string(),
+      trailing12mDividendUsd: z.number().optional(),
+      dividendYieldTtm: z.number().optional(),
+      dividendYieldTtmKrw: z.number().optional(),
+      trailing12mDividendEvents: z.number().optional(),
+      dividendFrequency: z.enum(["monthly", "quarterly", "other"]).optional(),
+      dividendCagr5y: z.number().nullable().optional(),
+      dividendCagrPeriod: z
+        .record(z.string(), z.number())
+        .nullable()
+        .optional(),
+      dividendAnnualUsd: z.record(z.string(), z.number()).optional(),
+      dividendNote: z.string().nullable().optional(),
       periods: z.record(
         z.enum(["5y", "10y", "20y"]),
         z.object({ USD: metricSchema, KRW: metricSchema }),

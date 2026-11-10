@@ -1,7 +1,12 @@
 export type MonthlyReturn = { date: string; return: number; fxRate: number };
 export type MonthlySeries = {
   ticker: string;
-  monthly: Array<{ date: string; adjClose: number }>;
+  monthly: Array<{
+    date: string;
+    adjClose: number;
+    close?: number;
+    dividend?: number;
+  }>;
 };
 export type PortfolioWeight = Record<string, number>;
 export type BacktestInput = {

@@ -2,6 +2,13 @@ import fs from "node:fs";
 import { describe, expect, it } from "vitest";
 import { etfSchema, summarySchema } from "../data/schema";
 import {
+  formatManwon,
+  formatManwonInput,
+  formatWon,
+  parseManwon,
+} from "../money";
+import { runScenarioMonteCarlo } from "./scenario";
+import {
   afterTaxGain,
   annualReturns,
   buildMonthlyReturns,
@@ -12,6 +19,11 @@ import {
   taxByYear,
   validateWeights,
 } from "./index";
+import {
+  estimateCorrelation,
+  monthlyDividendKrw,
+  portfolioVolatility,
+} from "./scenario";
 describe("fireCalc calculations", () => {
   it("parses the real data contracts", () => {
     const summary = JSON.parse(fs.readFileSync("data/summary.json", "utf8"));
@@ -20,6 +32,16 @@ describe("fireCalc calculations", () => {
       summarySchema.parse(summary).tickers.VOO.periods["5y"].USD.cagr,
     ).toBeCloseTo(0.120395);
     expect(etfSchema.parse(etf).monthly.length).toBeGreaterThan(200);
+  });
+  it("parses and formats manwon inputs", () => {
+    expect(parseManwon("1,000")).toBe(1000);
+    expect(parseManwon("1.5")).toBe(1.5);
+    expect(parseManwon("")).toBe(0);
+    expect(parseManwon("-5")).toBe(0);
+    expect(formatManwon(1000)).toBe("1,000");
+    expect(formatManwonInput("1234567")).toBe("1,234,567");
+    expect(formatManwonInput("1234567.5")).toBe("1,234,567.5");
+    expect(formatWon(1_228_962_330)).toBe("12억 2,896만원");
   });
   it("uses the first historical FX for initial KRW", () => {
     const returns = {
@@ -73,6 +95,50 @@ describe("fireCalc calculations", () => {
     ]);
     expect(rows.find((row) => row.year === "2023")?.return).toBeCloseTo(0.263);
     expect(rows.find((row) => row.year === "2024")?.partial).toBe(true);
+  });
+  it("keeps scenario Monte Carlo deterministic", () => {
+    const input = {
+      returns: {
+        VOO: [
+          { date: "2026-01", return: 0, fxRate: 1000 },
+          { date: "2026-02", return: 0, fxRate: 1000 },
+        ],
+      },
+      weights: { VOO: 1 },
+      initialKrw: 10_000_000,
+      monthlyContributionKrw: 1_000_000,
+      contributionGrowth: 0,
+      accumulationMonths: 2,
+      retirementMonths: 2,
+      monthlyLivingKrw: 100_000,
+      fxRate: 1000,
+      inflation: 0,
+      haircut: 0.02,
+      pessimistic: true,
+    };
+    const a = runScenarioMonteCarlo(input, 10, 7);
+    const b = runScenarioMonteCarlo(input, 10, 7);
+    expect(a.paths).toEqual(b.paths);
+  });
+  it("uses pairwise overlap correlation and portfolio volatility", () => {
+    const returns = {
+      A: [
+        { date: "1", return: 0.1, fxRate: 1 },
+        { date: "2", return: -0.1, fxRate: 1 },
+      ],
+      B: [
+        { date: "1", return: 0.1, fxRate: 1 },
+        { date: "2", return: -0.1, fxRate: 1 },
+      ],
+    };
+    const corr = estimateCorrelation(returns);
+    expect(corr[0][1]).toBeCloseTo(1);
+    expect(portfolioVolatility([0.1, 0.1], corr, [0.5, 0.5])).toBeCloseTo(0.1);
+  });
+  it("calculates the retirement monthly dividend after withholding", () => {
+    expect(monthlyDividendKrw({ VOO: 120_000 }, { VOO: 0.03 }, 1000)).toBe(
+      255_000,
+    );
   });
   it("applies monthly returns from the next month after a month-start purchase", () => {
     const returns = {
@@ -190,5 +256,32 @@ describe("fireCalc calculations", () => {
     expect(zeroReturn.p50).toBe(190);
     const depleted = monteCarlo([0], 10, 11, 2, 10, 1);
     expect(depleted.depletionProbability).toBe(1);
+  });
+  it("takes the retirement holdings snapshot before the first retirement return", () => {
+    const result = runScenarioMonteCarlo(
+      {
+        returns: {
+          VOO: [
+            { date: "2026-01", return: 0.1, fxRate: 1000 },
+            { date: "2026-02", return: 0.1, fxRate: 1000 },
+          ],
+        },
+        weights: { VOO: 1 },
+        initialKrw: 1_000_000,
+        monthlyContributionKrw: 0,
+        contributionGrowth: 0,
+        accumulationMonths: 1,
+        retirementMonths: 1,
+        monthlyLivingKrw: 0,
+        fxRate: 1000,
+        inflation: 0,
+        haircut: 0,
+        pessimistic: false,
+      },
+      1,
+      1,
+    );
+    expect(result.paths[0].retirementValue).toBe(1_000_000);
+    expect(result.paths[0].retirementHoldings.VOO).toBe(1_000);
   });
 });

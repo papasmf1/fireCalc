@@ -23,7 +23,7 @@
     {
       "date": "2007-01",
       "close": 18.1365,
-      "adjClose": 15.4952,
+      "adjClose": 15.4951,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -142,7 +142,7 @@
     {
       "date": "2008-06",
       "close": 18.5892,
-      "adjClose": 15.9527,
+      "adjClose": 15.9528,
       "dividend": 0.013992,
       "source": "QQQ"
     },
@@ -184,7 +184,7 @@
     {
       "date": "2008-12",
       "close": 12.2391,
-      "adjClose": 10.5257,
+      "adjClose": 10.5256,
       "dividend": 0.017696,
       "source": "QQQ"
     },
@@ -303,7 +303,7 @@
     {
       "date": "2010-05",
       "close": 18.7661,
-      "adjClose": 16.2455,
+      "adjClose": 16.2454,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -311,13 +311,13 @@
       "date": "2010-06",
       "close": 17.5768,
       "adjClose": 15.2747,
-      "dividend": 0.073254,
+      "dividend": 0.036627,
       "source": "QQQ"
     },
     {
       "date": "2010-07",
       "close": 18.8525,
-      "adjClose": 16.3834,
+      "adjClose": 16.3833,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -366,7 +366,7 @@
     {
       "date": "2011-02",
       "close": 23.7745,
-      "adjClose": 20.7502,
+      "adjClose": 20.7501,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -422,7 +422,7 @@
     {
       "date": "2011-10",
       "close": 23.8486,
-      "adjClose": 20.9297,
+      "adjClose": 20.9296,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -534,14 +534,14 @@
     {
       "date": "2013-02",
       "close": 27.6142,
-      "adjClose": 24.6305,
+      "adjClose": 24.6304,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2013-03",
       "close": 28.3837,
-      "adjClose": 25.3755,
+      "adjClose": 25.3754,
       "dividend": 0.065434,
       "source": "QQQ"
     },
@@ -562,7 +562,7 @@
     {
       "date": "2013-06",
       "close": 29.3303,
-      "adjClose": 26.3047,
+      "adjClose": 26.3046,
       "dividend": 0.092184,
       "source": "QQQ"
     },
@@ -611,7 +611,7 @@
     {
       "date": "2014-01",
       "close": 35.5033,
-      "adjClose": 32.038,
+      "adjClose": 32.0379,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -632,7 +632,7 @@
     {
       "date": "2014-04",
       "close": 35.9643,
-      "adjClose": 32.6632,
+      "adjClose": 32.6631,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -667,7 +667,7 @@
     {
       "date": "2014-09",
       "close": 40.6558,
-      "adjClose": 37.1114,
+      "adjClose": 37.1113,
       "dividend": 0.097946,
       "source": "QQQ"
     },
@@ -702,7 +702,7 @@
     {
       "date": "2015-02",
       "close": 44.6107,
-      "adjClose": 40.8732,
+      "adjClose": 40.8731,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -751,7 +751,7 @@
     {
       "date": "2015-09",
       "close": 41.8781,
-      "adjClose": 38.64,
+      "adjClose": 38.6399,
       "dividend": 0.107,
       "source": "QQQ"
     },
@@ -807,14 +807,14 @@
     {
       "date": "2016-05",
       "close": 45.4091,
-      "adjClose": 42.1506,
+      "adjClose": 42.1505,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2016-06",
       "close": 44.2568,
-      "adjClose": 41.1903,
+      "adjClose": 41.1904,
       "dividend": 0.118111,
       "source": "QQQ"
     },
@@ -828,7 +828,7 @@
     {
       "date": "2016-08",
       "close": 47.9194,
-      "adjClose": 44.5993,
+      "adjClose": 44.5992,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -856,7 +856,7 @@
     {
       "date": "2016-12",
       "close": 48.759,
-      "adjClose": 45.6289,
+      "adjClose": 45.6288,
       "dividend": 0.146096,
       "source": "QQQ"
     },
@@ -905,14 +905,14 @@
     {
       "date": "2017-07",
       "close": 58.9445,
-      "adjClose": 55.4259,
+      "adjClose": 55.4258,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2017-08",
       "close": 60.1668,
-      "adjClose": 56.5752,
+      "adjClose": 56.5751,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -933,21 +933,21 @@
     {
       "date": "2017-11",
       "close": 63.8501,
-      "adjClose": 60.17,
+      "adjClose": 60.1699,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2017-12",
       "close": 64.1011,
-      "adjClose": 60.5329,
+      "adjClose": 60.5328,
       "dividend": 0.135396,
       "source": "QQQ"
     },
     {
       "date": "2018-01",
       "close": 69.7145,
-      "adjClose": 65.8338,
+      "adjClose": 65.8337,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -975,7 +975,7 @@
     {
       "date": "2018-05",
       "close": 69.9902,
-      "adjClose": 66.2014,
+      "adjClose": 66.2013,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1003,14 +1003,14 @@
     {
       "date": "2018-09",
       "close": 76.4596,
-      "adjClose": 72.6058,
+      "adjClose": 72.6057,
       "dividend": 0.135807,
       "source": "QQQ"
     },
     {
       "date": "2018-10",
       "close": 69.8873,
-      "adjClose": 66.3648,
+      "adjClose": 66.3647,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1031,7 +1031,7 @@
     {
       "date": "2019-01",
       "close": 69.2042,
-      "adjClose": 65.9041,
+      "adjClose": 65.904,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1073,21 +1073,21 @@
     {
       "date": "2019-07",
       "close": 78.6448,
-      "adjClose": 75.1968,
+      "adjClose": 75.1967,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2019-08",
       "close": 77.151,
-      "adjClose": 73.7684,
+      "adjClose": 73.7683,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2019-09",
       "close": 77.7024,
-      "adjClose": 74.4455,
+      "adjClose": 74.4454,
       "dividend": 0.15803,
       "source": "QQQ"
     },
@@ -1108,14 +1108,14 @@
     {
       "date": "2019-12",
       "close": 87.497,
-      "adjClose": 84.0113,
+      "adjClose": 84.0112,
       "dividend": 0.188484,
       "source": "QQQ"
     },
     {
       "date": "2020-01",
       "close": 90.1555,
-      "adjClose": 86.5639,
+      "adjClose": 86.5638,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1129,21 +1129,21 @@
     {
       "date": "2020-03",
       "close": 78.3568,
-      "adjClose": 75.3955,
+      "adjClose": 75.3954,
       "dividend": 0.149388,
       "source": "QQQ"
     },
     {
       "date": "2020-04",
       "close": 90.0897,
-      "adjClose": 86.685,
+      "adjClose": 86.6849,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2020-05",
       "close": 96.0364,
-      "adjClose": 92.407,
+      "adjClose": 92.4069,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1171,7 +1171,7 @@
     {
       "date": "2020-09",
       "close": 114.3416,
-      "adjClose": 110.2117,
+      "adjClose": 110.2116,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1192,21 +1192,21 @@
     {
       "date": "2020-12",
       "close": 128.91,
-      "adjClose": 124.455,
+      "adjClose": 124.4551,
       "dividend": 0.206,
       "source": "QQQM"
     },
     {
       "date": "2021-01",
       "close": 129.37,
-      "adjClose": 124.8992,
+      "adjClose": 124.8991,
       "dividend": 0,
       "source": "QQQM"
     },
     {
       "date": "2021-02",
       "close": 129.72,
-      "adjClose": 125.237,
+      "adjClose": 125.2371,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1234,14 +1234,14 @@
     {
       "date": "2021-06",
       "close": 147.37,
-      "adjClose": 142.6351,
+      "adjClose": 142.6352,
       "dividend": 0.182,
       "source": "QQQM"
     },
     {
       "date": "2021-07",
       "close": 149.84,
-      "adjClose": 145.0257,
+      "adjClose": 145.0258,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1255,7 +1255,7 @@
     {
       "date": "2021-09",
       "close": 148.03,
-      "adjClose": 143.4289,
+      "adjClose": 143.4288,
       "dividend": 0.166,
       "source": "QQQM"
     },
@@ -1269,7 +1269,7 @@
     {
       "date": "2021-11",
       "close": 157.54,
-      "adjClose": 152.6432,
+      "adjClose": 152.6433,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1297,7 +1297,7 @@
     {
       "date": "2022-03",
       "close": 148.84,
-      "adjClose": 144.5435,
+      "adjClose": 144.5436,
       "dividend": 0.194,
       "source": "QQQM"
     },
@@ -1388,7 +1388,7 @@
     {
       "date": "2023-04",
       "close": 132.68,
-      "adjClose": 129.9236,
+      "adjClose": 129.9235,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1458,14 +1458,14 @@
     {
       "date": "2024-02",
       "close": 183.48,
-      "adjClose": 180.6288,
+      "adjClose": 180.6287,
       "dividend": 0,
       "source": "QQQM"
     },
     {
       "date": "2024-03",
       "close": 182.69,
-      "adjClose": 180.1991,
+      "adjClose": 180.199,
       "dividend": 0.345,
       "source": "QQQM"
     },
@@ -1521,7 +1521,7 @@
     {
       "date": "2024-11",
       "close": 209.8,
-      "adjClose": 207.5887,
+      "adjClose": 207.5888,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1598,7 +1598,7 @@
     {
       "date": "2025-10",
       "close": 258.96,
-      "adjClose": 257.7064,
+      "adjClose": 257.7063,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1684,6 +1684,413 @@
       "close": 284.34,
       "adjClose": 284.34,
       "dividend": 0,
+      "source": "QQQM"
+    }
+  ],
+  "dividendEvents": [
+    {
+      "exDate": "2006-12-15",
+      "amount": 0.022223,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2007-03-16",
+      "amount": 0.011112,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2007-06-15",
+      "amount": 0.015227,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2007-09-21",
+      "amount": 0.0107,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2007-12-21",
+      "amount": 0.021811,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2008-03-20",
+      "amount": 0.013581,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2008-06-20",
+      "amount": 0.013992,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2008-09-19",
+      "amount": 0.011523,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2008-12-19",
+      "amount": 0.017696,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2009-03-20",
+      "amount": 0.020165,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2009-06-19",
+      "amount": 0.018108,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2009-09-18",
+      "amount": 0.016873,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2009-12-18",
+      "amount": 0.030042,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2010-03-19",
+      "amount": 0.020988,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2010-06-18",
+      "amount": 0.036627,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2010-09-17",
+      "amount": 0.046092,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2010-12-17",
+      "amount": 0.044446,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2011-03-18",
+      "amount": 0.031688,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2011-06-17",
+      "amount": 0.049796,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2011-09-16",
+      "amount": 0.0428,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2011-12-16",
+      "amount": 0.066258,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2011-12-27",
+      "amount": 0.020165,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2012-03-16",
+      "amount": 0.046504,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2012-06-15",
+      "amount": 0.05885,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2012-09-21",
+      "amount": 0.082308,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2012-12-21",
+      "amount": 0.151034,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2013-03-15",
+      "amount": 0.065434,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2013-06-21",
+      "amount": 0.092184,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2013-09-20",
+      "amount": 0.097946,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2013-12-20",
+      "amount": 0.111938,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2014-02-27",
+      "amount": 0.153504,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2014-03-21",
+      "amount": 0.084777,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2014-06-20",
+      "amount": 0.102473,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2014-09-19",
+      "amount": 0.097946,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2014-12-19",
+      "amount": 0.159265,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2015-03-20",
+      "amount": 0.102061,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2015-06-19",
+      "amount": 0.104531,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2015-09-18",
+      "amount": 0.107,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2015-12-18",
+      "amount": 0.140746,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2016-03-18",
+      "amount": 0.130869,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2016-06-17",
+      "amount": 0.118111,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2016-09-16",
+      "amount": 0.120992,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2016-12-16",
+      "amount": 0.146096,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2017-03-17",
+      "amount": 0.112761,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2017-06-16",
+      "amount": 0.155561,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2017-09-18",
+      "amount": 0.13128,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2017-12-18",
+      "amount": 0.135396,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2018-03-19",
+      "amount": 0.113996,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2018-06-18",
+      "amount": 0.155561,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2018-09-24",
+      "amount": 0.135807,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2018-12-24",
+      "amount": 0.173257,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2019-03-18",
+      "amount": 0.133338,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2019-06-24",
+      "amount": 0.1712,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2019-09-23",
+      "amount": 0.15803,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2019-12-23",
+      "amount": 0.188484,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2020-03-23",
+      "amount": 0.149388,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2020-06-22",
+      "amount": 0.174492,
+      "source": "QQQ"
+    },
+    {
+      "exDate": "2020-12-21",
+      "amount": 0.206,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2021-03-22",
+      "amount": 0.157,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2021-06-21",
+      "amount": 0.182,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2021-09-20",
+      "amount": 0.166,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2021-12-20",
+      "amount": 0.149,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2022-03-21",
+      "amount": 0.194,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2022-06-21",
+      "amount": 0.205,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2022-09-19",
+      "amount": 0.245,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2022-12-19",
+      "amount": 0.27,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2023-03-20",
+      "amount": 0.254,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2023-06-20",
+      "amount": 0.217,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2023-09-18",
+      "amount": 0.245,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2023-12-18",
+      "amount": 0.381,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2024-03-18",
+      "amount": 0.345,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2024-06-24",
+      "amount": 0.32,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2024-09-23",
+      "amount": 0.3,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2024-12-23",
+      "amount": 0.31,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2025-03-24",
+      "amount": 0.318,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2025-06-23",
+      "amount": 0.316,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2025-09-22",
+      "amount": 0.302,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2025-12-22",
+      "amount": 0.323,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2026-03-23",
+      "amount": 0.328,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2026-06-22",
+      "amount": 0.352,
+      "source": "QQQM"
+    },
+    {
+      "exDate": "2026-09-21",
+      "amount": 0.313,
       "source": "QQQM"
     }
   ]

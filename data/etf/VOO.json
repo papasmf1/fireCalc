@@ -44,7 +44,7 @@
     {
       "date": "2007-04",
       "close": 135.5372,
-      "adjClose": 94.9607,
+      "adjClose": 94.9606,
       "dividend": 0,
       "source": "SPY"
     },
@@ -93,7 +93,7 @@
     {
       "date": "2007-11",
       "close": 135.8754,
-      "adjClose": 96.0615,
+      "adjClose": 96.0614,
       "dividend": 0,
       "source": "SPY"
     },
@@ -107,7 +107,7 @@
     {
       "date": "2008-01",
       "close": 125.5563,
-      "adjClose": 89.2372,
+      "adjClose": 89.2371,
       "dividend": 0,
       "source": "SPY"
     },
@@ -121,7 +121,7 @@
     {
       "date": "2008-03",
       "close": 120.6207,
-      "adjClose": 86.1537,
+      "adjClose": 86.1536,
       "dividend": 0.586789,
       "source": "SPY"
     },
@@ -135,7 +135,7 @@
     {
       "date": "2008-05",
       "close": 128.2801,
-      "adjClose": 91.6243,
+      "adjClose": 91.6244,
       "dividend": 0,
       "source": "SPY"
     },
@@ -156,7 +156,7 @@
     {
       "date": "2008-08",
       "close": 117.7142,
-      "adjClose": 84.4981,
+      "adjClose": 84.4982,
       "dividend": 0,
       "source": "SPY"
     },
@@ -191,7 +191,7 @@
     {
       "date": "2009-01",
       "close": 75.7067,
-      "adjClose": 55.1025,
+      "adjClose": 55.1024,
       "dividend": 0,
       "source": "SPY"
     },
@@ -212,7 +212,7 @@
     {
       "date": "2009-04",
       "close": 79.902,
-      "adjClose": 58.5721,
+      "adjClose": 58.5722,
       "dividend": 0,
       "source": "SPY"
     },
@@ -247,7 +247,7 @@
     {
       "date": "2009-09",
       "close": 96.5094,
-      "adjClose": 71.4848,
+      "adjClose": 71.4847,
       "dividend": 0.464313,
       "source": "SPY"
     },
@@ -275,14 +275,14 @@
     {
       "date": "2010-01",
       "close": 98.1546,
-      "adjClose": 73.0947,
+      "adjClose": 73.0948,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-02",
       "close": 101.2165,
-      "adjClose": 75.375,
+      "adjClose": 75.3749,
       "dividend": 0,
       "source": "SPY"
     },
@@ -324,14 +324,14 @@
     {
       "date": "2010-08",
       "close": 96.2535,
-      "adjClose": 72.3166,
+      "adjClose": 72.3167,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-09",
       "close": 104.315,
-      "adjClose": 78.793,
+      "adjClose": 78.7929,
       "dividend": 0.550229,
       "source": "SPY"
     },
@@ -422,7 +422,7 @@
     {
       "date": "2011-10",
       "close": 114.64,
-      "adjClose": 88.296,
+      "adjClose": 88.2959,
       "dividend": 0,
       "source": "VOO"
     },
@@ -478,7 +478,7 @@
     {
       "date": "2012-06",
       "close": 124.56,
-      "adjClose": 97.4488,
+      "adjClose": 97.4487,
       "dividend": 0.64,
       "source": "VOO"
     },
@@ -492,7 +492,7 @@
     {
       "date": "2012-08",
       "close": 129.22,
-      "adjClose": 101.0944,
+      "adjClose": 101.0945,
       "dividend": 0,
       "source": "VOO"
     },
@@ -583,7 +583,7 @@
     {
       "date": "2013-09",
       "close": 154,
-      "adjClose": 123.789,
+      "adjClose": 123.7889,
       "dividend": 0.786,
       "source": "VOO"
     },
@@ -597,7 +597,7 @@
     {
       "date": "2013-11",
       "close": 165.7,
-      "adjClose": 133.1937,
+      "adjClose": 133.1938,
       "dividend": 0,
       "source": "VOO"
     },
@@ -618,7 +618,7 @@
     {
       "date": "2014-02",
       "close": 170.63,
-      "adjClose": 137.9026,
+      "adjClose": 137.9027,
       "dividend": 0,
       "source": "VOO"
     },
@@ -632,7 +632,7 @@
     {
       "date": "2014-04",
       "close": 172.59,
-      "adjClose": 140.1234,
+      "adjClose": 140.1235,
       "dividend": 0,
       "source": "VOO"
     },
@@ -646,14 +646,14 @@
     {
       "date": "2014-06",
       "close": 179.43,
-      "adjClose": 146.3328,
+      "adjClose": 146.3327,
       "dividend": 0.809,
       "source": "VOO"
     },
     {
       "date": "2014-07",
       "close": 176.96,
-      "adjClose": 144.3184,
+      "adjClose": 144.3185,
       "dividend": 0,
       "source": "VOO"
     },
@@ -667,14 +667,14 @@
     {
       "date": "2014-09",
       "close": 180.59,
-      "adjClose": 147.9801,
+      "adjClose": 147.98,
       "dividend": 0.876,
       "source": "VOO"
     },
     {
       "date": "2014-10",
       "close": 184.93,
-      "adjClose": 151.5363,
+      "adjClose": 151.5364,
       "dividend": 0,
       "source": "VOO"
     },
@@ -688,7 +688,7 @@
     {
       "date": "2014-12",
       "close": 188.4,
-      "adjClose": 154.3797,
+      "adjClose": 154.3798,
       "dividend": 0,
       "source": "VOO"
     },
@@ -709,7 +709,7 @@
     {
       "date": "2015-03",
       "close": 189.2,
-      "adjClose": 155.8263,
+      "adjClose": 155.8264,
       "dividend": 0.984,
       "source": "VOO"
     },
@@ -730,7 +730,7 @@
     {
       "date": "2015-06",
       "close": 188.84,
-      "adjClose": 156.2568,
+      "adjClose": 156.2569,
       "dividend": 0.902,
       "source": "VOO"
     },
@@ -744,7 +744,7 @@
     {
       "date": "2015-08",
       "close": 181.11,
-      "adjClose": 149.8606,
+      "adjClose": 149.8607,
       "dividend": 0,
       "source": "VOO"
     },
@@ -758,7 +758,7 @@
     {
       "date": "2015-10",
       "close": 190.56,
-      "adjClose": 158.5188,
+      "adjClose": 158.5187,
       "dividend": 0,
       "source": "VOO"
     },
@@ -800,7 +800,7 @@
     {
       "date": "2016-04",
       "close": 189.22,
-      "adjClose": 159.1915,
+      "adjClose": 159.1916,
       "dividend": 0,
       "source": "VOO"
     },
@@ -821,7 +821,7 @@
     {
       "date": "2016-07",
       "close": 199.28,
-      "adjClose": 168.493,
+      "adjClose": 168.4929,
       "dividend": 0,
       "source": "VOO"
     },
@@ -849,7 +849,7 @@
     {
       "date": "2016-11",
       "close": 202.4,
-      "adjClose": 171.8956,
+      "adjClose": 171.8957,
       "dividend": 0,
       "source": "VOO"
     },
@@ -863,7 +863,7 @@
     {
       "date": "2017-01",
       "close": 208.97,
-      "adjClose": 178.5851,
+      "adjClose": 178.5852,
       "dividend": 0,
       "source": "VOO"
     },
@@ -933,7 +933,7 @@
     {
       "date": "2017-11",
       "close": 243.35,
-      "adjClose": 210.9548,
+      "adjClose": 210.9547,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1087,7 +1087,7 @@
     {
       "date": "2019-09",
       "close": 272.6,
-      "adjClose": 245.8288,
+      "adjClose": 245.8287,
       "dividend": 1.301,
       "source": "VOO"
     },
@@ -1101,14 +1101,14 @@
     {
       "date": "2019-11",
       "close": 288.65,
-      "adjClose": 260.3025,
+      "adjClose": 260.3026,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2019-12",
       "close": 295.8,
-      "adjClose": 268.043,
+      "adjClose": 268.0431,
       "dividend": 1.429,
       "source": "VOO"
     },
@@ -1150,14 +1150,14 @@
     {
       "date": "2020-06",
       "close": 283.43,
-      "adjClose": 259.3809,
+      "adjClose": 259.3808,
       "dividend": 1.433,
       "source": "VOO"
     },
     {
       "date": "2020-07",
       "close": 300.1,
-      "adjClose": 274.6364,
+      "adjClose": 274.6365,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1178,7 +1178,7 @@
     {
       "date": "2020-10",
       "close": 299.82,
-      "adjClose": 275.5499,
+      "adjClose": 275.55,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1192,14 +1192,14 @@
     {
       "date": "2020-12",
       "close": 343.69,
-      "adjClose": 317.1604,
+      "adjClose": 317.1603,
       "dividend": 1.383,
       "source": "VOO"
     },
     {
       "date": "2021-01",
       "close": 340.18,
-      "adjClose": 313.9212,
+      "adjClose": 313.9213,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1255,7 +1255,7 @@
     {
       "date": "2021-09",
       "close": 394.4,
-      "adjClose": 367.6801,
+      "adjClose": 367.6802,
       "dividend": 1.308,
       "source": "VOO"
     },
@@ -1304,7 +1304,7 @@
     {
       "date": "2022-04",
       "close": 378.7,
-      "adjClose": 355.5312,
+      "adjClose": 355.5311,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1318,7 +1318,7 @@
     {
       "date": "2022-06",
       "close": 346.88,
-      "adjClose": 326.9924,
+      "adjClose": 326.9923,
       "dividend": 1.432,
       "source": "VOO"
     },
@@ -1395,7 +1395,7 @@
     {
       "date": "2023-05",
       "close": 383.89,
-      "adjClose": 366.7168,
+      "adjClose": 366.7169,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1430,7 +1430,7 @@
     {
       "date": "2023-10",
       "close": 384.17,
-      "adjClose": 369.8322,
+      "adjClose": 369.8323,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1479,7 +1479,7 @@
     {
       "date": "2024-05",
       "close": 484.62,
-      "adjClose": 469.9652,
+      "adjClose": 469.9653,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1514,7 +1514,7 @@
     {
       "date": "2024-10",
       "close": 522.67,
-      "adjClose": 510.2504,
+      "adjClose": 510.2505,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1577,14 +1577,14 @@
     {
       "date": "2025-07",
       "close": 581.02,
-      "adjClose": 572.7653,
+      "adjClose": 572.7652,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2025-08",
       "close": 593.08,
-      "adjClose": 584.6539,
+      "adjClose": 584.6538,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1598,7 +1598,7 @@
     {
       "date": "2025-10",
       "close": 627.04,
-      "adjClose": 619.8992,
+      "adjClose": 619.8991,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1684,6 +1684,403 @@
       "close": 694.81,
       "adjClose": 694.81,
       "dividend": 0,
+      "source": "VOO"
+    }
+  ],
+  "dividendEvents": [
+    {
+      "exDate": "2006-12-15",
+      "amount": 0.724803,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2007-03-16",
+      "amount": 0.503615,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2007-06-15",
+      "amount": 0.599585,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2007-09-21",
+      "amount": 0.657167,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2007-12-21",
+      "amount": 0.708351,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2008-03-20",
+      "amount": 0.586789,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2008-06-20",
+      "amount": 0.611467,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2008-09-19",
+      "amount": 0.631575,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2008-12-19",
+      "amount": 0.657167,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2009-03-20",
+      "amount": 0.512755,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2009-06-19",
+      "amount": 0.473453,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2009-09-18",
+      "amount": 0.464313,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2009-12-18",
+      "amount": 0.539261,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2010-03-19",
+      "amount": 0.438721,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2010-06-18",
+      "amount": 0.485335,
+      "source": "SPY"
+    },
+    {
+      "exDate": "2010-09-24",
+      "amount": 0.558,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2010-12-27",
+      "amount": 0.526,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2011-03-25",
+      "amount": 0.536,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2011-06-24",
+      "amount": 0.57,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2011-09-23",
+      "amount": 0.58,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2011-12-23",
+      "amount": 0.686,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2012-03-26",
+      "amount": 0.57,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2012-06-25",
+      "amount": 0.64,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2012-09-24",
+      "amount": 0.686,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2012-12-24",
+      "amount": 0.94,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2013-03-22",
+      "amount": 0.67,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2013-06-24",
+      "amount": 0.738,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2013-09-23",
+      "amount": 0.786,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2013-12-24",
+      "amount": 0.914,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2014-03-24",
+      "amount": 0.779,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2014-06-23",
+      "amount": 0.809,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2014-09-22",
+      "amount": 0.876,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2015-03-23",
+      "amount": 0.984,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2015-06-22",
+      "amount": 0.902,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2015-09-21",
+      "amount": 0.953,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2015-12-21",
+      "amount": 1.092,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2016-03-21",
+      "amount": 1.006,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2016-06-21",
+      "amount": 0.953,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2016-09-13",
+      "amount": 0.883,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2016-12-22",
+      "amount": 1.296,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2017-03-22",
+      "amount": 0.998,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2017-06-23",
+      "amount": 1.01,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2017-09-20",
+      "amount": 1.176,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2017-12-26",
+      "amount": 1.184,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2018-03-26",
+      "amount": 1.084,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2018-06-28",
+      "amount": 1.157,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2018-09-26",
+      "amount": 1.207,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2018-12-17",
+      "amount": 1.289,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2019-03-21",
+      "amount": 1.455,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2019-06-27",
+      "amount": 1.386,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2019-09-26",
+      "amount": 1.301,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2019-12-23",
+      "amount": 1.429,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2020-03-10",
+      "amount": 1.178,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2020-06-29",
+      "amount": 1.433,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2020-09-29",
+      "amount": 1.309,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2020-12-22",
+      "amount": 1.383,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2021-03-26",
+      "amount": 1.263,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2021-06-29",
+      "amount": 1.333,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2021-09-29",
+      "amount": 1.308,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2021-12-21",
+      "amount": 1.533,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2022-03-24",
+      "amount": 1.374,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2022-06-29",
+      "amount": 1.432,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2022-09-28",
+      "amount": 1.469,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2022-12-20",
+      "amount": 1.672,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2023-03-24",
+      "amount": 1.487,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2023-06-29",
+      "amount": 1.576,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2023-09-28",
+      "amount": 1.493,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2023-12-20",
+      "amount": 1.801,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2024-03-22",
+      "amount": 1.543,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2024-06-28",
+      "amount": 1.784,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2024-09-27",
+      "amount": 1.639,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2024-12-23",
+      "amount": 1.739,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2025-03-27",
+      "amount": 1.812,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2025-06-30",
+      "amount": 1.745,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2025-09-29",
+      "amount": 1.74,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2025-12-22",
+      "amount": 1.771,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2026-03-27",
+      "amount": 1.872,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2026-06-26",
+      "amount": 1.962,
+      "source": "VOO"
+    },
+    {
+      "exDate": "2026-09-28",
+      "amount": 1.823,
       "source": "VOO"
     }
   ]
