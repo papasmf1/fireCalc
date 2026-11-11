@@ -8,6 +8,7 @@ import {
   parseManwon,
 } from "../money";
 import { runScenarioMonteCarlo } from "./scenario";
+import { fixtureEtfs } from "../data/fixtures/etfs";
 import {
   afterTaxGain,
   annualReturns,
@@ -42,6 +43,12 @@ describe("fireCalc calculations", () => {
     expect(formatManwonInput("1234567")).toBe("1,234,567");
     expect(formatManwonInput("1234567.5")).toBe("1,234,567.5");
     expect(formatWon(1_228_962_330)).toBe("12억 2,896만원");
+  });
+  it("provides eight ETF fixtures including GLD and IBIT", () => {
+    expect(fixtureEtfs).toHaveLength(8);
+    expect(fixtureEtfs.map((etf) => etf.ticker)).toEqual(
+      expect.arrayContaining(["GLD", "IBIT"]),
+    );
   });
   it("uses the first historical FX for initial KRW", () => {
     const returns = {
@@ -139,6 +146,96 @@ describe("fireCalc calculations", () => {
     expect(monthlyDividendKrw({ VOO: 120_000 }, { VOO: 0.03 }, 1000)).toBe(
       255_000,
     );
+    expect(monthlyDividendKrw({ GLD: 120_000 }, { GLD: 0 }, 1000)).toBe(0);
+  });
+  it("caps a single pessimistic asset annual expected return", () => {
+    const result = runScenarioMonteCarlo(
+      {
+        returns: {
+          IBIT: [
+            { date: "2026-01", return: 0.5, fxRate: 1000 },
+            { date: "2026-02", return: 0.5, fxRate: 1000 },
+          ],
+        },
+        weights: { IBIT: 1 },
+        initialKrw: 1_000_000,
+        monthlyContributionKrw: 0,
+        contributionGrowth: 0,
+        accumulationMonths: 1,
+        retirementMonths: 1,
+        monthlyLivingKrw: 0,
+        fxRate: 1000,
+        inflation: 0,
+        haircut: 0,
+        pessimistic: true,
+        annualReturnCap: 0.12,
+      },
+      1,
+      1,
+    );
+    expect(result.means[0]).toBeCloseTo(Math.pow(1.12, 1 / 12) - 1);
+  });
+  it("caps each pessimistic asset after haircut and keeps raw-mean variance", () => {
+    const cap = Math.pow(1.12, 1 / 12) - 1;
+    const result = runScenarioMonteCarlo(
+      {
+        returns: {
+          GLD: [
+            { date: "2026-01", return: 0.005, fxRate: 1000 },
+            { date: "2026-02", return: 0.015, fxRate: 1000 },
+          ],
+          IBIT: [
+            { date: "2026-01", return: 0.5, fxRate: 1000 },
+            { date: "2026-02", return: 0.7, fxRate: 1000 },
+          ],
+        },
+        weights: { GLD: 0.5, IBIT: 0.5 },
+        initialKrw: 1_000_000,
+        monthlyContributionKrw: 0,
+        contributionGrowth: 0,
+        accumulationMonths: 1,
+        retirementMonths: 1,
+        monthlyLivingKrw: 0,
+        fxRate: 1000,
+        inflation: 0,
+        haircut: 0.02,
+        pessimistic: true,
+        annualReturnCap: 0.12,
+      },
+      1,
+      1,
+    );
+    expect(result.means[0]).toBeCloseTo(0.01 - 0.02 / 12);
+    expect(result.means[1]).toBeCloseTo(cap);
+    expect(result.vols[0]).toBeCloseTo(Math.sqrt(0.00005));
+    expect(result.vols[1]).toBeCloseTo(Math.sqrt(0.02));
+  });
+  it("does not apply the cap or haircut in the historical view", () => {
+    const result = runScenarioMonteCarlo(
+      {
+        returns: {
+          GLD: [
+            { date: "2026-01", return: 0.2, fxRate: 1000 },
+            { date: "2026-02", return: 0.2, fxRate: 1000 },
+          ],
+        },
+        weights: { GLD: 1 },
+        initialKrw: 1_000_000,
+        monthlyContributionKrw: 0,
+        contributionGrowth: 0,
+        accumulationMonths: 1,
+        retirementMonths: 1,
+        monthlyLivingKrw: 0,
+        fxRate: 1000,
+        inflation: 0,
+        haircut: 0.02,
+        pessimistic: false,
+        annualReturnCap: 0.01,
+      },
+      1,
+      1,
+    );
+    expect(result.means[0]).toBeCloseTo(0.2);
   });
   it("applies monthly returns from the next month after a month-start purchase", () => {
     const returns = {

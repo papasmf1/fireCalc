@@ -3,7 +3,8 @@
   "name": "JPMorgan Nasdaq Equity Premium Income ETF",
   "inception": "2022-05-04",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": null,
   "monthly": [
     {
@@ -149,7 +150,7 @@
     {
       "date": "2024-01",
       "close": 51.94,
-      "adjClose": 38.7074,
+      "adjClose": 38.7075,
       "dividend": 0,
       "source": "JEPQ"
     },
@@ -268,7 +269,7 @@
     {
       "date": "2025-06",
       "close": 54.16,
-      "adjClose": 47.0579,
+      "adjClose": 47.058,
       "dividend": 0.621,
       "source": "JEPQ"
     },

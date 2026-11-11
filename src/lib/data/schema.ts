@@ -47,7 +47,9 @@ export const metricSchema = z.object({
   usesProxy: z.boolean(),
   trailing12mDividendUsd: z.number().optional(),
   dividendYieldTtm: z.number().optional(),
-  dividendFrequency: z.enum(["monthly", "quarterly", "other"]).optional(),
+  dividendFrequency: z
+    .enum(["monthly", "quarterly", "other", "none"])
+    .optional(),
   dividendCagr5y: z.number().optional(),
 });
 export const summarySchema = z.object({
@@ -59,13 +61,16 @@ export const summarySchema = z.object({
       name: z.string(),
       inception: z.string(),
       proxy: z.string().nullable(),
+      assetClass: z.enum(["equity", "gold", "bitcoin"]).optional(),
       firstMonth: z.string(),
       lastMonth: z.string(),
       trailing12mDividendUsd: z.number().optional(),
       dividendYieldTtm: z.number().optional(),
       dividendYieldTtmKrw: z.number().optional(),
       trailing12mDividendEvents: z.number().optional(),
-      dividendFrequency: z.enum(["monthly", "quarterly", "other"]).optional(),
+      dividendFrequency: z
+        .enum(["monthly", "quarterly", "other", "none"])
+        .optional(),
       dividendCagr5y: z.number().nullable().optional(),
       dividendCagrPeriod: z
         .record(z.string(), z.number())

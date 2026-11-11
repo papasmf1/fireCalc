@@ -35,6 +35,7 @@ import {
 } from "@/lib/sim";
 import type { Summary } from "@/lib/data/schema";
 import { monthlyDividendKrw, runScenarioMonteCarlo } from "@/lib/sim/scenario";
+import { assetClassFor, assetClassLabel } from "@/lib/asset-class";
 
 type Fx = { date: string; rate: number };
 type Preset = "stable" | "growth" | "aggressive" | "direct";
@@ -69,6 +70,7 @@ export default function Simulator({
   const [taxEnabled, setTaxEnabled] = useState(false);
   const [view, setView] = useState<"pessimistic" | "historical">("pessimistic");
   const [haircut, setHaircut] = useState(0.02);
+  const [annualReturnCap, setAnnualReturnCap] = useState(0.12);
   const [realTerms, setRealTerms] = useState(false);
   const [fxMode, setFxMode] = useState<"historical" | "fixed">("historical");
   const [fixedFx, setFixedFx] = useState(latestFx);
@@ -197,6 +199,7 @@ export default function Simulator({
           inflation: effectiveInflation,
           haircut,
           pessimistic: view === "pessimistic",
+          annualReturnCap,
         },
         1000,
         42,
@@ -255,16 +258,44 @@ export default function Simulator({
     futureReturns,
     view,
     haircut,
+    annualReturnCap,
   ]);
   const setPresetWeights = (next: Preset) => {
     setPreset(next);
     setAmounts(
       next === "stable"
-        ? { VOO: 1400, SCHD: 1800, QQQM: 800, QLD: 0, SPYQ: 0, JEPQ: 0 }
+        ? {
+            VOO: 1400,
+            SCHD: 1800,
+            QQQM: 800,
+            QLD: 0,
+            SPYQ: 0,
+            JEPQ: 0,
+            GLD: 1000,
+            IBIT: 0,
+          }
         : next === "growth"
-          ? { VOO: 1800, SCHD: 400, QQQM: 1800, QLD: 0, SPYQ: 0, JEPQ: 0 }
+          ? {
+              VOO: 1800,
+              SCHD: 400,
+              QQQM: 1800,
+              QLD: 0,
+              SPYQ: 0,
+              JEPQ: 0,
+              GLD: 0,
+              IBIT: 0,
+            }
           : next === "aggressive"
-            ? { VOO: 400, SCHD: 0, QQQM: 2000, QLD: 1600, SPYQ: 0, JEPQ: 0 }
+            ? {
+                VOO: 400,
+                SCHD: 0,
+                QQQM: 2000,
+                QLD: 1600,
+                SPYQ: 0,
+                JEPQ: 0,
+                GLD: 0,
+                IBIT: 0,
+              }
             : amounts,
     );
   };
@@ -280,6 +311,23 @@ export default function Simulator({
       return [etf.ticker, fromSummary ?? (close > 0 ? dividend / close : 0)];
     }),
   );
+  const monthlyCap = Math.pow(1 + Math.max(0, annualReturnCap), 1 / 12) - 1;
+  const cappedTickers =
+    view === "pessimistic"
+      ? activeEtfs
+          .filter((etf) => {
+            const points =
+              (futureReturns as Record<string, { return: number }[]>)[
+                etf.ticker
+              ] ?? [];
+            const mean =
+              points.reduce((sum, point) => sum + point.return, 0) /
+              Math.max(1, points.length);
+            return mean - haircut / 12 > monthlyCap;
+          })
+          .map((etf) => etf.ticker)
+      : [];
+  const cappedTicker = cappedTickers.join(", ");
   const scenarioCards =
     "error" in result
       ? []
@@ -443,6 +491,20 @@ export default function Simulator({
                     setValue={(value) => setHaircut(value / 100)}
                     step="0.1"
                   />
+                  <Field
+                    id="annualReturnCap"
+                    label="단일 자산 연 기대수익률 상한 (%)"
+                    value={annualReturnCap * 100}
+                    setValue={(value) => setAnnualReturnCap(value / 100)}
+                    step="0.1"
+                    min={0}
+                  />
+                  {cappedTickers.length ? (
+                    <p className="text-xs text-amber-700">
+                      상한 적용 종목: {cappedTicker} (연{" "}
+                      {(annualReturnCap * 100).toFixed(1)}%)
+                    </p>
+                  ) : null}
                 </>
               )}
             </div>
@@ -478,7 +540,17 @@ export default function Simulator({
                 return (
                   <div key={ticker} className="mt-2 flex items-center gap-2">
                     <span className="flex w-24 items-center gap-1 text-xs">
-                      {ticker}
+                      {ticker}{" "}
+                      <Badge variant="secondary">
+                        {
+                          assetClassLabel[
+                            assetClassFor(
+                              ticker,
+                              summary?.tickers[ticker]?.assetClass,
+                            )
+                          ]
+                        }
+                      </Badge>
                       {["SPYQ", "JEPQ"].includes(ticker) &&
                       etf.monthly.length < 60 ? (
                         <Badge variant="outline" className="px-1 text-[10px]">
@@ -730,13 +802,15 @@ export default function Simulator({
                                   )
                                 </td>
                                 <td className="py-1 text-right">
-                                  {formatWon(
-                                    monthlyDividendKrw(
-                                      { [ticker]: value },
-                                      { [ticker]: dividendYields[ticker] },
-                                      fixedFx,
-                                    ),
-                                  )}
+                                  {dividendYields[ticker] > 0
+                                    ? formatWon(
+                                        monthlyDividendKrw(
+                                          { [ticker]: value },
+                                          { [ticker]: dividendYields[ticker] },
+                                          fixedFx,
+                                        ),
+                                      )
+                                    : "배당 없음(가격 수익만)"}
                                 </td>
                               </tr>
                             ),

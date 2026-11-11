@@ -3,7 +3,8 @@
   "name": "Tradr 2X Long SPY Quarterly ETF",
   "inception": "2024-10-01",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": null,
   "monthly": [
     {

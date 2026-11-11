@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-12",
   "notes": [
     "USD: 조정종가(배당·분할 반영) 기준 총수익",
     "KRW: 월말 조정종가 × 월말 USDKRW 환율 (매월 환전 후 원화 평가)",
@@ -9,6 +9,7 @@
   "tickers": {
     "VOO": {
       "name": "Vanguard S&P 500 ETF",
+      "assetClass": "equity",
       "inception": "2010-09-09",
       "proxy": "SPY",
       "firstMonth": "2006-11",
@@ -64,7 +65,7 @@
             },
             "worstYear": {
               "year": 2022,
-              "return": -0.18174
+              "return": -0.181741
             },
             "dividendYield": 0.010691,
             "usesProxy": false
@@ -97,7 +98,7 @@
             "months": 120,
             "coverage": "full",
             "cagr": 0.154114,
-            "totalReturn": 3.192639,
+            "totalReturn": 3.192642,
             "volatility": 0.15322,
             "maxDrawdown": -0.239044,
             "bestYear": {
@@ -106,7 +107,7 @@
             },
             "worstYear": {
               "year": 2022,
-              "return": -0.18174
+              "return": -0.181741
             },
             "dividendYield": 0.010691,
             "usesProxy": false
@@ -117,7 +118,7 @@
             "months": 120,
             "coverage": "full",
             "cagr": 0.172057,
-            "totalReturn": 3.892009,
+            "totalReturn": 3.892012,
             "volatility": 0.142857,
             "maxDrawdown": -0.171217,
             "bestYear": {
@@ -139,9 +140,9 @@
             "months": 239,
             "coverage": "partial",
             "cagr": 0.108604,
-            "totalReturn": 6.794663,
+            "totalReturn": 6.794645,
             "volatility": 0.153166,
-            "maxDrawdown": -0.507848,
+            "maxDrawdown": -0.507849,
             "bestYear": {
               "year": 2013,
               "return": 0.323865
@@ -159,16 +160,16 @@
             "months": 239,
             "coverage": "partial",
             "cagr": 0.129661,
-            "totalReturn": 10.338323,
+            "totalReturn": 10.338298,
             "volatility": 0.135142,
-            "maxDrawdown": -0.222997,
+            "maxDrawdown": -0.222995,
             "bestYear": {
               "year": 2024,
               "return": 0.435145
             },
             "worstYear": {
               "year": 2008,
-              "return": -0.152454
+              "return": -0.152455
             },
             "dividendYield": 0.011694,
             "usesProxy": true
@@ -178,6 +179,7 @@
     },
     "SCHD": {
       "name": "Schwab U.S. Dividend Equity ETF",
+      "assetClass": "equity",
       "inception": "2011-10-20",
       "proxy": null,
       "firstMonth": "2011-11",
@@ -266,7 +268,7 @@
             "maxDrawdown": -0.215284,
             "bestYear": {
               "year": 2021,
-              "return": 0.298754
+              "return": 0.298762
             },
             "worstYear": {
               "year": 2018,
@@ -286,7 +288,7 @@
             "maxDrawdown": -0.177277,
             "bestYear": {
               "year": 2021,
-              "return": 0.422447
+              "return": 0.422455
             },
             "worstYear": {
               "year": 2018,
@@ -324,11 +326,11 @@
             "coverage": "partial",
             "cagr": 0.147758,
             "totalReturn": 6.812051,
-            "volatility": 0.133191,
+            "volatility": 0.13319,
             "maxDrawdown": -0.177277,
             "bestYear": {
               "year": 2021,
-              "return": 0.422447
+              "return": 0.422455
             },
             "worstYear": {
               "year": 2018,
@@ -342,6 +344,7 @@
     },
     "QQQM": {
       "name": "Invesco NASDAQ 100 ETF",
+      "assetClass": "equity",
       "inception": "2020-10-13",
       "proxy": "QQQ",
       "firstMonth": "2006-11",
@@ -473,7 +476,7 @@
             "coverage": "partial",
             "cagr": 0.157412,
             "totalReturn": 17.385201,
-            "volatility": 0.193989,
+            "volatility": 0.19399,
             "maxDrawdown": -0.497398,
             "bestYear": {
               "year": 2023,
@@ -481,7 +484,7 @@
             },
             "worstYear": {
               "year": 2008,
-              "return": -0.417274
+              "return": -0.417269
             },
             "dividendYield": 0.004628,
             "usesProxy": true
@@ -493,7 +496,7 @@
             "coverage": "partial",
             "cagr": 0.179396,
             "totalReturn": 25.7436,
-            "volatility": 0.174762,
+            "volatility": 0.174761,
             "maxDrawdown": -0.285267,
             "bestYear": {
               "year": 2023,
@@ -511,6 +514,7 @@
     },
     "QLD": {
       "name": "ProShares Ultra QQQ",
+      "assetClass": "equity",
       "inception": "2006-06-21",
       "proxy": null,
       "firstMonth": "2006-11",
@@ -554,7 +558,7 @@
             "coverage": "full",
             "cagr": 0.146242,
             "totalReturn": 0.978706,
-            "volatility": 0.421745,
+            "volatility": 0.421746,
             "maxDrawdown": -0.605224,
             "bestYear": {
               "year": 2023,
@@ -638,7 +642,7 @@
             "coverage": "partial",
             "cagr": 0.235487,
             "totalReturn": 66.469978,
-            "volatility": 0.381801,
+            "volatility": 0.381802,
             "maxDrawdown": -0.80617,
             "bestYear": {
               "year": 2009,
@@ -658,7 +662,7 @@
             "coverage": "partial",
             "cagr": 0.258954,
             "totalReturn": 97.143618,
-            "volatility": 0.345562,
+            "volatility": 0.345563,
             "maxDrawdown": -0.680087,
             "bestYear": {
               "year": 2023,
@@ -676,6 +680,7 @@
     },
     "SPYQ": {
       "name": "Tradr 2X Long SPY Quarterly ETF",
+      "assetClass": "equity",
       "inception": "2024-10-01",
       "proxy": null,
       "firstMonth": "2024-09",
@@ -822,6 +827,7 @@
     },
     "JEPQ": {
       "name": "JPMorgan Nasdaq Equity Premium Income ETF",
+      "assetClass": "equity",
       "inception": "2022-05-04",
       "proxy": null,
       "firstMonth": "2022-05",
@@ -968,6 +974,296 @@
               "return": 0.114203
             },
             "dividendYield": 0.128499,
+            "usesProxy": false
+          }
+        }
+      }
+    },
+    "GLD": {
+      "name": "SPDR Gold Shares",
+      "assetClass": "gold",
+      "inception": "2004-11-18",
+      "proxy": null,
+      "firstMonth": "2006-11",
+      "lastMonth": "2026-10",
+      "trailing12mDividendUsd": 0,
+      "dividendYieldTtm": 0,
+      "dividendYieldTtmKrw": 0,
+      "trailing12mDividendEvents": 0,
+      "dividendFrequency": "none",
+      "dividendCagr5y": null,
+      "dividendCagrPeriod": null,
+      "dividendAnnualUsd": {},
+      "dividendNote": "무배당 ETF (가격 수익만)",
+      "periods": {
+        "5y": {
+          "USD": {
+            "start": "2021-10",
+            "end": "2026-10",
+            "months": 60,
+            "coverage": "full",
+            "cagr": 0.163792,
+            "totalReturn": 1.134893,
+            "volatility": 0.175799,
+            "maxDrawdown": -0.264537,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.636765
+            },
+            "worstYear": {
+              "year": 2022,
+              "return": -0.007721
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2021-10",
+            "end": "2026-10",
+            "months": 60,
+            "coverage": "full",
+            "cagr": 0.195979,
+            "totalReturn": 1.446906,
+            "volatility": 0.17138,
+            "maxDrawdown": -0.312979,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.603883
+            },
+            "worstYear": {
+              "year": 2022,
+              "return": 0.050962
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          }
+        },
+        "10y": {
+          "USD": {
+            "start": "2016-10",
+            "end": "2026-10",
+            "months": 120,
+            "coverage": "full",
+            "cagr": 0.113021,
+            "totalReturn": 1.917664,
+            "volatility": 0.156332,
+            "maxDrawdown": -0.264537,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.636765
+            },
+            "worstYear": {
+              "year": 2021,
+              "return": -0.041489
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2016-10",
+            "end": "2026-10",
+            "months": 120,
+            "coverage": "full",
+            "cagr": 0.130325,
+            "totalReturn": 2.404357,
+            "volatility": 0.152706,
+            "maxDrawdown": -0.312979,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.603883
+            },
+            "worstYear": {
+              "year": 2017,
+              "return": 0.000989
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          }
+        },
+        "20y": {
+          "USD": {
+            "start": "2006-11",
+            "end": "2026-10",
+            "months": 239,
+            "coverage": "partial",
+            "cagr": 0.089616,
+            "totalReturn": 4.525392,
+            "volatility": 0.174848,
+            "maxDrawdown": -0.429102,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.636765
+            },
+            "worstYear": {
+              "year": 2013,
+              "return": -0.283298
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2006-11",
+            "end": "2026-10",
+            "months": 239,
+            "coverage": "partial",
+            "cagr": 0.110312,
+            "totalReturn": 7.037382,
+            "volatility": 0.189302,
+            "maxDrawdown": -0.393295,
+            "bestYear": {
+              "year": 2025,
+              "return": 0.603883
+            },
+            "worstYear": {
+              "year": 2013,
+              "return": -0.272114
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          }
+        }
+      }
+    },
+    "IBIT": {
+      "name": "iShares Bitcoin Trust ETF",
+      "assetClass": "bitcoin",
+      "inception": "2024-01-11",
+      "proxy": null,
+      "firstMonth": "2024-01",
+      "lastMonth": "2026-10",
+      "trailing12mDividendUsd": 0,
+      "dividendYieldTtm": 0,
+      "dividendYieldTtmKrw": 0,
+      "trailing12mDividendEvents": 0,
+      "dividendFrequency": "none",
+      "dividendCagr5y": null,
+      "dividendCagrPeriod": null,
+      "dividendAnnualUsd": {},
+      "dividendNote": "무배당 ETF (가격 수익만)",
+      "periods": {
+        "5y": {
+          "USD": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.230705,
+            "totalReturn": 0.769796,
+            "volatility": 0.531044,
+            "maxDrawdown": -0.500501,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.234527,
+            "totalReturn": 0.784951,
+            "volatility": 0.529361,
+            "maxDrawdown": -0.481711,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          }
+        },
+        "10y": {
+          "USD": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.230705,
+            "totalReturn": 0.769796,
+            "volatility": 0.531044,
+            "maxDrawdown": -0.500501,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.234527,
+            "totalReturn": 0.784951,
+            "volatility": 0.529361,
+            "maxDrawdown": -0.481711,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          }
+        },
+        "20y": {
+          "USD": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.230705,
+            "totalReturn": 0.769796,
+            "volatility": 0.531044,
+            "maxDrawdown": -0.500501,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.089707
+            },
+            "dividendYield": 0,
+            "usesProxy": false
+          },
+          "KRW": {
+            "start": "2024-01",
+            "end": "2026-10",
+            "months": 33,
+            "coverage": "partial",
+            "cagr": 0.234527,
+            "totalReturn": 0.784951,
+            "volatility": 0.529361,
+            "maxDrawdown": -0.481711,
+            "bestYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "worstYear": {
+              "year": 2025,
+              "return": -0.107995
+            },
+            "dividendYield": 0,
             "usesProxy": false
           }
         }

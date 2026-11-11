@@ -3,7 +3,8 @@
   "name": "ProShares Ultra QQQ",
   "inception": "2006-06-21",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": null,
   "monthly": [
     {
@@ -611,7 +612,7 @@
     {
       "date": "2014-01",
       "close": 2.9856,
-      "adjClose": 2.9273,
+      "adjClose": 2.9272,
       "dividend": 0,
       "source": "QLD"
     },
@@ -1297,7 +1298,7 @@
     {
       "date": "2022-03",
       "close": 35.96,
-      "adjClose": 35.5086,
+      "adjClose": 35.5087,
       "dividend": 0,
       "source": "QLD"
     },
@@ -1500,7 +1501,7 @@
     {
       "date": "2024-08",
       "close": 48.275,
-      "adjClose": 48.0731,
+      "adjClose": 48.073,
       "dividend": 0,
       "source": "QLD"
     },

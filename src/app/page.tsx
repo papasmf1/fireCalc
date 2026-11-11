@@ -3,6 +3,7 @@ import { ArrowRight, CircleDollarSign, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { loadEtfs, loadFxDaily, loadSummary } from "@/lib/data/loader";
+import { assetClassFor, assetClassLabel } from "@/lib/asset-class";
 const won = (n: number) => new Intl.NumberFormat("ko-KR").format(Math.round(n));
 export default function Home() {
   const fxResult = loadFxDaily();
@@ -120,7 +121,19 @@ export default function Home() {
             return (
               <Card key={ticker}>
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-lg">{ticker}</CardTitle>
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    {ticker}
+                    <Badge variant="secondary">
+                      {
+                        assetClassLabel[
+                          assetClassFor(
+                            ticker,
+                            summary?.tickers[ticker]?.assetClass,
+                          )
+                        ]
+                      }
+                    </Badge>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-semibold text-primary">
@@ -134,6 +147,11 @@ export default function Home() {
                   {m && ["SPYQ", "JEPQ"].includes(ticker) && m.months < 60 ? (
                     <Badge variant="outline" className="mt-2">
                       짧은 표본 · {m.months}개월
+                    </Badge>
+                  ) : null}
+                  {m && ticker === "IBIT" && m.volatility > 0.5 ? (
+                    <Badge variant="destructive" className="mt-2">
+                      짧은 표본·고변동성
                     </Badge>
                   ) : null}
                   <div className="mt-4 grid grid-cols-2 gap-2 text-xs">

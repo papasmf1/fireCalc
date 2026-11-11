@@ -3,342 +3,343 @@
   "name": "Vanguard S&P 500 ETF",
   "inception": "2010-09-09",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": "SPY",
   "monthly": [
     {
       "date": "2006-11",
       "close": 128.4446,
-      "adjClose": 89.1392,
+      "adjClose": 89.1394,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2006-12",
       "close": 129.4408,
-      "adjClose": 90.3311,
+      "adjClose": 90.3313,
       "dividend": 0.724803,
       "source": "SPY"
     },
     {
       "date": "2007-01",
       "close": 131.3877,
-      "adjClose": 91.6897,
+      "adjClose": 91.6899,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-02",
       "close": 128.8102,
-      "adjClose": 89.8909,
+      "adjClose": 89.8911,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-03",
       "close": 129.7882,
-      "adjClose": 90.9327,
+      "adjClose": 90.9329,
       "dividend": 0.503615,
       "source": "SPY"
     },
     {
       "date": "2007-04",
       "close": 135.5372,
-      "adjClose": 94.9606,
+      "adjClose": 94.9609,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-05",
       "close": 140.1347,
-      "adjClose": 98.1817,
+      "adjClose": 98.1819,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-06",
       "close": 137.4932,
-      "adjClose": 96.7462,
+      "adjClose": 96.7464,
       "dividend": 0.599585,
       "source": "SPY"
     },
     {
       "date": "2007-07",
       "close": 133.1883,
-      "adjClose": 93.717,
+      "adjClose": 93.7173,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-08",
       "close": 134.8974,
-      "adjClose": 94.9197,
+      "adjClose": 94.9199,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-09",
       "close": 139.4583,
-      "adjClose": 98.5944,
+      "adjClose": 98.5946,
       "dividend": 0.657167,
       "source": "SPY"
     },
     {
       "date": "2007-10",
       "close": 141.3503,
-      "adjClose": 99.932,
+      "adjClose": 99.9323,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-11",
       "close": 135.8754,
-      "adjClose": 96.0614,
+      "adjClose": 96.0616,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2007-12",
       "close": 133.6361,
-      "adjClose": 94.9797,
+      "adjClose": 94.9799,
       "dividend": 0.708351,
       "source": "SPY"
     },
     {
       "date": "2008-01",
       "close": 125.5563,
-      "adjClose": 89.2371,
+      "adjClose": 89.2373,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-02",
       "close": 122.3116,
-      "adjClose": 86.931,
+      "adjClose": 86.9312,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-03",
       "close": 120.6207,
-      "adjClose": 86.1536,
+      "adjClose": 86.1539,
       "dividend": 0.586789,
       "source": "SPY"
     },
     {
       "date": "2008-04",
       "close": 126.3698,
-      "adjClose": 90.2599,
+      "adjClose": 90.2601,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-05",
       "close": 128.2801,
-      "adjClose": 91.6244,
+      "adjClose": 91.6245,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-06",
       "close": 116.9739,
-      "adjClose": 83.9668,
+      "adjClose": 83.967,
       "dividend": 0.611467,
       "source": "SPY"
     },
     {
       "date": "2008-07",
       "close": 115.9228,
-      "adjClose": 83.2123,
+      "adjClose": 83.2125,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-08",
       "close": 117.7142,
-      "adjClose": 84.4982,
+      "adjClose": 84.4984,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-09",
       "close": 106.015,
-      "adjClose": 76.5407,
+      "adjClose": 76.5409,
       "dividend": 0.631575,
       "source": "SPY"
     },
     {
       "date": "2008-10",
       "close": 88.5027,
-      "adjClose": 63.8972,
+      "adjClose": 63.8973,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-11",
       "close": 82.3424,
-      "adjClose": 59.4495,
+      "adjClose": 59.4496,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2008-12",
       "close": 82.4795,
-      "adjClose": 60.0319,
+      "adjClose": 60.032,
       "dividend": 0.657167,
       "source": "SPY"
     },
     {
       "date": "2009-01",
       "close": 75.7067,
-      "adjClose": 55.1024,
+      "adjClose": 55.1025,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-02",
       "close": 67.5721,
-      "adjClose": 49.1817,
+      "adjClose": 49.1818,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-03",
       "close": 72.6814,
-      "adjClose": 53.2791,
+      "adjClose": 53.2793,
       "dividend": 0.512755,
       "source": "SPY"
     },
     {
       "date": "2009-04",
       "close": 79.902,
-      "adjClose": 58.5722,
+      "adjClose": 58.5723,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-05",
       "close": 84.5725,
-      "adjClose": 61.9959,
+      "adjClose": 61.996,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-06",
       "close": 84.0424,
-      "adjClose": 61.9553,
+      "adjClose": 61.9554,
       "dividend": 0.473453,
       "source": "SPY"
     },
     {
       "date": "2009-07",
       "close": 90.3125,
-      "adjClose": 66.5775,
+      "adjClose": 66.5776,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-08",
       "close": 93.6486,
-      "adjClose": 69.0368,
+      "adjClose": 69.037,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-09",
       "close": 96.5094,
-      "adjClose": 71.4847,
+      "adjClose": 71.4849,
       "dividend": 0.464313,
       "source": "SPY"
     },
     {
       "date": "2009-10",
       "close": 94.654,
-      "adjClose": 70.1104,
+      "adjClose": 70.1106,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-11",
       "close": 100.4853,
-      "adjClose": 74.4297,
+      "adjClose": 74.4299,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2009-12",
       "close": 101.8563,
-      "adjClose": 75.8514,
+      "adjClose": 75.8516,
       "dividend": 0.539261,
       "source": "SPY"
     },
     {
       "date": "2010-01",
       "close": 98.1546,
-      "adjClose": 73.0948,
+      "adjClose": 73.0949,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-02",
       "close": 101.2165,
-      "adjClose": 75.3749,
+      "adjClose": 75.3751,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-03",
       "close": 106.9381,
-      "adjClose": 79.9637,
+      "adjClose": 79.9639,
       "dividend": 0.438721,
       "source": "SPY"
     },
     {
       "date": "2010-04",
       "close": 108.5925,
-      "adjClose": 81.2008,
+      "adjClose": 81.2009,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-05",
       "close": 99.9643,
-      "adjClose": 74.749,
+      "adjClose": 74.7491,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-06",
       "close": 94.3432,
-      "adjClose": 70.8814,
+      "adjClose": 70.8816,
       "dividend": 0.485335,
       "source": "SPY"
     },
     {
       "date": "2010-07",
       "close": 100.7869,
-      "adjClose": 75.7227,
+      "adjClose": 75.7229,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-08",
       "close": 96.2535,
-      "adjClose": 72.3167,
+      "adjClose": 72.3168,
       "dividend": 0,
       "source": "SPY"
     },
     {
       "date": "2010-09",
       "close": 104.315,
-      "adjClose": 78.7929,
+      "adjClose": 78.7931,
       "dividend": 0.550229,
       "source": "SPY"
     },
     {
       "date": "2010-10",
       "close": 108.3,
-      "adjClose": 81.803,
+      "adjClose": 81.8031,
       "dividend": 0,
       "source": "VOO"
     },
@@ -562,7 +563,7 @@
     {
       "date": "2013-06",
       "close": 146.68,
-      "adjClose": 117.3151,
+      "adjClose": 117.315,
       "dividend": 0.738,
       "source": "VOO"
     },
@@ -597,7 +598,7 @@
     {
       "date": "2013-11",
       "close": 165.7,
-      "adjClose": 133.1938,
+      "adjClose": 133.1937,
       "dividend": 0,
       "source": "VOO"
     },
@@ -618,7 +619,7 @@
     {
       "date": "2014-02",
       "close": 170.63,
-      "adjClose": 137.9027,
+      "adjClose": 137.9026,
       "dividend": 0,
       "source": "VOO"
     },
@@ -632,7 +633,7 @@
     {
       "date": "2014-04",
       "close": 172.59,
-      "adjClose": 140.1235,
+      "adjClose": 140.1234,
       "dividend": 0,
       "source": "VOO"
     },
@@ -646,14 +647,14 @@
     {
       "date": "2014-06",
       "close": 179.43,
-      "adjClose": 146.3327,
+      "adjClose": 146.3328,
       "dividend": 0.809,
       "source": "VOO"
     },
     {
       "date": "2014-07",
       "close": 176.96,
-      "adjClose": 144.3185,
+      "adjClose": 144.3183,
       "dividend": 0,
       "source": "VOO"
     },
@@ -667,7 +668,7 @@
     {
       "date": "2014-09",
       "close": 180.59,
-      "adjClose": 147.98,
+      "adjClose": 147.9801,
       "dividend": 0.876,
       "source": "VOO"
     },
@@ -709,7 +710,7 @@
     {
       "date": "2015-03",
       "close": 189.2,
-      "adjClose": 155.8264,
+      "adjClose": 155.8263,
       "dividend": 0.984,
       "source": "VOO"
     },
@@ -758,14 +759,14 @@
     {
       "date": "2015-10",
       "close": 190.56,
-      "adjClose": 158.5187,
+      "adjClose": 158.5188,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2015-11",
       "close": 191.37,
-      "adjClose": 159.1926,
+      "adjClose": 159.1925,
       "dividend": 0,
       "source": "VOO"
     },
@@ -821,7 +822,7 @@
     {
       "date": "2016-07",
       "close": 199.28,
-      "adjClose": 168.4929,
+      "adjClose": 168.493,
       "dividend": 0,
       "source": "VOO"
     },
@@ -842,7 +843,7 @@
     {
       "date": "2016-10",
       "close": 195.13,
-      "adjClose": 165.7214,
+      "adjClose": 165.7213,
       "dividend": 0,
       "source": "VOO"
     },
@@ -863,7 +864,7 @@
     {
       "date": "2017-01",
       "close": 208.97,
-      "adjClose": 178.5852,
+      "adjClose": 178.5851,
       "dividend": 0,
       "source": "VOO"
     },
@@ -905,14 +906,14 @@
     {
       "date": "2017-07",
       "close": 226.64,
-      "adjClose": 195.468,
+      "adjClose": 195.4681,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2017-08",
       "close": 227.3,
-      "adjClose": 196.0372,
+      "adjClose": 196.0373,
       "dividend": 0,
       "source": "VOO"
     },
@@ -933,14 +934,14 @@
     {
       "date": "2017-11",
       "close": 243.35,
-      "adjClose": 210.9547,
+      "adjClose": 210.9548,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2017-12",
       "close": 245.29,
-      "adjClose": 213.6607,
+      "adjClose": 213.6606,
       "dividend": 1.184,
       "source": "VOO"
     },
@@ -954,14 +955,14 @@
     {
       "date": "2018-02",
       "close": 249.34,
-      "adjClose": 217.1884,
+      "adjClose": 217.1885,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2018-03",
       "close": 242.08,
-      "adjClose": 211.829,
+      "adjClose": 211.8291,
       "dividend": 1.084,
       "source": "VOO"
     },
@@ -1031,7 +1032,7 @@
     {
       "date": "2019-01",
       "close": 248.01,
-      "adjClose": 220.2039,
+      "adjClose": 220.204,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1059,35 +1060,35 @@
     {
       "date": "2019-05",
       "close": 252.87,
-      "adjClose": 225.7829,
+      "adjClose": 225.783,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2019-06",
       "close": 269.15,
-      "adjClose": 241.5678,
+      "adjClose": 241.5677,
       "dividend": 1.386,
       "source": "VOO"
     },
     {
       "date": "2019-07",
       "close": 273.08,
-      "adjClose": 245.095,
+      "adjClose": 245.0951,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2019-08",
       "close": 268.6,
-      "adjClose": 241.0741,
+      "adjClose": 241.0742,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2019-09",
       "close": 272.6,
-      "adjClose": 245.8287,
+      "adjClose": 245.8289,
       "dividend": 1.301,
       "source": "VOO"
     },
@@ -1115,7 +1116,7 @@
     {
       "date": "2020-01",
       "close": 295.69,
-      "adjClose": 267.9434,
+      "adjClose": 267.9435,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1136,7 +1137,7 @@
     {
       "date": "2020-04",
       "close": 267.1,
-      "adjClose": 243.1725,
+      "adjClose": 243.1724,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1157,7 +1158,7 @@
     {
       "date": "2020-07",
       "close": 300.1,
-      "adjClose": 274.6365,
+      "adjClose": 274.6364,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1178,7 +1179,7 @@
     {
       "date": "2020-10",
       "close": 299.82,
-      "adjClose": 275.55,
+      "adjClose": 275.5499,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1199,14 +1200,14 @@
     {
       "date": "2021-01",
       "close": 340.18,
-      "adjClose": 313.9213,
+      "adjClose": 313.9212,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2021-02",
       "close": 349.59,
-      "adjClose": 322.6049,
+      "adjClose": 322.605,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1220,14 +1221,14 @@
     {
       "date": "2021-04",
       "close": 383.57,
-      "adjClose": 355.2101,
+      "adjClose": 355.2102,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2021-05",
       "close": 386.13,
-      "adjClose": 357.5808,
+      "adjClose": 357.5809,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1241,21 +1242,21 @@
     {
       "date": "2021-07",
       "close": 403.15,
-      "adjClose": 374.6088,
+      "adjClose": 374.6089,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2021-08",
       "close": 415.05,
-      "adjClose": 385.6664,
+      "adjClose": 385.6663,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2021-09",
       "close": 394.4,
-      "adjClose": 367.6802,
+      "adjClose": 367.6801,
       "dividend": 1.308,
       "source": "VOO"
     },
@@ -1276,7 +1277,7 @@
     {
       "date": "2021-12",
       "close": 436.57,
-      "adjClose": 408.4849,
+      "adjClose": 408.485,
       "dividend": 1.533,
       "source": "VOO"
     },
@@ -1304,14 +1305,14 @@
     {
       "date": "2022-04",
       "close": 378.7,
-      "adjClose": 355.5311,
+      "adjClose": 355.5313,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2022-05",
       "close": 379.68,
-      "adjClose": 356.4512,
+      "adjClose": 356.4511,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1325,7 +1326,7 @@
     {
       "date": "2022-07",
       "close": 378.79,
-      "adjClose": 357.0728,
+      "adjClose": 357.0729,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1402,21 +1403,21 @@
     {
       "date": "2023-06",
       "close": 407.28,
-      "adjClose": 390.5897,
+      "adjClose": 390.5896,
       "dividend": 1.576,
       "source": "VOO"
     },
     {
       "date": "2023-07",
       "close": 420.68,
-      "adjClose": 403.4406,
+      "adjClose": 403.4405,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2023-08",
       "close": 413.83,
-      "adjClose": 396.8712,
+      "adjClose": 396.8713,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1430,7 +1431,7 @@
     {
       "date": "2023-10",
       "close": 384.17,
-      "adjClose": 369.8323,
+      "adjClose": 369.8322,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1458,7 +1459,7 @@
     {
       "date": "2024-02",
       "close": 466.93,
-      "adjClose": 451.3586,
+      "adjClose": 451.3587,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1479,7 +1480,7 @@
     {
       "date": "2024-05",
       "close": 484.62,
-      "adjClose": 469.9653,
+      "adjClose": 469.9652,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1507,7 +1508,7 @@
     {
       "date": "2024-09",
       "close": 527.67,
-      "adjClose": 515.1317,
+      "adjClose": 515.1316,
       "dividend": 1.639,
       "source": "VOO"
     },
@@ -1542,14 +1543,14 @@
     {
       "date": "2025-02",
       "close": 546.33,
-      "adjClose": 535.0554,
+      "adjClose": 535.0555,
       "dividend": 0,
       "source": "VOO"
     },
     {
       "date": "2025-03",
       "close": 513.91,
-      "adjClose": 505.0494,
+      "adjClose": 505.0493,
       "dividend": 1.812,
       "source": "VOO"
     },
@@ -1584,7 +1585,7 @@
     {
       "date": "2025-08",
       "close": 593.08,
-      "adjClose": 584.6538,
+      "adjClose": 584.6539,
       "dividend": 0,
       "source": "VOO"
     },
@@ -1612,7 +1613,7 @@
     {
       "date": "2025-12",
       "close": 627.13,
-      "adjClose": 621.7427,
+      "adjClose": 621.7428,
       "dividend": 1.771,
       "source": "VOO"
     },

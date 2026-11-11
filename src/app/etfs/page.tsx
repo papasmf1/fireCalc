@@ -11,6 +11,7 @@ import {
 import { loadEtfs, loadSummary } from "@/lib/data/loader";
 import { loadFxMonthly } from "@/lib/data/loader";
 import { annualReturns } from "@/lib/sim";
+import { assetClassFor, assetClassLabel } from "@/lib/asset-class";
 import Comparison from "./comparison";
 const pct = (n?: number) => (n == null ? "-" : `${(n * 100).toFixed(1)}%`);
 export default function EtfsPage() {
@@ -82,7 +83,16 @@ export default function EtfsPage() {
                 return (
                   <TableRow key={ticker}>
                     <TableCell className="font-semibold">
-                      {ticker}
+                      <div className="flex items-center gap-2">
+                        {ticker}
+                        <Badge variant="secondary">
+                          {
+                            assetClassLabel[
+                              assetClassFor(ticker, item?.assetClass)
+                            ]
+                          }
+                        </Badge>
+                      </div>
                       <div className="mt-1 flex flex-wrap gap-1">
                         {short && (
                           <Badge variant="outline">
@@ -93,6 +103,9 @@ export default function EtfsPage() {
                           <Badge variant="destructive">
                             짧은 표본 · {five?.months ?? 0}개월
                           </Badge>
+                        )}
+                        {ticker === "IBIT" && five && five.volatility > 0.5 && (
+                          <Badge variant="destructive">怨좊??숈꽦</Badge>
                         )}
                         {ticker === "SPYQ" && (
                           <Badge variant="destructive">2배·분기 리셋</Badge>

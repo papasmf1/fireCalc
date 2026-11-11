@@ -1,0 +1,250 @@
+{
+  "ticker": "IBIT",
+  "name": "iShares Bitcoin Trust ETF",
+  "inception": "2024-01-11",
+  "currency": "USD",
+  "updatedAt": "2026-11-12",
+  "assetClass": "bitcoin",
+  "proxy": null,
+  "monthly": [
+    {
+      "date": "2024-01",
+      "close": 24.5,
+      "adjClose": 24.5,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-02",
+      "close": 35.99,
+      "adjClose": 35.99,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-03",
+      "close": 40.47,
+      "adjClose": 40.47,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-04",
+      "close": 35.4,
+      "adjClose": 35.4,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-05",
+      "close": 38.55,
+      "adjClose": 38.55,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-06",
+      "close": 34.14,
+      "adjClose": 34.14,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-07",
+      "close": 35.61,
+      "adjClose": 35.61,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-08",
+      "close": 33.37,
+      "adjClose": 33.37,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-09",
+      "close": 35.52,
+      "adjClose": 35.52,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-10",
+      "close": 39.37,
+      "adjClose": 39.37,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-11",
+      "close": 55.21,
+      "adjClose": 55.21,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2024-12",
+      "close": 55.96,
+      "adjClose": 55.96,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-01",
+      "close": 57.71,
+      "adjClose": 57.71,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-02",
+      "close": 47.9,
+      "adjClose": 47.9,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-03",
+      "close": 47.71,
+      "adjClose": 47.71,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-04",
+      "close": 55.19,
+      "adjClose": 55.19,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-05",
+      "close": 59.46,
+      "adjClose": 59.46,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-06",
+      "close": 62.19,
+      "adjClose": 62.19,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-07",
+      "close": 64.22,
+      "adjClose": 64.22,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-08",
+      "close": 61.44,
+      "adjClose": 61.44,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-09",
+      "close": 69.81,
+      "adjClose": 69.81,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-10",
+      "close": 62.3,
+      "adjClose": 62.3,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-11",
+      "close": 51.55,
+      "adjClose": 51.55,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2025-12",
+      "close": 50.94,
+      "adjClose": 50.94,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-01",
+      "close": 47.49,
+      "adjClose": 47.49,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-02",
+      "close": 37.19,
+      "adjClose": 37.19,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-03",
+      "close": 37.97,
+      "adjClose": 37.97,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-04",
+      "close": 44.47,
+      "adjClose": 44.47,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-05",
+      "close": 41.63,
+      "adjClose": 41.63,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-06",
+      "close": 34.87,
+      "adjClose": 34.87,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-07",
+      "close": 35.64,
+      "adjClose": 35.64,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-08",
+      "close": 45.23,
+      "adjClose": 45.23,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-09",
+      "close": 47.73,
+      "adjClose": 47.73,
+      "dividend": 0,
+      "source": "IBIT"
+    },
+    {
+      "date": "2026-10",
+      "close": 43.36,
+      "adjClose": 43.36,
+      "dividend": 0,
+      "source": "IBIT"
+    }
+  ],
+  "dividendEvents": []
+}

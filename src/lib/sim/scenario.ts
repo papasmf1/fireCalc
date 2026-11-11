@@ -12,6 +12,7 @@ export type ScenarioInput = {
   inflation: number;
   haircut: number;
   pessimistic: boolean;
+  annualReturnCap?: number;
 };
 export type ScenarioPath = {
   label: "P10" | "P50" | "P90";
@@ -129,15 +130,22 @@ export function runScenarioMonteCarlo(
   const tickers = Object.keys(input.weights).filter(
     (ticker) => input.weights[ticker] > 0,
   );
-  const means = tickers.map(
+  const rawMeans = tickers.map(
     (ticker) =>
       input.returns[ticker].reduce((sum, point) => sum + point.return, 0) /
       Math.max(1, input.returns[ticker].length),
   );
+  const monthlyCap =
+    input.pessimistic && input.annualReturnCap != null
+      ? Math.pow(1 + Math.max(0, input.annualReturnCap), 1 / 12) - 1
+      : Number.POSITIVE_INFINITY;
+  const drifts = rawMeans.map((mean) =>
+    input.pessimistic ? Math.min(mean - input.haircut / 12, monthlyCap) : mean,
+  );
   const vols = tickers.map((ticker, i) =>
     Math.sqrt(
       input.returns[ticker].reduce(
-        (sum, point) => sum + (point.return - means[i]) ** 2,
+        (sum, point) => sum + (point.return - rawMeans[i]) ** 2,
         0,
       ) / Math.max(1, input.returns[ticker].length - 1),
     ),
@@ -178,7 +186,7 @@ export function runScenarioMonteCarlo(
           row.reduce((sum, value, j) => sum + value * z[j], 0),
         );
         tickers.forEach((ticker, i) => {
-          const drift = means[i] - (input.pessimistic ? input.haircut / 12 : 0);
+          const drift = drifts[i];
           const sigma = vols[i] * (input.pessimistic ? 1.15 : 1);
           const growth =
             Math.exp(drift - (sigma * sigma) / 2 + sigma * correlated[i]) - 1;
@@ -235,7 +243,7 @@ export function runScenarioMonteCarlo(
   return {
     paths: [pick(0.1, "P10"), pick(0.5, "P50"), pick(0.9, "P90")],
     depletionProbability: paths.filter((path) => path.depleted).length / runs,
-    means,
+    means: drifts,
     vols,
     correlation,
   };

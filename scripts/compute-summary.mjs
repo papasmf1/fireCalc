@@ -26,7 +26,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ETF_DIR = path.join(ROOT, 'data', 'etf');
 const FX_FILE = path.join(ROOT, 'data', 'fx', 'usdkrw-monthly.json');
 const OUT_FILE = path.join(ROOT, 'data', 'summary.json');
-const TICKERS = ['VOO', 'SCHD', 'QQQM', 'QLD', 'SPYQ', 'JEPQ'];
+const TICKERS = ['VOO', 'SCHD', 'QQQM', 'QLD', 'SPYQ', 'JEPQ', 'GLD', 'IBIT'];
 const PERIODS = [5, 10, 20];
 
 const round = (v, d = 6) => (v == null || !Number.isFinite(v) ? null : Math.round(v * 10 ** d) / 10 ** d);
@@ -111,7 +111,9 @@ function dividendMetrics(etf, rows, rateByMonth) {
   const ttmKrwNum = ttmEvents.reduce((a, e) => a + e.amount * (rateByMonth.get(e.exDate.slice(0, 7)) ?? NaN), 0);
 
   const n = ttmEvents.length;
-  const frequency = n >= 11 ? 'monthly' : n >= 3 && n <= 5 ? 'quarterly' : 'other';
+  // 무배당 ETF(GLD, IBIT)는 'none'. 최근 12개월에 배당이 없어도 과거에 있었다면 'other'
+  const frequency =
+    events.length === 0 ? 'none' : n >= 11 ? 'monthly' : n >= 3 && n <= 5 ? 'quarterly' : 'other';
 
   // 연간 배당 합 (완전한 연도만)
   const annual = new Map();
@@ -150,9 +152,11 @@ function dividendMetrics(etf, rows, rateByMonth) {
       [...annual].filter(([y]) => y >= firstFullYear && y <= lastFullYear).map(([y, v]) => [y, round(v, 6)]),
     ),
     dividendNote:
-      cagr5 == null && period == null
-        ? `데이터가 짧아 연간 배당 성장률을 계산할 수 없음 (완전한 연도 ${firstFullYear}~${lastFullYear})`
-        : null,
+      events.length === 0
+        ? '무배당 ETF (가격 수익만)'
+        : cagr5 == null && period == null
+          ? `데이터가 짧아 연간 배당 성장률을 계산할 수 없음 (완전한 연도 ${firstFullYear}~${lastFullYear})`
+          : null,
   };
 }
 
@@ -198,6 +202,7 @@ function main() {
     }
     out.tickers[ticker] = {
       name: etf.name,
+      assetClass: etf.assetClass ?? 'equity',
       inception: etf.inception,
       proxy: etf.proxy ?? null,
       firstMonth: etf.monthly[0].date,

@@ -3,7 +3,8 @@
   "name": "Invesco NASDAQ 100 ETF",
   "inception": "2020-10-13",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": "QQQ",
   "monthly": [
     {
@@ -23,7 +24,7 @@
     {
       "date": "2007-01",
       "close": 18.1365,
-      "adjClose": 15.4951,
+      "adjClose": 15.4952,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -163,7 +164,7 @@
     {
       "date": "2008-09",
       "close": 16.0129,
-      "adjClose": 13.7512,
+      "adjClose": 13.7511,
       "dividend": 0.011523,
       "source": "QQQ"
     },
@@ -184,7 +185,7 @@
     {
       "date": "2008-12",
       "close": 12.2391,
-      "adjClose": 10.5256,
+      "adjClose": 10.5257,
       "dividend": 0.017696,
       "source": "QQQ"
     },
@@ -212,7 +213,7 @@
     {
       "date": "2009-04",
       "close": 14.1075,
-      "adjClose": 12.1525,
+      "adjClose": 12.1526,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -303,7 +304,7 @@
     {
       "date": "2010-05",
       "close": 18.7661,
-      "adjClose": 16.2454,
+      "adjClose": 16.2455,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -317,7 +318,7 @@
     {
       "date": "2010-07",
       "close": 18.8525,
-      "adjClose": 16.3833,
+      "adjClose": 16.3834,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -534,14 +535,14 @@
     {
       "date": "2013-02",
       "close": 27.6142,
-      "adjClose": 24.6304,
+      "adjClose": 24.6305,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2013-03",
       "close": 28.3837,
-      "adjClose": 25.3754,
+      "adjClose": 25.3755,
       "dividend": 0.065434,
       "source": "QQQ"
     },
@@ -562,7 +563,7 @@
     {
       "date": "2013-06",
       "close": 29.3303,
-      "adjClose": 26.3046,
+      "adjClose": 26.3047,
       "dividend": 0.092184,
       "source": "QQQ"
     },
@@ -611,7 +612,7 @@
     {
       "date": "2014-01",
       "close": 35.5033,
-      "adjClose": 32.0379,
+      "adjClose": 32.038,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -702,7 +703,7 @@
     {
       "date": "2015-02",
       "close": 44.6107,
-      "adjClose": 40.8731,
+      "adjClose": 40.8732,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -807,14 +808,14 @@
     {
       "date": "2016-05",
       "close": 45.4091,
-      "adjClose": 42.1505,
+      "adjClose": 42.1506,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2016-06",
       "close": 44.2568,
-      "adjClose": 41.1904,
+      "adjClose": 41.1903,
       "dividend": 0.118111,
       "source": "QQQ"
     },
@@ -828,7 +829,7 @@
     {
       "date": "2016-08",
       "close": 47.9194,
-      "adjClose": 44.5992,
+      "adjClose": 44.5993,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -856,7 +857,7 @@
     {
       "date": "2016-12",
       "close": 48.759,
-      "adjClose": 45.6288,
+      "adjClose": 45.6289,
       "dividend": 0.146096,
       "source": "QQQ"
     },
@@ -912,7 +913,7 @@
     {
       "date": "2017-08",
       "close": 60.1668,
-      "adjClose": 56.5751,
+      "adjClose": 56.5752,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -933,21 +934,21 @@
     {
       "date": "2017-11",
       "close": 63.8501,
-      "adjClose": 60.1699,
+      "adjClose": 60.17,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2017-12",
       "close": 64.1011,
-      "adjClose": 60.5328,
+      "adjClose": 60.5329,
       "dividend": 0.135396,
       "source": "QQQ"
     },
     {
       "date": "2018-01",
       "close": 69.7145,
-      "adjClose": 65.8337,
+      "adjClose": 65.8338,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -961,7 +962,7 @@
     {
       "date": "2018-03",
       "close": 65.8995,
-      "adjClose": 62.3321,
+      "adjClose": 62.3322,
       "dividend": 0.113996,
       "source": "QQQ"
     },
@@ -975,7 +976,7 @@
     {
       "date": "2018-05",
       "close": 69.9902,
-      "adjClose": 66.2013,
+      "adjClose": 66.2014,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1010,7 +1011,7 @@
     {
       "date": "2018-10",
       "close": 69.8873,
-      "adjClose": 66.3647,
+      "adjClose": 66.3648,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1031,7 +1032,7 @@
     {
       "date": "2019-01",
       "close": 69.2042,
-      "adjClose": 65.904,
+      "adjClose": 65.9041,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1073,21 +1074,21 @@
     {
       "date": "2019-07",
       "close": 78.6448,
-      "adjClose": 75.1967,
+      "adjClose": 75.1968,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2019-08",
       "close": 77.151,
-      "adjClose": 73.7683,
+      "adjClose": 73.7684,
       "dividend": 0,
       "source": "QQQ"
     },
     {
       "date": "2019-09",
       "close": 77.7024,
-      "adjClose": 74.4454,
+      "adjClose": 74.4455,
       "dividend": 0.15803,
       "source": "QQQ"
     },
@@ -1108,14 +1109,14 @@
     {
       "date": "2019-12",
       "close": 87.497,
-      "adjClose": 84.0112,
+      "adjClose": 84.0113,
       "dividend": 0.188484,
       "source": "QQQ"
     },
     {
       "date": "2020-01",
       "close": 90.1555,
-      "adjClose": 86.5638,
+      "adjClose": 86.5639,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1129,14 +1130,14 @@
     {
       "date": "2020-03",
       "close": 78.3568,
-      "adjClose": 75.3954,
+      "adjClose": 75.3955,
       "dividend": 0.149388,
       "source": "QQQ"
     },
     {
       "date": "2020-04",
       "close": 90.0897,
-      "adjClose": 86.6849,
+      "adjClose": 86.685,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1171,7 +1172,7 @@
     {
       "date": "2020-09",
       "close": 114.3416,
-      "adjClose": 110.2116,
+      "adjClose": 110.2117,
       "dividend": 0,
       "source": "QQQ"
     },
@@ -1206,7 +1207,7 @@
     {
       "date": "2021-02",
       "close": 129.72,
-      "adjClose": 125.2371,
+      "adjClose": 125.237,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1234,7 +1235,7 @@
     {
       "date": "2021-06",
       "close": 147.37,
-      "adjClose": 142.6352,
+      "adjClose": 142.6351,
       "dividend": 0.182,
       "source": "QQQM"
     },
@@ -1339,7 +1340,7 @@
     {
       "date": "2022-09",
       "close": 109.95,
-      "adjClose": 107.191,
+      "adjClose": 107.1911,
       "dividend": 0.245,
       "source": "QQQM"
     },
@@ -1388,7 +1389,7 @@
     {
       "date": "2023-04",
       "close": 132.68,
-      "adjClose": 129.9235,
+      "adjClose": 129.9236,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1458,7 +1459,7 @@
     {
       "date": "2024-02",
       "close": 183.48,
-      "adjClose": 180.6287,
+      "adjClose": 180.6288,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1479,7 +1480,7 @@
     {
       "date": "2024-05",
       "close": 185.87,
-      "adjClose": 183.3357,
+      "adjClose": 183.3356,
       "dividend": 0,
       "source": "QQQM"
     },
@@ -1507,7 +1508,7 @@
     {
       "date": "2024-09",
       "close": 200.56,
-      "adjClose": 198.4461,
+      "adjClose": 198.4462,
       "dividend": 0.3,
       "source": "QQQM"
     },
@@ -1612,7 +1613,7 @@
     {
       "date": "2025-12",
       "close": 252.44,
-      "adjClose": 251.5377,
+      "adjClose": 251.5376,
       "dividend": 0.323,
       "source": "QQQM"
     },
@@ -1626,7 +1627,7 @@
     {
       "date": "2026-02",
       "close": 250.06,
-      "adjClose": 249.1662,
+      "adjClose": 249.1661,
       "dividend": 0,
       "source": "QQQM"
     },

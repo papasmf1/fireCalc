@@ -1,7 +1,7 @@
 {
   "pair": "USDKRW",
   "source": "Yahoo Finance KRW=X",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "daily": [
     {
       "date": "2025-11-10",
@@ -1306,6 +1306,11 @@
     {
       "date": "2026-11-11",
       "rate": 1343.11,
+      "source": "Yahoo Finance KRW=X"
+    },
+    {
+      "date": "2026-11-12",
+      "rate": 1338.59,
       "source": "Yahoo Finance KRW=X"
     }
   ]

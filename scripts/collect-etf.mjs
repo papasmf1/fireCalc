@@ -26,7 +26,12 @@ const TARGETS = [
   { ticker: 'QLD' },
   { ticker: 'SPYQ', optional: true }, // 실존 확인됨(Tradr 2X Long SPY Quarterly). 데이터가 짧아도 저장
   { ticker: 'JEPQ' },                  // JPMorgan Nasdaq Equity Premium Income ETF, 2022-05 상장, 월배당, proxy 없음
+  { ticker: 'GLD', assetClass: 'gold' },    // SPDR Gold Shares, 2004-11 상장, 무배당, proxy 없음
+  { ticker: 'IBIT', assetClass: 'bitcoin' }, // iShares Bitcoin Trust, 2024-01 상장, 무배당, 비트코인 현물 proxy 사용 안 함
 ];
+
+/** 자산군. 기본은 equity. 비트코인 현물(BTC-USD)은 상장 전 구간 대체에 쓰지 않는다 (docs/PLAN.md 3단계). */
+const assetClassOf = (target) => target.assetClass ?? 'equity';
 const PROXY_TICKERS = ['SPY', 'QQQ'];
 
 async function loadSeries(symbol) {
@@ -150,6 +155,7 @@ async function main() {
         inception: series.firstTradeDate ?? monthly[0].date,
         currency: 'USD',
         updatedAt: UPDATED_AT,
+        assetClass: assetClassOf(target),
         proxy: usesProxy ? target.proxy : null,
         monthly,
         dividendEvents,

@@ -3,7 +3,8 @@
   "name": "Schwab U.S. Dividend Equity ETF",
   "inception": "2011-10-20",
   "currency": "USD",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
+  "assetClass": "equity",
   "proxy": null,
   "monthly": [
     {
@@ -142,7 +143,7 @@
     {
       "date": "2013-06",
       "close": 10.9,
-      "adjClose": 7.1037,
+      "adjClose": 7.1038,
       "dividend": 0.075,
       "source": "SCHD"
     },
@@ -380,7 +381,7 @@
     {
       "date": "2016-04",
       "close": 13.34,
-      "adjClose": 9.3993,
+      "adjClose": 9.3994,
       "dividend": 0,
       "source": "SCHD"
     },
@@ -506,7 +507,7 @@
     {
       "date": "2017-10",
       "close": 16.1633,
-      "adjClose": 11.9068,
+      "adjClose": 11.9069,
       "dividend": 0,
       "source": "SCHD"
     },
@@ -772,7 +773,7 @@
     {
       "date": "2020-12",
       "close": 21.38,
-      "adjClose": 17.4933,
+      "adjClose": 17.4932,
       "dividend": 0.200667,
       "source": "SCHD"
     },
@@ -982,7 +983,7 @@
     {
       "date": "2023-06",
       "close": 24.2067,
-      "adjClose": 21.503,
+      "adjClose": 21.5029,
       "dividend": 0.221667,
       "source": "SCHD"
     },
